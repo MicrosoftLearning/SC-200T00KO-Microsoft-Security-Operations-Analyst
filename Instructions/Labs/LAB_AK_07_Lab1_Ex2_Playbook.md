@@ -34,7 +34,7 @@
 
 이 작업에서는 Azure Sentinel에서 플레이북으로 사용할 논리 앱을 만듭니다.
 
-1. Edge 브라우저에서 Azure Portal https://portal.azure.com으로 이동합니다.
+1. Edge 브라우저에서 Azure Portal https://portal.azure.com 으로 이동합니다.
 
 2. 랩 호스팅 공급자가 제공한 **테넌트 전자 메일** 계정을 복사하여 **로그인** 대화 상자에 붙여넣은 후 **다음**을 선택합니다.
 

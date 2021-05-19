@@ -4,7 +4,7 @@
 
 이 연습에서는 특별한 작업을 수행하지 않으며  수행할 공격의 설명만 확인합니다.
 
-이 공격의 패턴은 오픈 소스 프로젝트 https://github.com/redcanaryco/atomic-red-team을 토대로 작성된 것입니다.
+이 공격의 패턴은 오픈 소스 프로젝트 https://github.com/redcanaryco/atomic-red-team 을 토대로 작성된 것입니다.
 
 **참고** 랩을 진행하기 위해 짧은 시간 내에 트리거되는 설정도 있습니다.
 

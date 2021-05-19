@@ -12,8 +12,8 @@
 
 이 과정은 학습 파트너가 여러 승인된 랩 호스팅 공급자 중 하나를 통해 제공하는 것입니다. 따라서 테넌트와 연결된 테넌트 ID를 검색하는 실제 단계는 랩 호스팅 공급자별로 다를 수 있습니다. 그러므로 과정을 진행할 수 있도록 이 정보를 검색하는 방법과 관련된 필요한 지침은 강사가 제공합니다. 나중에 사용할 수 있도록 기록해 두어야 하는 정보는 다음과 같습니다.
 
-	- **테넌트 접미사 ID.** 랩 전반에서 Microsoft 365에 로그인하는 데 사용할 onmicrosoft.com 계정용 ID입니다. 이 ID의 형식은 **{사용자 이름}@M365xZZZZZZ.onmicrosoft.com**입니다. 여기서 ZZZZZZ는 랩 호스팅 공급자가 제공한 고유 테넌트 접미사 ID입니다. 나중에 사용할 수 있도록 이 ZZZZZZ 부분의 내용을 기록해 둡니다. 랩 단계를 진행할 때 Microsoft 365 포털에 로그인하라는 메시지가 표시되면 여기서 적어 둔 ZZZZZZ 값을 입력해야 합니다.
-	- **테넌트 암호.** 랩 호스팅 공급자가 제공한 관리자 계정의 암호입니다.
+- **테넌트 접미사 ID.** 랩 전반에서 Microsoft 365에 로그인하는 데 사용할 onmicrosoft.com 계정용 ID입니다. 이 ID의 형식은 **{사용자 이름}@M365xZZZZZZ.onmicrosoft.com**입니다. 여기서 ZZZZZZ는 랩 호스팅 공급자가 제공한 고유 테넌트 접미사 ID입니다. 나중에 사용할 수 있도록 이 ZZZZZZ 부분의 내용을 기록해 둡니다. 랩 단계를 진행할 때 Microsoft 365 포털에 로그인하라는 메시지가 표시되면 여기서 적어 둔 ZZZZZZ 값을 입력해야 합니다.
+- **테넌트 암호.** 랩 호스팅 공급자가 제공한 관리자 계정의 암호입니다.
 	
 
 ### 작업 2: 엔드포인트용 Microsoft Defender 초기화
@@ -25,7 +25,7 @@
 
 2.  Microsoft Edge 브라우저를 열고 "edge 브라우저 업데이트"를 검색하여 새 Microsoft Edge 브라우저를 다운로드한 후 설치합니다. 호스트된 가상 머신에서 Microsoft Edge의 최신 버전을 실행하려면 이 단계를 수행해야 합니다. 새 Edge 브라우저를 시작합니다.
 
-3.  Edge 브라우저에서 Microsoft Defender 보안 센터(https://securitycenter.microsoft.com)로 이동합니다.
+3.  Edge 브라우저에서 Microsoft Defender 보안 센터 (https://securitycenter.microsoft.com) 로 이동합니다.
 
 4. 랩 호스팅 공급자가 제공한 관리자 사용자 이름용 테넌트 전자 메일 계정을 복사하여 **로그인** 대화 상자에 붙여넣은 후 **다음**을 선택합니다.
 
@@ -53,7 +53,7 @@
 
 이 작업에서는 엔드포인트용 Microsoft Defender에 디바이스를 온보딩합니다.
 
-1. Microsoft Defender 보안 센터(https://securitycenter.microsoft.com)로 이동한 후 현재 포털이 표시되어 있지 않으면 **테넌트 전자 메일** 자격 증명을 사용하여 로그인합니다.
+1. Microsoft Defender 보안 센터 (https://securitycenter.microsoft.com) 로 이동한 후 현재 포털이 표시되어 있지 않으면 **테넌트 전자 메일** 자격 증명을 사용하여 로그인합니다.
 
 2. 왼쪽 메뉴 모음에서 **설정**을 선택합니다.
 

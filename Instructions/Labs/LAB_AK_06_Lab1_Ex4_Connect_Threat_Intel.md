@@ -6,7 +6,7 @@
 
 1. WIN1 가상 머신에 Admin으로 로그인합니다. 암호로는 **Pa55w.rd** 를 사용합니다.  
 
-2. Edge 브라우저에서 Azure Portal https://portal.azure.com으로 이동합니다.
+2. Edge 브라우저에서 Azure Portal https://portal.azure.com 으로 이동합니다.
 
 3. 랩 호스팅 공급자가 제공한 **테넌트 전자 메일** 계정을 복사하여 **로그인** 대화 상자에 붙여넣은 후 **다음**을 선택합니다.
 
@@ -22,7 +22,7 @@
 
 9. 구성 영역에 식별 이름으로 *PhishURLs*를 입력합니다.
 
-10. API 루트 URL로는 https://limo.anomali.com/api/v1/taxii2/feeds/를 입력합니다.
+10. API 루트 URL로는 https://limo.anomali.com/api/v1/taxii2/feeds/ 를 입력합니다.
 
 11. 컬렉션 ID로는 **107**을 입력합니다.
 

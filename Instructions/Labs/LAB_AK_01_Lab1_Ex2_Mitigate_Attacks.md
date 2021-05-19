@@ -10,7 +10,7 @@
 
 이 작업에서는 엔드포인트용 Microsoft Defender 기능을 살펴보기 위해 시뮬레이션된 공격 6개를 실행합니다.
 
-1. 브라우저에 Microsoft Defender 보안 센터가 아직 열려 있지 않으면 Microsoft Defender 보안 센터(https://securitycenter.microsoft.com)로 이동하여 테넌트 관리자로 로그인합니다.
+1. 브라우저에 Microsoft Defender 보안 센터가 아직 열려 있지 않으면 Microsoft Defender 보안 센터 (https://securitycenter.microsoft.com) 로 이동하여 테넌트 관리자로 로그인합니다.
 
 2. 메뉴에서 **평가판 및 자습서**를 선택하고 왼쪽에서 then **시뮬레이션 및 자습서**를 선택합니다.
 

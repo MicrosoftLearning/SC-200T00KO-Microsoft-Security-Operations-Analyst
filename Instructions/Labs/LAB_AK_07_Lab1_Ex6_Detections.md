@@ -11,7 +11,7 @@ REG ADD "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /V "SOC Test" /t RE
 
 1. WIN1 가상 머신에 Admin으로 로그인합니다. 암호로는 **Pa55w.rd** 를 사용합니다.  
 
-2. Edge 브라우저에서 Azure Portal https://portal.azure.com으로 이동합니다.
+2. Edge 브라우저에서 Azure Portal https://portal.azure.com 으로 이동합니다.
 
 3. 랩 호스팅 공급자가 제공한 관리자용 **테넌트 전자 메일** 계정을 복사하여 **로그인** 대화 상자에 붙여넣은 후 **다음**을 선택합니다.
 
@@ -49,7 +49,7 @@ search in (Event) "temp\\startup.bat"
 
 12. 행을 확장하여 레코드와 관련된 모든 열을 표시합니다.  EventData, ParameterXml 등의 일부 필드에는 여러 데이터 항목이 구조화된 데이터로 저장되어 있습니다.  그러므로 특정 필드를 쿼리하기가 어렵습니다.  
 
-13.  따라서 다음으로는 의미 있는 필드를 찾을 수 있도록 각 행의 데이터를 구문 분석하는 KQL 문을 작성해야 합니다.  GitHub의 Azure Sentinel 커뮤니티 내 Parsers 폴더에는 다양한 파서 예제가 포함되어 있습니다.  브라우저에서 다른 탭을 열고 https://github.com/Azure/Azure-Sentinel로 이동합니다.
+13.  따라서 다음으로는 의미 있는 필드를 찾을 수 있도록 각 행의 데이터를 구문 분석하는 KQL 문을 작성해야 합니다.  GitHub의 Azure Sentinel 커뮤니티 내 Parsers 폴더에는 다양한 파서 예제가 포함되어 있습니다.  브라우저에서 다른 탭을 열고 https://github.com/Azure/Azure-Sentinel 로 이동합니다.
 
 14. **Parsers** 폴더와 **Sysmon** 폴더를 차례로 선택합니다.  그러면 다음 파일이 표시됩니다. Azure-Sentinel/Parsers/Sysmon/Sysmon-v12.0.txt
 
@@ -105,13 +105,13 @@ Event
 
 17.  검색 규칙을 계속 작성할 수도 있지만, 이 KQL 문을 다른 검색 규칙의 KQL 문에 이 KQL 문을 재사용할 수 있을 것으로 보입니다.  
     
-    로그 창에서 **저장**, **저장**을 차례로 선택합니다.
-    저장 플라이아웃에 다음 정보를 입력합니다.
+로그 창에서 **저장**, **저장**을 차례로 선택합니다.
+저장 플라이아웃에 다음 정보를 입력합니다.
 
-    이름: Event_Reg_SetValue
-    다른 이름으로 저장: 함수
-    함수 별칭: Event_Reg_SetValue
-    범주: Sysmon
+이름: Event_Reg_SetValue
+다른 이름으로 저장: 함수
+함수 별칭: Event_Reg_SetValue
+범주: Sysmon
 
 
 18. 새 로그 쿼리 탭을 엽니다. 해당 탭에서 다음 KQL 문을 실행합니다.

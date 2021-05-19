@@ -12,7 +12,7 @@
 
 2.  이전 랩에서 이 과정을 진행하지 않았다면 브라우저를 열고 Microsoft Edge 브라우저를 검색하여 다운로드한 후 새로 설치합니다. 새 Edge 브라우저를 시작합니다.
 
-3.  Edge 브라우저에서 Microsoft Defender 보안 센터(https://security.microsoft.com)로 이동합니다.
+3.  Edge 브라우저에서 Microsoft Defender 보안 센터 (https://security.microsoft.com) 로 이동합니다.
 
 4. 랩 호스팅 공급자가 제공한 관리자 사용자 이름용 테넌트 전자 메일 계정을 복사하여 **로그인** 대화 상자에 붙여넣은 후 **다음**을 선택합니다.
 

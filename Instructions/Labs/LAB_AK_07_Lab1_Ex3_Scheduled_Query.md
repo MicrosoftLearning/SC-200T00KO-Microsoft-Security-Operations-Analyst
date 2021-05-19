@@ -85,11 +85,11 @@ timestamp = StartTimeUtc, AccountCustomEntity = UserPrincipalName, IPCustomEntit
 
 8. 브라우저를 닫습니다.
 
-9. 브라우저를 열고 https://portal.office.com으로 이동한 다음 ChristieC@**테넌트 전자 메일 도메인**을 사용하여 로그인해 봅니다. 암호는 관리자 테넌트 암호와 같습니다.  계정이 차단되었다는 경고가 표시됩니다.
+9. 브라우저를 열고 https://portal.office.com 으로 이동한 다음 ChristieC@**테넌트 전자 메일 도메인**을 사용하여 로그인해 봅니다. 암호는 관리자 테넌트 암호와 같습니다.  계정이 차단되었다는 경고가 표시됩니다.
 
 10. 브라우저를 닫습니다. 경고가 처리되도록 10분 동안 기다립니다.
 
-11.  Edge 브라우저에서 Azure Portal https://portal.azure.com으로 이동합니다.
+11.  Edge 브라우저에서 Azure Portal https://portal.azure.com 으로 이동합니다.
 
 12. 랩 호스팅 공급자가 관리 사용자용으로 제공한 **테넌트 전자 메일** 계정을 복사하여 **로그인** 대화 상자에 붙여넣은 후 **다음**을 선택합니다.
 

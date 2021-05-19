@@ -16,7 +16,7 @@ Azure Sentinel을 구현한 회사에서 근무하는 보안 운영 분석자인
 
 2. 브라우저를 열고 Microsoft Edge 브라우저를 검색하여 다운로드한 후 새로 설치합니다. 새 Edge 브라우저를 시작합니다.
 
-3. Edge 브라우저에서 Azure Portal https://portal.azure.com으로 이동합니다.
+3. Edge 브라우저에서 Azure Portal https://portal.azure.com 으로 이동합니다.
 
 4. 랩 호스팅 공급자가 제공한 **테넌트 전자 메일** 계정을 복사하여 **로그인** 대화 상자에 붙여넣은 후 **다음**을 선택합니다.
 
