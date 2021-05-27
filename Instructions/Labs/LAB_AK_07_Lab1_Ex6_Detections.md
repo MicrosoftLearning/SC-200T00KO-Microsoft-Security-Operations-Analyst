@@ -105,12 +105,12 @@ Event
 
 17.  검색 규칙을 계속 작성할 수도 있지만, 이 KQL 문을 다른 검색 규칙의 KQL 문에 이 KQL 문을 재사용할 수 있을 것으로 보입니다.  
     
-로그 창에서 **저장**, **저장**을 차례로 선택합니다.
+로그 창에서 **저장**, **저장**을 차례로 선택합니다.<br>
 저장 플라이아웃에 다음 정보를 입력합니다.
 
-이름: Event_Reg_SetValue
-다른 이름으로 저장: 함수
-함수 별칭: Event_Reg_SetValue
+이름: Event_Reg_SetValue<br>
+다른 이름으로 저장: 함수<br>
+함수 별칭: Event_Reg_SetValue<br>
 범주: Sysmon
 
 

@@ -28,12 +28,14 @@
 
 12. 규칙 쿼리에 다음 KQL 문을 붙여넣습니다.
 
-SigninLogs
-| where ResultType == "50057"
-| where ResultDescription =~ "User account is disabled. The account has been disabled by an administrator."
-| summarize StartTimeUtc = min(TimeGenerated), EndTimeUtc = max(TimeGenerated), count(), applicationCount = dcount(AppDisplayName), 
-applicationSet = makeset(AppDisplayName) by UserPrincipalName, IPAddress
-| extend timestamp = StartTimeUtc, AccountCustomEntity = UserPrincipalName, IPCustomEntity = IPAddress
+```
+ SigninLogs
+ | where ResultType == "50057"
+ | where ResultDescription =~ "User account is disabled. The account has been disabled by an administrator."
+ | summarize StartTimeUtc = min(TimeGenerated), EndTimeUtc = max(TimeGenerated), count(), applicationCount = dcount(AppDisplayName), 
+ applicationSet = makeset(AppDisplayName) by UserPrincipalName, IPAddress
+ | extend timestamp = StartTimeUtc, AccountCustomEntity = UserPrincipalName, IPCustomEntity = IPAddress
+```
 
 **경고:** 가상 머신에 붙여넣기 기능을  사용할 때는 | (파이프) 문자를 더 추가할 수 있습니다.  붙여넣은 문이 다음 KQL 문과 같이 표시되어야 합니다.
 
@@ -41,7 +43,9 @@ applicationSet = makeset(AppDisplayName) by UserPrincipalName, IPAddress
 
 13. 맵 엔터티를 검토합니다.  쿼리 출력에 다음 필드가 포함되므로, 이러한 엔터티는 쿼리에 매핑된 것으로 표시됩니다.
 
-timestamp = StartTimeUtc, AccountCustomEntity = UserPrincipalName, IPCustomEntity = IPAddress
+```
+ timestamp = StartTimeUtc, AccountCustomEntity = UserPrincipalName, IPCustomEntity = IPAddress
+```
 
 14. 쿼리 예약 영역의 분석 규칙 마법사 - 새 규칙 만들기 블레이드로 돌아와서 쿼리 실행 간격에 **5**를 입력하고 단위로는 **분**을 선택합니다.
 

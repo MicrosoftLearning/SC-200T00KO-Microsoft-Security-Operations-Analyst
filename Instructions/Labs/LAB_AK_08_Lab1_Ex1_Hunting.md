@@ -28,6 +28,7 @@ Azure Sentinel을 구현한 회사에서 근무하는 보안 운영 분석자인
 
 8. 새 쿼리 1 공간에 다음 SQL 문을 입력합니다.
 
+```
 let lookback = 2d;
 DeviceEvents
 | where TimeGenerated >= ago(lookback) 
@@ -37,11 +38,13 @@ DeviceEvents
 | summarize count() by bin(TimeGenerated, 3m), c2
 | where count_ > 5
 | render timechart 
+```
 
 9. 이 문은 C2 알림을 일관되게 확인하기 위한 시각화를 제공하는 데 사용됩니다.  3m 설정을 30s로 조정하는 등 문을 조정해 봅니다.  count_ > 5 설정의 임계값 횟수를 다른 값으로 변경하여 결과의 변화를 확인합니다.
 
 10. 지금까지 C2 서버에 알림을 전송하는 DNS 요청을 살펴보았습니다.  다음으로는 알림을 생성하는 디바이스를 확인합니다.  다음 KQL 문을 입력합니다.
 
+```
 let lookback = 2d;
 DeviceEvents
 | where TimeGenerated >= ago(lookback) 
@@ -50,6 +53,7 @@ DeviceEvents
 | where c2 startswith "sub"
 | summarize cnt=count() by bin(TimeGenerated, 5m), c2, DeviceName
 | where cnt > 15
+```
 
 **참고** 로그 데이터는 디바이스 하나에서만 생성됩니다.
 
@@ -59,6 +63,7 @@ DeviceEvents
 
 13. 쿼리에 다음 KQL 문을 입력합니다.
 
+```
 let lookback = 2d;
 DeviceEvents
 | where TimeGenerated >= ago(lookback) 
@@ -67,6 +72,7 @@ DeviceEvents
 | where c2 startswith "sub"
 | summarize cnt=count() by bin(TimeGenerated, 5m), c2, DeviceName
 | where cnt > 15
+```
 
 14. 이름으로는 *C2 Hunt*를 입력합니다.
 
