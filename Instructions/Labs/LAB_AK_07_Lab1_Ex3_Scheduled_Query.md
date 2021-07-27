@@ -4,7 +4,7 @@
 
 이 작업에서는 예약된 쿼리를 만듭니다.
 
-1. WIN1 가상 머신에 Admin으로 로그인합니다. 암호로는 **Pa55w.rd** 를 사용합니다.  
+1. WIN1 가상 머신에 Admin으로 로그인합니다. 암호로는 **Pa55w.rd**를 사용합니다.  
 
 2. 랩 호스팅 공급자가 제공한 **테넌트 전자 메일** 계정을 복사하여 **로그인** 대화 상자에 붙여넣은 후 **다음**을 선택합니다.
 
@@ -28,13 +28,13 @@
 
 12. 규칙 쿼리에 다음 KQL 문을 붙여넣습니다.
 
-```
- SigninLogs
- | where ResultType == "50057"
- | where ResultDescription =~ "User account is disabled. The account has been disabled by an administrator."
- | summarize StartTimeUtc = min(TimeGenerated), EndTimeUtc = max(TimeGenerated), count(), applicationCount = dcount(AppDisplayName), 
- applicationSet = makeset(AppDisplayName) by UserPrincipalName, IPAddress
- | extend timestamp = StartTimeUtc, AccountCustomEntity = UserPrincipalName, IPCustomEntity = IPAddress
+```KQL
+SigninLogs
+| where ResultType == "50057"
+| where ResultDescription =~ "User account is disabled. The account has been disabled by an administrator."
+| summarize StartTimeUtc = min(TimeGenerated), EndTimeUtc = max(TimeGenerated), count(), applicationCount = dcount(AppDisplayName), 
+applicationSet = makeset(AppDisplayName) by UserPrincipalName, IPAddress
+| extend timestamp = StartTimeUtc, AccountCustomEntity = UserPrincipalName, IPCustomEntity = IPAddress
 ```
 
 **경고:** 가상 머신에 붙여넣기 기능을  사용할 때는 | (파이프) 문자를 더 추가할 수 있습니다.  붙여넣은 문이 다음 KQL 문과 같이 표시되어야 합니다.
@@ -43,9 +43,7 @@
 
 13. 맵 엔터티를 검토합니다.  쿼리 출력에 다음 필드가 포함되므로, 이러한 엔터티는 쿼리에 매핑된 것으로 표시됩니다.
 
-```
- timestamp = StartTimeUtc, AccountCustomEntity = UserPrincipalName, IPCustomEntity = IPAddress
-```
+timestamp = StartTimeUtc, AccountCustomEntity = UserPrincipalName, IPCustomEntity = IPAddress
 
 14. 쿼리 예약 영역의 분석 규칙 마법사 - 새 규칙 만들기 블레이드로 돌아와서 쿼리 실행 간격에 **5**를 입력하고 단위로는 **분**을 선택합니다.
 
@@ -89,11 +87,11 @@
 
 8. 브라우저를 닫습니다.
 
-9. 브라우저를 열고 https://portal.office.com 으로 이동한 다음 ChristieC@**테넌트 전자 메일 도메인**을 사용하여 로그인해 봅니다. 암호는 관리자 테넌트 암호와 같습니다.  계정이 차단되었다는 경고가 표시됩니다.
+9. 브라우저를 열고 https://portal.office.com으로 이동한 다음 ChristieC@**테넌트 전자 메일 도메인**을 사용하여 로그인해 봅니다. 암호는 관리자 테넌트 암호와 같습니다.  계정이 차단되었다는 경고가 표시됩니다.
 
 10. 브라우저를 닫습니다. 경고가 처리되도록 10분 동안 기다립니다.
 
-11.  Edge 브라우저에서 Azure Portal https://portal.azure.com 으로 이동합니다.
+11.  Edge 브라우저에서 Azure Portal https://portal.azure.com으로 이동합니다.
 
 12. 랩 호스팅 공급자가 관리 사용자용으로 제공한 **테넌트 전자 메일** 계정을 복사하여 **로그인** 대화 상자에 붙여넣은 후 **다음**을 선택합니다.
 
