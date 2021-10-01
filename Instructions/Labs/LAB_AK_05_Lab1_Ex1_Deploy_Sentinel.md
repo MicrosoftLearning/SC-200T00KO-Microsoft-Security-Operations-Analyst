@@ -74,7 +74,7 @@
 
 9. **다음: 원본 >** 을 선택합니다.
 
-10. 방금 만든 *HighValue.csv* 파일을 찾습니다.
+10. **파일 찾아보기**를 선택하고 방금 만든 *HighValue.csv* 파일을 찾습니다.
 
 11. SearchKey 필드에서 **Hostname**을 선택합니다.
 
@@ -99,7 +99,7 @@ _GetWatchlist('HighValueHosts')
 
 이 작업에서는 Azure Sentinel에서 표시기를 만듭니다.
 
-1. Azure Sentinel의 위협 관리 영역에서 **위협 인텔리전스** 옵션을 선택합니다.
+1. Azure Sentinel의 위협 관리 영역에서 **위협 인텔리전스(미리 보기)** 옵션을 선택합니다.
 
 2. 명령 모음에서 **+ 새 항목 추가**를 선택합니다.
 

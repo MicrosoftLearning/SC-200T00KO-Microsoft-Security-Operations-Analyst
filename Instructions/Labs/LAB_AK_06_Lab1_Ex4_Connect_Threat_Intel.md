@@ -34,4 +34,6 @@
 
 피싱 URL 끌어오기가 진행되며 ThreatIntelligenceIndicator 테이블에 피싱 URL이 입력됩니다.
 
+**참고:** 추가적인 컬렉션에 대해서는 브라우저에서 https://limo.anomali.com/api/v1/taxii2/feeds/collections/를 열고, 사용 가능한 다른 ID를 검토합니다.
+
 ## 이 랩을 완료했습니다.
