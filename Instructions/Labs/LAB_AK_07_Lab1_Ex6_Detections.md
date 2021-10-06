@@ -1,63 +1,63 @@
-# ¸ðµâ 7 - ·¦ 1 - ¿¬½À 6 - °Ë»ö ¸¸µé±â
+ï»¿# ëª¨ë“ˆ 7 - ëž© 1 - ì—°ìŠµ 6 - ê²€ìƒ‰ ë§Œë“¤ê¸°
 
-### ÀÛ¾÷ 1: SysmonÀ» »ç¿ëÇÏ¿© °ø°Ý 1 °Ë»ö
+### ìž‘ì—… 1: Sysmonì„ ì‚¬ìš©í•˜ì—¬ ê³µê²© 1 ê²€ìƒ‰
 
-ÀÌ ÀÛ¾÷¿¡¼­´Â º¸¾È ÀÌº¥Æ® Ä¿³ØÅÍ¿Í SysmonÀÌ ¼³Ä¡µÈ È£½ºÆ®¿¡¼­ °ø°Ý 1 °Ë»öÀ» ¸¸µì´Ï´Ù.
+ì´ ìž‘ì—…ì—ì„œëŠ” ë³´ì•ˆ ì´ë²¤íŠ¸ ì»¤ë„¥í„°ì™€ Sysmonì´ ì„¤ì¹˜ëœ í˜¸ìŠ¤íŠ¸ì—ì„œ ê³µê²© 1 ê²€ìƒ‰ì„ ë§Œë“­ë‹ˆë‹¤.
 
-ÀÌ °ø°ÝÀº ½ÃÀÛ ½Ã¿¡ ½ÇÇàµÇ´Â ·¹Áö½ºÆ®¸® Å°¸¦ ¸¸µì´Ï´Ù.  
+ì´ ê³µê²©ì€ ì‹œìž‘ ì‹œì— ì‹¤í–‰ë˜ëŠ” ë ˆì§€ìŠ¤íŠ¸ë¦¬ í‚¤ë¥¼ ë§Œë“­ë‹ˆë‹¤.  
 ```Command
 REG ADD "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /V "SOC Test" /t REG_SZ /F /D "C:\temp\startup.bat"
 ```
 
-1. WIN1 °¡»ó ¸Ó½Å¿¡ AdminÀ¸·Î ·Î±×ÀÎÇÕ´Ï´Ù. ¾ÏÈ£·Î´Â **Pa55w.rd**¸¦ »ç¿ëÇÕ´Ï´Ù.  
+1. WIN1 ê°€ìƒ ë¨¸ì‹ ì— Adminìœ¼ë¡œ ë¡œê·¸ì¸í•©ë‹ˆë‹¤. ì•”í˜¸ë¡œëŠ” **Pa55w.rd**ë¥¼ ì‚¬ìš©í•©ë‹ˆë‹¤.  
 
-2. Edge ºê¶ó¿ìÀú¿¡¼­ Azure Portal https://portal.azure.comÀ¸·Î ÀÌµ¿ÇÕ´Ï´Ù.
+2. Edge ë¸Œë¼ìš°ì €ì—ì„œ Azure Portal https://portal.azure.comìœ¼ë¡œ ì´ë™í•©ë‹ˆë‹¤.
 
-3. ·¦ È£½ºÆÃ °ø±ÞÀÚ°¡ Á¦°øÇÑ °ü¸®ÀÚ¿ë **Å×³ÍÆ® ÀüÀÚ ¸ÞÀÏ** °èÁ¤À» º¹»çÇÏ¿© **·Î±×ÀÎ** ´ëÈ­ »óÀÚ¿¡ ºÙ¿©³ÖÀº ÈÄ **´ÙÀ½**À» ¼±ÅÃÇÕ´Ï´Ù.
+3. ëž© í˜¸ìŠ¤íŒ… ê³µê¸‰ìžê°€ ì œê³µí•œ ê´€ë¦¬ìžìš© **í…Œë„ŒíŠ¸ ì „ìž ë©”ì¼** ê³„ì •ì„ ë³µì‚¬í•˜ì—¬ **ë¡œê·¸ì¸** ëŒ€í™” ìƒìžì— ë¶™ì—¬ë„£ì€ í›„ **ë‹¤ìŒ**ì„ ì„ íƒí•©ë‹ˆë‹¤.
 
-4. ·¦ È£½ºÆÃ °ø±ÞÀÚ°¡ Á¦°øÇÑ °ü¸®ÀÚ¿ë **Å×³ÍÆ® ¾ÏÈ£**¸¦ º¹»çÇÏ¿© **¾ÏÈ£ ÀÔ·Â** ´ëÈ­ »óÀÚ¿¡ ºÙ¿©³ÖÀº ÈÄ **·Î±×ÀÎ**À» ¼±ÅÃÇÕ´Ï´Ù.
+4. ëž© í˜¸ìŠ¤íŒ… ê³µê¸‰ìžê°€ ì œê³µí•œ ê´€ë¦¬ìžìš© **í…Œë„ŒíŠ¸ ì•”í˜¸**ë¥¼ ë³µì‚¬í•˜ì—¬ **ì•”í˜¸ ìž…ë ¥** ëŒ€í™” ìƒìžì— ë¶™ì—¬ë„£ì€ í›„ **ë¡œê·¸ì¸**ì„ ì„ íƒí•©ë‹ˆë‹¤.
 
-5. Azure PortalÀÇ °Ë»ö Ã¢¿¡ *Sentinel*À» ÀÔ·ÂÇÏ°í **Azure Sentinel**À» ¼±ÅÃÇÕ´Ï´Ù.
+5. Azure Portalì˜ ê²€ìƒ‰ ì°½ì— *Sentinel*ì„ ìž…ë ¥í•˜ê³  **Azure Sentinel**ì„ ì„ íƒí•©ë‹ˆë‹¤.
 
-6. ¾Õ¿¡¼­ ¸¸µç Azure Sentinel ÀÛ¾÷ ¿µ¿ªÀ» ¼±ÅÃÇÕ´Ï´Ù.
+6. ì•žì—ì„œ ë§Œë“  Azure Sentinel ìž‘ì—… ì˜ì—­ì„ ì„ íƒí•©ë‹ˆë‹¤.
 
-7. ÀÏ¹Ý ¼½¼Ç¿¡¼­ **·Î±×**¸¦ ¼±ÅÃÇÕ´Ï´Ù.
+7. ì¼ë°˜ ì„¹ì…˜ì—ì„œ **ë¡œê·¸**ë¥¼ ì„ íƒí•©ë‹ˆë‹¤.
 
-8. ¸ÕÀú µ¥ÀÌÅÍ°¡ ÀúÀåµÇ´Â À§Ä¡¸¦ È®ÀÎÇØ¾ß ÇÕ´Ï´Ù. ¹æ±Ý °ø°ÝÀ» ¼öÇàÇßÀ¸¹Ç·Î,  ·Î±× ½Ã°£ ¹üÀ§¸¦ **Áö³­ 24½Ã°£**À¸·Î ¼³Á¤ÇÕ´Ï´Ù.
+8. ë¨¼ì € ë°ì´í„°ê°€ ì €ìž¥ë˜ëŠ” ìœ„ì¹˜ë¥¼ í™•ì¸í•´ì•¼ í•©ë‹ˆë‹¤. ë°©ê¸ˆ ê³µê²©ì„ ìˆ˜í–‰í–ˆìœ¼ë¯€ë¡œ,  ë¡œê·¸ ì‹œê°„ ë²”ìœ„ë¥¼ **ì§€ë‚œ 24ì‹œê°„**ìœ¼ë¡œ ì„¤ì •í•©ë‹ˆë‹¤.
 
-9. ´ÙÀ½ KQL ¹®À» ½ÇÇàÇÕ´Ï´Ù.
+9. ë‹¤ìŒ KQL ë¬¸ì„ ì‹¤í–‰í•©ë‹ˆë‹¤.
 
 ```KQL
 search "temp\\startup.bat"
 ```
 
-10. °á°ú¿¡´Â ´ÙÀ½ÀÇ 3°³ Å×ÀÌºíÀÌ Ç¥½ÃµË´Ï´Ù.
+10. ê²°ê³¼ì—ëŠ” ë‹¤ìŒì˜ 3ê°œ í…Œì´ë¸”ì´ í‘œì‹œë©ë‹ˆë‹¤.
     - DeviceProcessEvents
     - DeviceRegistryEvents
     - Event
 
-    *Device* Å×ÀÌºíÀº ¿£µåÆ÷ÀÎÆ®¿ë Defender(µ¥ÀÌÅÍ Ä¿³ØÅÍ - Microsoft 365 Defender)¿¡¼­ Á¦°øµÈ °ÍÀÔ´Ï´Ù.  ±×¸®°í *Event* Å×ÀÌºíÀº ¿©±â¼­ »ç¿ëÇÏ´Â µ¥ÀÌÅÍ Ä¿³ØÅÍ º¸¾È ÀÌº¥Æ®¿¡¼­ Á¦°øµÈ °ÍÀÔ´Ï´Ù. 
+    *Device* í…Œì´ë¸”ì€ ì—”ë“œí¬ì¸íŠ¸ìš© Defender(ë°ì´í„° ì»¤ë„¥í„° - Microsoft 365 Defender)ì—ì„œ ì œê³µëœ ê²ƒìž…ë‹ˆë‹¤.  ê·¸ë¦¬ê³  *Event* í…Œì´ë¸”ì€ ì—¬ê¸°ì„œ ì‚¬ìš©í•˜ëŠ” ë°ì´í„° ì»¤ë„¥í„° ë³´ì•ˆ ì´ë²¤íŠ¸ì—ì„œ ì œê³µëœ ê²ƒìž…ë‹ˆë‹¤. 
 
-    ¿©±â¼­´Â Sysmon°ú ¿£µåÆ÷ÀÎÆ®¿ë DefenderÀÇ µÎ ¿øº»¿¡¼­ µ¥ÀÌÅÍ¸¦ ¼ö½ÅÇÏ¹Ç·Î, ³ªÁß¿¡ ÅëÇÕÇÒ ¼ö ÀÖ´Â KQL ¹® µÎ °³¸¦ ÀÛ¼ºÇØ¾ß ÇÕ´Ï´Ù.  ÃÊ±â Á¶»ç¿¡¼­ °¢ ¹®À» °³º°ÀûÀ¸·Î »ìÆìº¼ ¿¹Á¤ÀÔ´Ï´Ù.
+    ì—¬ê¸°ì„œëŠ” Sysmonê³¼ ì—”ë“œí¬ì¸íŠ¸ìš© Defenderì˜ ë‘ ì›ë³¸ì—ì„œ ë°ì´í„°ë¥¼ ìˆ˜ì‹ í•˜ë¯€ë¡œ, ë‚˜ì¤‘ì— í†µí•©í•  ìˆ˜ ìžˆëŠ” KQL ë¬¸ ë‘ ê°œë¥¼ ìž‘ì„±í•´ì•¼ í•©ë‹ˆë‹¤.  ì´ˆê¸° ì¡°ì‚¬ì—ì„œ ê° ë¬¸ì„ ê°œë³„ì ìœ¼ë¡œ ì‚´íŽ´ë³¼ ì˜ˆì •ìž…ë‹ˆë‹¤.
 
-    **Âü°í:** µå¹°°Ô µ¥ÀÌÅÍ ·Îµå ÇÁ·Î¼¼½º ½Ã°£ÀÌ Æò¼Òº¸´Ù ´õ ¿À·¡ °É¸®´Â °æ¿ìµµ ÀÖÀ» ¼ö ÀÖ½À´Ï´Ù.  ±×·² °æ¿ì ¸î ½Ã°£ µ¿¾È Å×ÀÌºíÀÌ Äõ¸®¿¡ Ç¥½ÃµÇÁö ¾ÊÀ» ¼ö ÀÖ½À´Ï´Ù.
+    **ì°¸ê³ :** ë“œë¬¼ê²Œ ë°ì´í„° ë¡œë“œ í”„ë¡œì„¸ìŠ¤ ì‹œê°„ì´ í‰ì†Œë³´ë‹¤ ë” ì˜¤ëž˜ ê±¸ë¦¬ëŠ” ê²½ìš°ë„ ìžˆì„ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.  ê·¸ëŸ´ ê²½ìš° ëª‡ ì‹œê°„ ë™ì•ˆ í…Œì´ë¸”ì´ ì¿¼ë¦¬ì— í‘œì‹œë˜ì§€ ì•Šì„ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.
 
-11. Ã¹ ¹øÂ° µ¥ÀÌÅÍ ¿øº»Àº Windows È£½ºÆ®ÀÇ SysmonÀÔ´Ï´Ù.  ´ÙÀ½ KQL ¹®À» ½ÇÇàÇÕ´Ï´Ù.
+11. ì²« ë²ˆì§¸ ë°ì´í„° ì›ë³¸ì€ Windows í˜¸ìŠ¤íŠ¸ì˜ Sysmonìž…ë‹ˆë‹¤.  ë‹¤ìŒ KQL ë¬¸ì„ ì‹¤í–‰í•©ë‹ˆë‹¤.
 
 ```KQL
 search in (Event) "temp\\startup.bat"
 ```
-ÀÌÁ¦ °á°ú¿¡´Â Event Å×ÀÌºí¸¸ Ç¥½ÃµË´Ï´Ù.  
+ì´ì œ ê²°ê³¼ì—ëŠ” Event í…Œì´ë¸”ë§Œ í‘œì‹œë©ë‹ˆë‹¤.  
 
-12. ÇàÀ» È®ÀåÇÏ¿© ·¹ÄÚµå¿Í °ü·ÃµÈ ¸ðµç ¿­À» Ç¥½ÃÇÕ´Ï´Ù.  EventData, ParameterXml µîÀÇ ÀÏºÎ ÇÊµå¿¡´Â ¿©·¯ µ¥ÀÌÅÍ Ç×¸ñÀÌ ±¸Á¶È­µÈ µ¥ÀÌÅÍ·Î ÀúÀåµÇ¾î ÀÖ½À´Ï´Ù.  ±×·¯¹Ç·Î Æ¯Á¤ ÇÊµå¸¦ Äõ¸®ÇÏ±â°¡ ¾î·Æ½À´Ï´Ù.  
+12. í–‰ì„ í™•ìž¥í•˜ì—¬ ë ˆì½”ë“œì™€ ê´€ë ¨ëœ ëª¨ë“  ì—´ì„ í‘œì‹œí•©ë‹ˆë‹¤.  EventData, ParameterXml ë“±ì˜ ì¼ë¶€ í•„ë“œì—ëŠ” ì—¬ëŸ¬ ë°ì´í„° í•­ëª©ì´ êµ¬ì¡°í™”ëœ ë°ì´í„°ë¡œ ì €ìž¥ë˜ì–´ ìžˆìŠµë‹ˆë‹¤.  ê·¸ëŸ¬ë¯€ë¡œ íŠ¹ì • í•„ë“œë¥¼ ì¿¼ë¦¬í•˜ê¸°ê°€ ì–´ë µìŠµë‹ˆë‹¤.  
 
-13. µû¶ó¼­ ´ÙÀ½À¸·Î´Â ÀÇ¹Ì ÀÖ´Â ÇÊµå¸¦ Ã£À» ¼ö ÀÖµµ·Ï °¢ ÇàÀÇ µ¥ÀÌÅÍ¸¦ ±¸¹® ºÐ¼®ÇÏ´Â KQL ¹®À» ÀÛ¼ºÇØ¾ß ÇÕ´Ï´Ù.  GitHubÀÇ Azure Sentinel Ä¿¹Â´ÏÆ¼ ³» Parsers Æú´õ¿¡´Â ´Ù¾çÇÑ ÆÄ¼­ ¿¹Á¦°¡ Æ÷ÇÔµÇ¾î ÀÖ½À´Ï´Ù.  ºê¶ó¿ìÀú¿¡¼­ ´Ù¸¥ ÅÇÀ» ¿­°í https://github.com/Azure/Azure-Sentinel·Î ÀÌµ¿ÇÕ´Ï´Ù.
+13. ë”°ë¼ì„œ ë‹¤ìŒìœ¼ë¡œëŠ” ì˜ë¯¸ ìžˆëŠ” í•„ë“œë¥¼ ì°¾ì„ ìˆ˜ ìžˆë„ë¡ ê° í–‰ì˜ ë°ì´í„°ë¥¼ êµ¬ë¬¸ ë¶„ì„í•˜ëŠ” KQL ë¬¸ì„ ìž‘ì„±í•´ì•¼ í•©ë‹ˆë‹¤.  GitHubì˜ Azure Sentinel ì»¤ë®¤ë‹ˆí‹° ë‚´ Parsers í´ë”ì—ëŠ” ë‹¤ì–‘í•œ íŒŒì„œ ì˜ˆì œê°€ í¬í•¨ë˜ì–´ ìžˆìŠµë‹ˆë‹¤.  ë¸Œë¼ìš°ì €ì—ì„œ ë‹¤ë¥¸ íƒ­ì„ ì—´ê³  https://github.com/Azure/Azure-Sentinelë¡œ ì´ë™í•©ë‹ˆë‹¤.
 
-14. **Parsers** Æú´õ¿Í **Sysmon** Æú´õ¸¦ Â÷·Ê·Î ¼±ÅÃÇÕ´Ï´Ù.  ±×·¯¸é ´ÙÀ½ ÆÄÀÏÀÌ Ç¥½ÃµË´Ï´Ù. Azure-Sentinel/Parsers/Sysmon/Sysmon-v12.0.txt
+14. **Parsers** í´ë”ì™€ **Sysmon** í´ë”ë¥¼ ì°¨ë¡€ë¡œ ì„ íƒí•©ë‹ˆë‹¤.  ê·¸ëŸ¬ë©´ ë‹¤ìŒ íŒŒì¼ì´ í‘œì‹œë©ë‹ˆë‹¤. Azure-Sentinel/Parsers/Sysmon/Sysmon-v12.0.txt
 
-15. Sysmon-v12.0.txt ÆÄÀÏÀ» ¼±ÅÃÇÏ¿© Ç¥½ÃÇÕ´Ï´Ù.
+15. Sysmon-v12.0.txt íŒŒì¼ì„ ì„ íƒí•˜ì—¬ í‘œì‹œí•©ë‹ˆë‹¤.
 
-ÆÄÀÏ ¸Ç À§¿¡ Event Å×ÀÌºíÀ» Äõ¸®ÇÏ¿© EventData º¯¼ö¿¡ ÀúÀåÇÏ´Â let ¹®ÀÌ ÀÖ½À´Ï´Ù.
+íŒŒì¼ ë§¨ ìœ„ì— Event í…Œì´ë¸”ì„ ì¿¼ë¦¬í•˜ì—¬ EventData ë³€ìˆ˜ì— ì €ìž¥í•˜ëŠ” let ë¬¸ì´ ìžˆìŠµë‹ˆë‹¤.
 
 
 ```KQL
@@ -70,7 +70,7 @@ let EventData = Event
 | project-away EventData, EvData  ;
 ```
 
-ÆÄÀÏ ¾Æ·¡ÂÊ¿¡´Â EventData º¯¼ö¸¦ ÀÔ·ÂÀ¸·Î »ç¿ëÇÏ¿© EventID == 13À» Ã£´Â ¶Ç ´Ù¸¥ let ¹®ÀÌ ÀÖ½À´Ï´Ù.  
+íŒŒì¼ ì•„ëž˜ìª½ì—ëŠ” EventData ë³€ìˆ˜ë¥¼ ìž…ë ¥ìœ¼ë¡œ ì‚¬ìš©í•˜ì—¬ EventID == 13ì„ ì°¾ëŠ” ë˜ ë‹¤ë¥¸ let ë¬¸ì´ ìžˆìŠµë‹ˆë‹¤.  
 
 ```KQL
 let SYSMON_REG_SETVALUE_13=()
@@ -84,9 +84,9 @@ let SYSMON_REG_SETVALUE_13=()
     
 };
 ```
-ÀÌ ¿¹Á¦¸¦ ÂüÁ¶ÇÏ¿© KQL ¹®À» ÀÛ¼ºÇÒ ¼ö ÀÖ½À´Ï´Ù.
+ì´ ì˜ˆì œë¥¼ ì°¸ì¡°í•˜ì—¬ KQL ë¬¸ì„ ìž‘ì„±í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.
 
-16. ¿©±â¼­´Â À§ÀÇ ¹®À» »ç¿ëÇÏ¿© ¸ðµç Registry Key Set Value ÇàÀ» Ç¥½ÃÇÏ´Â KQL ¹®À» Á÷Á¢ ÀÛ¼ºÇÕ´Ï´Ù.  ´ÙÀ½ KQL Äõ¸®¸¦ ½ÇÇàÇÕ´Ï´Ù.
+16. ì—¬ê¸°ì„œëŠ” ìœ„ì˜ ë¬¸ì„ ì‚¬ìš©í•˜ì—¬ ëª¨ë“  Registry Key Set Value í–‰ì„ í‘œì‹œí•˜ëŠ” KQL ë¬¸ì„ ì§ì ‘ ìž‘ì„±í•©ë‹ˆë‹¤.  ë‹¤ìŒ KQL ì¿¼ë¦¬ë¥¼ ì‹¤í–‰í•©ë‹ˆë‹¤.
 
 ```KQL
 
@@ -105,42 +105,42 @@ Event
 
 ```
 
-   ![½ºÅ©¸°¼¦](../Media/SC200_sysmon_query1.png)
+   ![ìŠ¤í¬ë¦°ìƒ·](../Media/SC200_sysmon_query1.png)
 
-17.  °Ë»ö ±ÔÄ¢À» °è¼Ó ÀÛ¼ºÇÒ ¼öµµ ÀÖÁö¸¸, ÀÌ KQL ¹®À» ´Ù¸¥ °Ë»ö ±ÔÄ¢ÀÇ KQL ¹®¿¡ ÀÌ KQL ¹®À» Àç»ç¿ëÇÒ ¼ö ÀÖÀ» °ÍÀ¸·Î º¸ÀÔ´Ï´Ù.  ·Î±× Ã¢¿¡¼­ **ÀúÀå**, **ÇÔ¼ö·Î ÀúÀå**À» Â÷·Ê·Î ¼±ÅÃÇÕ´Ï´Ù. ÀúÀå ÇÃ¶óÀÌ¾Æ¿ô¿¡¼­ ´ÙÀ½À» ÀÔ·ÂÇÏ°í ÇÔ¼ö¸¦ ÀúÀåÇÕ´Ï´Ù.
+17.  ê²€ìƒ‰ ê·œì¹™ì„ ê³„ì† ìž‘ì„±í•  ìˆ˜ë„ ìžˆì§€ë§Œ, ì´ KQL ë¬¸ì„ ë‹¤ë¥¸ ê²€ìƒ‰ ê·œì¹™ì˜ KQL ë¬¸ì— ì´ KQL ë¬¸ì„ ìž¬ì‚¬ìš©í•  ìˆ˜ ìžˆì„ ê²ƒìœ¼ë¡œ ë³´ìž…ë‹ˆë‹¤.  ë¡œê·¸ ì°½ì—ì„œ **ì €ìž¥**, **í•¨ìˆ˜ë¡œ ì €ìž¥**ì„ ì°¨ë¡€ë¡œ ì„ íƒí•©ë‹ˆë‹¤. ì €ìž¥ í”Œë¼ì´ì•„ì›ƒì—ì„œ ë‹¤ìŒì„ ìž…ë ¥í•˜ê³  í•¨ìˆ˜ë¥¼ ì €ìž¥í•©ë‹ˆë‹¤.
 
-ÇÔ¼ö ÀÌ¸§: Event_Reg_SetValue
-¹üÁÖ: Sysmon
+í•¨ìˆ˜ ì´ë¦„: Event_Reg_SetValue
+ë²”ì£¼: Sysmon
 
 
-18. »õ ·Î±× Äõ¸® ÅÇÀ» ¿±´Ï´Ù. ÇØ´ç ÅÇ¿¡¼­ ´ÙÀ½ KQL ¹®À» ½ÇÇàÇÕ´Ï´Ù.
+18. ìƒˆ ë¡œê·¸ ì¿¼ë¦¬ íƒ­ì„ ì—½ë‹ˆë‹¤. í•´ë‹¹ íƒ­ì—ì„œ ë‹¤ìŒ KQL ë¬¸ì„ ì‹¤í–‰í•©ë‹ˆë‹¤.
 
 ```KQL
 
 Event_Reg_SetValue
 
 ```
-ÇöÀç µ¥ÀÌÅÍ ÄÃ·º¼Ç¿¡ µû¶ó ÇàÀÌ ¿©·¯ °³ ¹ÝÈ¯µÉ ¼öµµ ÀÖ½À´Ï´Ù.  Á¤»óÀûÀÎ Çö»óÀÌ¹Ç·Î ¹«½ÃÇÏ¼¼¿ä.  ´ÙÀ½ ÀÛ¾÷¿¡¼­ ÀÌ ·¦ÀÇ ½Ã³ª¸®¿À¿¡ ¸Â°Ô °á°ú¸¦ ÇÊÅÍ¸µÇÕ´Ï´Ù.
+í˜„ìž¬ ë°ì´í„° ì»¬ë ‰ì…˜ì— ë”°ë¼ í–‰ì´ ì—¬ëŸ¬ ê°œ ë°˜í™˜ë  ìˆ˜ë„ ìžˆìŠµë‹ˆë‹¤.  ì •ìƒì ì¸ í˜„ìƒì´ë¯€ë¡œ ë¬´ì‹œí•˜ì„¸ìš”.  ë‹¤ìŒ ìž‘ì—…ì—ì„œ ì´ ëž©ì˜ ì‹œë‚˜ë¦¬ì˜¤ì— ë§žê²Œ ê²°ê³¼ë¥¼ í•„í„°ë§í•©ë‹ˆë‹¤.
 
-19. ´ÙÀ½ KQL ¹®À» ½ÇÇàÇÕ´Ï´Ù.
+19. ë‹¤ìŒ KQL ë¬¸ì„ ì‹¤í–‰í•©ë‹ˆë‹¤.
 
 ```KQL
 
 Event_Reg_SetValue | search "startup.bat"
 
 ```
-±×·¯¸é ÇÊ¿äÇÑ ·¹ÄÚµå°¡ ¹ÝÈ¯µË´Ï´Ù. ÀÌÁ¦ ÇØ´ç ·¹ÄÚµåÀÇ µ¥ÀÌÅÍ¸¦ °ËÅäÇÏ¿© Çà ½Äº°À» À§ÇØ º¯°æ °¡´ÉÇÑ ºÎºÐÀ» È®ÀÎÇÒ ¼ö ÀÖ½À´Ï´Ù.
+ê·¸ëŸ¬ë©´ í•„ìš”í•œ ë ˆì½”ë“œê°€ ë°˜í™˜ë©ë‹ˆë‹¤. ì´ì œ í•´ë‹¹ ë ˆì½”ë“œì˜ ë°ì´í„°ë¥¼ ê²€í† í•˜ì—¬ í–‰ ì‹ë³„ì„ ìœ„í•´ ë³€ê²½ ê°€ëŠ¥í•œ ë¶€ë¶„ì„ í™•ì¸í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.
 
-20. ÀÌ ¿¹Á¦ÀÇ À§Çù ÀÎÅÚ¸®Àü½º¿¡¼­´Â À§Çù ÇàÀ§ÀÚ°¡ reg.exe¸¦ »ç¿ëÇÏ¿© ·¹Áö½ºÆ®¸® Å°¸¦ Ãß°¡ÇÑ´Ù´Â °ÍÀÌ È®ÀÎµÇ¾ú½À´Ï´Ù.  ·¹Áö½ºÆ®¸® Å°°¡ Ãß°¡µÈ µð·ºÅÍ¸®´Â c:\tempÀÔ´Ï´Ù. startup.bat´Â ´Ù¸¥ ÀÌ¸§ÀÏ ¼öµµ ÀÖ½À´Ï´Ù. ´ÙÀ½ ½ºÅ©¸³Æ®¸¦ ½ÇÇàÇÕ´Ï´Ù.
+20. ì´ ì˜ˆì œì˜ ìœ„í˜‘ ì¸í…”ë¦¬ì „ìŠ¤ì—ì„œëŠ” ìœ„í˜‘ í–‰ìœ„ìžê°€ reg.exeë¥¼ ì‚¬ìš©í•˜ì—¬ ë ˆì§€ìŠ¤íŠ¸ë¦¬ í‚¤ë¥¼ ì¶”ê°€í•œë‹¤ëŠ” ê²ƒì´ í™•ì¸ë˜ì—ˆìŠµë‹ˆë‹¤.  ë ˆì§€ìŠ¤íŠ¸ë¦¬ í‚¤ê°€ ì¶”ê°€ëœ ë””ë ‰í„°ë¦¬ëŠ” c:\tempìž…ë‹ˆë‹¤. startup.batëŠ” ë‹¤ë¥¸ ì´ë¦„ì¼ ìˆ˜ë„ ìžˆìŠµë‹ˆë‹¤. ë‹¤ìŒ ìŠ¤í¬ë¦½íŠ¸ë¥¼ ì‹¤í–‰í•©ë‹ˆë‹¤.
 
 ```KQL
 Event_Reg_SetValue 
 | where Image contains "reg.exe"
 
 ```
-ÀÌÁ¦ ½Äº°ÇÒ ÆÄÀÏÀÌ ÁöÁ¤µÇ¾ú½À´Ï´Ù.  ´ÙÀ½À¸·Î´Â c:\temp¿¡¼­¸¸ °á°ú°¡ ¹ÝÈ¯µÇµµ·Ï ÁöÁ¤ÇØ¾ß ÇÕ´Ï´Ù.
+ì´ì œ ì‹ë³„í•  íŒŒì¼ì´ ì§€ì •ë˜ì—ˆìŠµë‹ˆë‹¤.  ë‹¤ìŒìœ¼ë¡œëŠ” c:\tempì—ì„œë§Œ ê²°ê³¼ê°€ ë°˜í™˜ë˜ë„ë¡ ì§€ì •í•´ì•¼ í•©ë‹ˆë‹¤.
 
-21. ÀÌÁ¦ ´ÙÀ½ KQL ¹®À» ½ÇÇàÇÕ´Ï´Ù.
+21. ì´ì œ ë‹¤ìŒ KQL ë¬¸ì„ ì‹¤í–‰í•©ë‹ˆë‹¤.
 
 ```KQL
 Event_Reg_SetValue 
@@ -148,9 +148,9 @@ Event_Reg_SetValue
 | where Details startswith "C:\\TEMP"
 ```
 
-ÀÌÁ¦ ÀûÀýÇÑ °Ë»ö ±ÔÄ¢ÀÌ ÀÛ¼ºµÇ¾ú½À´Ï´Ù.  
+ì´ì œ ì ì ˆí•œ ê²€ìƒ‰ ê·œì¹™ì´ ìž‘ì„±ë˜ì—ˆìŠµë‹ˆë‹¤.  
 
-22. º¸¾È ¿î¿µ ºÐ¼®ÀÚ°¡ À§ÇùÀ» Á¤È®ÇÏ°Ô ºÐ¼®ÇÒ ¼ö ÀÖµµ·Ï °æ°í °ü·Ã »óÈ² Á¤º¸¸¦ ÃÖ´ëÇÑ ¸¹ÀÌ Á¦°øÇØ¾ß ÇÕ´Ï´Ù. °¡·É Á¶»ç ±×·¡ÇÁ¿¡ »ç¿ëÇÒ ¿£ÅÍÆ¼ µîÀ» Á¦°øÇÒ ¼ö ÀÖ½À´Ï´Ù.  ´ÙÀ½ Äõ¸®¸¦ ½ÇÇàÇÕ´Ï´Ù.
+22. ë³´ì•ˆ ìš´ì˜ ë¶„ì„ìžê°€ ìœ„í˜‘ì„ ì •í™•í•˜ê²Œ ë¶„ì„í•  ìˆ˜ ìžˆë„ë¡ ê²½ê³  ê´€ë ¨ ìƒí™© ì •ë³´ë¥¼ ìµœëŒ€í•œ ë§Žì´ ì œê³µí•´ì•¼ í•©ë‹ˆë‹¤. ê°€ë ¹ ì¡°ì‚¬ ê·¸ëž˜í”„ì— ì‚¬ìš©í•  ì—”í„°í‹° ë“±ì„ ì œê³µí•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.  ë‹¤ìŒ ì¿¼ë¦¬ë¥¼ ì‹¤í–‰í•©ë‹ˆë‹¤.
 
 ```KQL
 Event_Reg_SetValue 
@@ -160,86 +160,86 @@ Event_Reg_SetValue
 
 ```
 
-23. ÀÌÁ¦ ÀûÀýÇÑ °Ë»ö ±ÔÄ¢ÀÌ ÀÛ¼ºµÇ¾úÀ¸¹Ç·Î Äõ¸®°¡ ÀÖ´Â ·Î±× Ã¢ÀÇ ¸í·É ¸ðÀ½¿¡¼­ **+ »õ °æ°í ±ÔÄ¢**À» ¼±ÅÃÇÏ°í **Azure Sentinel °æ°í ¸¸µé±â**¸¦ ¼±ÅÃÇÕ´Ï´Ù.
+23. ì´ì œ ì ì ˆí•œ ê²€ìƒ‰ ê·œì¹™ì´ ìž‘ì„±ë˜ì—ˆìœ¼ë¯€ë¡œ ì¿¼ë¦¬ê°€ ìžˆëŠ” ë¡œê·¸ ì°½ì˜ ëª…ë ¹ ëª¨ìŒì—ì„œ **+ ìƒˆ ê²½ê³  ê·œì¹™**ì„ ì„ íƒí•˜ê³  **Azure Sentinel ê²½ê³  ë§Œë“¤ê¸°**ë¥¼ ì„ íƒí•©ë‹ˆë‹¤.
 
-24. ±×·¯¸é ºÐ¼® ±ÔÄ¢ ¸¶¹ý»ç°¡ ½ÃÀÛµË´Ï´Ù.  ÀÏ¹Ý ÅÇ¿¡¼­ ´ÙÀ½ Á¤º¸¸¦ ÀÔ·ÂÇÕ´Ï´Ù.
+24. ê·¸ëŸ¬ë©´ ë¶„ì„ ê·œì¹™ ë§ˆë²•ì‚¬ê°€ ì‹œìž‘ë©ë‹ˆë‹¤.  ì¼ë°˜ íƒ­ì—ì„œ ë‹¤ìŒ ì •ë³´ë¥¼ ìž…ë ¥í•©ë‹ˆë‹¤.
 
-    ÀÌ¸§: Sysmon Startup RegKey
+    ì´ë¦„: Sysmon Startup RegKey
 
-    ¼³¸í: c:\tempÀÇ Sysmon Startup RegKey
+    ì„¤ëª…: c:\tempì˜ Sysmon Startup RegKey
 
-    Àü¼ú: Áö¼Ó¼º
+    ì „ìˆ : ì§€ì†ì„±
 
-    ½É°¢µµ: ³ôÀ½
+    ì‹¬ê°ë„: ë†’ìŒ
 
-**´ÙÀ½: ±ÔÄ¢ ³í¸® ¼³Á¤ >** À» ¼±ÅÃÇÕ´Ï´Ù.
+**ë‹¤ìŒ: ê·œì¹™ ë…¼ë¦¬ ì„¤ì • >** ì„ ì„ íƒí•©ë‹ˆë‹¤.
 
-25. **±ÔÄ¢ ³í¸® ¼³Á¤** ÅÇ¿¡¼­ **±ÔÄ¢ Äõ¸®**¿¡´Â ³»¿ëÀÌ ÀÌ¹Ì ÀÔ·ÂµÇ¾î ÀÖ½À´Ï´Ù.
+25. **ê·œì¹™ ë…¼ë¦¬ ì„¤ì •** íƒ­ì—ì„œ **ê·œì¹™ ì¿¼ë¦¬**ì—ëŠ” ë‚´ìš©ì´ ì´ë¯¸ ìž…ë ¥ë˜ì–´ ìžˆìŠµë‹ˆë‹¤.
 
-26. Äõ¸® ¿¹¾à¿¡¼­ ´ÙÀ½ Ç×¸ñÀ» ¼³Á¤ÇÕ´Ï´Ù.
+26. ì¿¼ë¦¬ ì˜ˆì•½ì—ì„œ ë‹¤ìŒ í•­ëª©ì„ ì„¤ì •í•©ë‹ˆë‹¤.
 
-- Äõ¸® ½ÇÇà °£°Ý: 5ºÐ
-- µ¥ÀÌÅÍ¸¦ È®ÀÎÇÒ ±â°£: 1ÀÏ
+- ì¿¼ë¦¬ ì‹¤í–‰ ê°„ê²©: 5ë¶„
+- ë°ì´í„°ë¥¼ í™•ì¸í•  ê¸°ê°„: 1ì¼
 
-**Âü°í** ¿©±â¼­´Â °°Àº µ¥ÀÌÅÍ¿¡ ´ëÇØ ÀÇµµÀûÀ¸·Î ¿©·¯ ÀÎ½Ã´øÆ®¸¦ »ý¼ºÇÕ´Ï´Ù.  ±×·¯¸é ·¦¿¡¼­ ÇØ´ç °æ°í¸¦ »ç¿ëÇÒ ¼ö ÀÖ±â ¶§¹®ÀÔ´Ï´Ù.
+**ì°¸ê³ ** ì—¬ê¸°ì„œëŠ” ê°™ì€ ë°ì´í„°ì— ëŒ€í•´ ì˜ë„ì ìœ¼ë¡œ ì—¬ëŸ¬ ì¸ì‹œë˜íŠ¸ë¥¼ ìƒì„±í•©ë‹ˆë‹¤.  ê·¸ëŸ¬ë©´ ëž©ì—ì„œ í•´ë‹¹ ê²½ê³ ë¥¼ ì‚¬ìš©í•  ìˆ˜ ìžˆê¸° ë•Œë¬¸ìž…ë‹ˆë‹¤.
 
-27. ³ª¸ÓÁö ¿É¼ÇÀº ±âº»°ªÀ¸·Î µÓ´Ï´Ù.  **´ÙÀ½: ÀÎ½Ã´øÆ® ¼³Á¤ >** ´ÜÃß¸¦ Å¬¸¯ÇÕ´Ï´Ù.
+27. ë‚˜ë¨¸ì§€ ì˜µì…˜ì€ ê¸°ë³¸ê°’ìœ¼ë¡œ ë‘¡ë‹ˆë‹¤.  **ë‹¤ìŒ: ì¸ì‹œë˜íŠ¸ ì„¤ì • >** ë‹¨ì¶”ë¥¼ í´ë¦­í•©ë‹ˆë‹¤.
 
-28. ÀÎ½Ã´øÆ® ¼³Á¤¿¡¼­ ´ÙÀ½ Ç×¸ñÀ» ¼³Á¤ÇÕ´Ï´Ù. 
+28. ì¸ì‹œë˜íŠ¸ ì„¤ì •ì—ì„œ ë‹¤ìŒ í•­ëª©ì„ ì„¤ì •í•©ë‹ˆë‹¤. 
 
-- ÀÎ½Ã´øÆ® ¼³Á¤: »ç¿ë
-- °æ°í ±×·ì: »ç¿ë ¾È ÇÔ
+- ì¸ì‹œë˜íŠ¸ ì„¤ì •: ì‚¬ìš©
+- ê²½ê³  ê·¸ë£¹: ì‚¬ìš© ì•ˆ í•¨
 
-**´ÙÀ½: ÀÚµ¿È­µÈ ÀÀ´ä >** ´ÜÃß¸¦ Å¬¸¯ÇÕ´Ï´Ù.
+**ë‹¤ìŒ: ìžë™í™”ëœ ì‘ë‹µ >** ë‹¨ì¶”ë¥¼ í´ë¦­í•©ë‹ˆë‹¤.
 
-29. ÀÚµ¿È­µÈ ÀÀ´ä ÅÇ¿¡¼­ ´ÙÀ½ Ç×¸ñÀ» ¼³Á¤ÇÕ´Ï´Ù.
+29. ìžë™í™”ëœ ì‘ë‹µ íƒ­ì—ì„œ ë‹¤ìŒ í•­ëª©ì„ ì„¤ì •í•©ë‹ˆë‹¤.
 
-- *PostMessageTeams-OnAlert*À» ¼±ÅÃÇÕ´Ï´Ù.
+- *PostMessageTeams-OnAlert*ì„ ì„ íƒí•©ë‹ˆë‹¤.
 
-**´ÙÀ½: °ËÅä** ´ÜÃß¸¦ ¼±ÅÃÇÕ´Ï´Ù.
+**ë‹¤ìŒ: ê²€í† ** ë‹¨ì¶”ë¥¼ ì„ íƒí•©ë‹ˆë‹¤.
 
-30. °ËÅä ÅÇ¿¡¼­ **¸¸µé±â** ´ÜÃß¸¦ ¼±ÅÃÇÕ´Ï´Ù.
+30. ê²€í†  íƒ­ì—ì„œ **ë§Œë“¤ê¸°** ë‹¨ì¶”ë¥¼ ì„ íƒí•©ë‹ˆë‹¤.
 
 
-### ÀÛ¾÷ 2: ¿£µåÆ÷ÀÎÆ®¿ë Defender¸¦ »ç¿ëÇÏ¿© °ø°Ý 1 °Ë»ö
+### ìž‘ì—… 2: ì—”ë“œí¬ì¸íŠ¸ìš© Defenderë¥¼ ì‚¬ìš©í•˜ì—¬ ê³µê²© 1 ê²€ìƒ‰
 
-ÀÌ ÀÛ¾÷¿¡¼­´Â ¿£µåÆ÷ÀÎÆ®¿ë Defender°¡ ±¸¼ºµÇ¾î ÀÖ´Â È£½ºÆ®¿¡¼­ °ø°Ý 1 °Ë»öÀ» ¸¸µì´Ï´Ù.
+ì´ ìž‘ì—…ì—ì„œëŠ” ì—”ë“œí¬ì¸íŠ¸ìš© Defenderê°€ êµ¬ì„±ë˜ì–´ ìžˆëŠ” í˜¸ìŠ¤íŠ¸ì—ì„œ ê³µê²© 1 ê²€ìƒ‰ì„ ë§Œë“­ë‹ˆë‹¤.
 
-ÀÌ °ø°ÝÀº ½ÃÀÛ ½Ã¿¡ ½ÇÇàµÇ´Â ·¹Áö½ºÆ®¸® Å°¸¦ ¸¸µì´Ï´Ù.  
+ì´ ê³µê²©ì€ ì‹œìž‘ ì‹œì— ì‹¤í–‰ë˜ëŠ” ë ˆì§€ìŠ¤íŠ¸ë¦¬ í‚¤ë¥¼ ë§Œë“­ë‹ˆë‹¤.  
 ```Command
 REG ADD "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /V "SOC Test" /t REG_SZ /F /D "C:\temp\startup.bat"
 ```
 
-1. Azure Sentinel Æ÷ÅÐÀÇ ÀÏ¹Ý ¼½¼Ç¿¡¼­ **·Î±×**¸¦ ¼±ÅÃÇÕ´Ï´Ù.
+1. Azure Sentinel í¬í„¸ì˜ ì¼ë°˜ ì„¹ì…˜ì—ì„œ **ë¡œê·¸**ë¥¼ ì„ íƒí•©ë‹ˆë‹¤.
 
-2. ¸ÕÀú µ¥ÀÌÅÍ°¡ ÀúÀåµÇ´Â À§Ä¡¸¦ È®ÀÎÇØ¾ß ÇÕ´Ï´Ù. ¹æ±Ý °ø°ÝÀ» ¼öÇàÇßÀ¸¹Ç·Î,  
+2. ë¨¼ì € ë°ì´í„°ê°€ ì €ìž¥ë˜ëŠ” ìœ„ì¹˜ë¥¼ í™•ì¸í•´ì•¼ í•©ë‹ˆë‹¤. ë°©ê¸ˆ ê³µê²©ì„ ìˆ˜í–‰í–ˆìœ¼ë¯€ë¡œ,  
 
-    ·Î±× ½Ã°£ ¹üÀ§¸¦ Áö³­ 24½Ã°£À¸·Î ¼³Á¤ÇÕ´Ï´Ù.
+    ë¡œê·¸ ì‹œê°„ ë²”ìœ„ë¥¼ ì§€ë‚œ 24ì‹œê°„ìœ¼ë¡œ ì„¤ì •í•©ë‹ˆë‹¤.
 
-3. ´ÙÀ½ KQL ¹®À» ½ÇÇàÇÕ´Ï´Ù.
+3. ë‹¤ìŒ KQL ë¬¸ì„ ì‹¤í–‰í•©ë‹ˆë‹¤.
 
 ```KQL
 search "temp\\startup.bat"
 ```
 
-4. °á°ú¿¡´Â ´ÙÀ½ÀÇ 3°³ Å×ÀÌºíÀÌ Ç¥½ÃµË´Ï´Ù.
+4. ê²°ê³¼ì—ëŠ” ë‹¤ìŒì˜ 3ê°œ í…Œì´ë¸”ì´ í‘œì‹œë©ë‹ˆë‹¤.
     DeviceProcessEvents
     DeviceRegistryEvents
     Event
 
-    Device* Å×ÀÌºíÀº ¿£µåÆ÷ÀÎÆ®¿ë Defender(µ¥ÀÌÅÍ Ä¿³ØÅÍ - Microsoft 365 Defender)¿¡¼­ Á¦°øµÈ °ÍÀÔ´Ï´Ù.  ±×¸®°í Event Å×ÀÌºíÀº ¿©±â¼­ »ç¿ëÇÏ´Â µ¥ÀÌÅÍ Ä¿³ØÅÍ º¸¾È ÀÌº¥Æ®¿¡¼­ Á¦°øµÈ °ÍÀÔ´Ï´Ù. 
+    Device* í…Œì´ë¸”ì€ ì—”ë“œí¬ì¸íŠ¸ìš© Defender(ë°ì´í„° ì»¤ë„¥í„° - Microsoft 365 Defender)ì—ì„œ ì œê³µëœ ê²ƒìž…ë‹ˆë‹¤.  ê·¸ë¦¬ê³  Event í…Œì´ë¸”ì€ ì—¬ê¸°ì„œ ì‚¬ìš©í•˜ëŠ” ë°ì´í„° ì»¤ë„¥í„° ë³´ì•ˆ ì´ë²¤íŠ¸ì—ì„œ ì œê³µëœ ê²ƒìž…ë‹ˆë‹¤. 
 
-    ¿©±â¼­´Â Sysmon°ú ¿£µåÆ÷ÀÎÆ®¿ë DefenderÀÇ µÎ ¿øº»¿¡¼­ µ¥ÀÌÅÍ¸¦ ¼ö½ÅÇÏ¹Ç·Î,  ³ªÁß¿¡ ÅëÇÕÇÒ ¼ö ÀÖ´Â KQL ¹® µÎ °³¸¦ ÀÛ¼ºÇØ¾ß ÇÕ´Ï´Ù.  ÃÊ±â Á¶»ç¿¡¼­ °¢ ¹®À» °³º°ÀûÀ¸·Î »ìÆìº¼ ¿¹Á¤ÀÔ´Ï´Ù.
+    ì—¬ê¸°ì„œëŠ” Sysmonê³¼ ì—”ë“œí¬ì¸íŠ¸ìš© Defenderì˜ ë‘ ì›ë³¸ì—ì„œ ë°ì´í„°ë¥¼ ìˆ˜ì‹ í•˜ë¯€ë¡œ,  ë‚˜ì¤‘ì— í†µí•©í•  ìˆ˜ ìžˆëŠ” KQL ë¬¸ ë‘ ê°œë¥¼ ìž‘ì„±í•´ì•¼ í•©ë‹ˆë‹¤.  ì´ˆê¸° ì¡°ì‚¬ì—ì„œ ê° ë¬¸ì„ ê°œë³„ì ìœ¼ë¡œ ì‚´íŽ´ë³¼ ì˜ˆì •ìž…ë‹ˆë‹¤.
 
-5. ÀÌ °Ë»ö¿¡¼­´Â ¿£µåÆ÷ÀÎÆ®¿ë DefenderÀÇ µ¥ÀÌÅÍ¸¦ ÁßÁ¡ÀûÀ¸·Î Ã£½À´Ï´Ù.  ´ÙÀ½ KQL ¹®À» ½ÇÇàÇÕ´Ï´Ù.
+5. ì´ ê²€ìƒ‰ì—ì„œëŠ” ì—”ë“œí¬ì¸íŠ¸ìš© Defenderì˜ ë°ì´í„°ë¥¼ ì¤‘ì ì ìœ¼ë¡œ ì°¾ìŠµë‹ˆë‹¤.  ë‹¤ìŒ KQL ë¬¸ì„ ì‹¤í–‰í•©ë‹ˆë‹¤.
 
 ```KQL
 search in (Device*) "temp\\startup.bat"
 ```
 
-6. ÀÌ¹Ì ÀÏ¹ÝÈ­µÇ¾î ½±°Ô Äõ¸®ÇÒ ¼ö ÀÖ´Â µ¥ÀÌÅÍ´Â DeviceRegistryEvents Å×ÀÌºí¿¡ Æ÷ÇÔµÇ¾î ÀÖ´Â °ÍÀ¸·Î º¸ÀÔ´Ï´Ù.  ÇàÀ» È®ÀåÇÏ¿© ·¹ÄÚµå¿Í °ü·ÃµÈ ¸ðµç ¿­À» Ç¥½ÃÇÕ´Ï´Ù.
+6. ì´ë¯¸ ì¼ë°˜í™”ë˜ì–´ ì‰½ê²Œ ì¿¼ë¦¬í•  ìˆ˜ ìžˆëŠ” ë°ì´í„°ëŠ” DeviceRegistryEvents í…Œì´ë¸”ì— í¬í•¨ë˜ì–´ ìžˆëŠ” ê²ƒìœ¼ë¡œ ë³´ìž…ë‹ˆë‹¤.  í–‰ì„ í™•ìž¥í•˜ì—¬ ë ˆì½”ë“œì™€ ê´€ë ¨ëœ ëª¨ë“  ì—´ì„ í‘œì‹œí•©ë‹ˆë‹¤.
 
-7. ÀÌ ¿¹Á¦ÀÇ À§Çù ÀÎÅÚ¸®Àü½º¿¡¼­´Â À§Çù ÇàÀ§ÀÚ°¡ reg.exe¸¦ »ç¿ëÇÏ¿© ·¹Áö½ºÆ®¸® Å°¸¦ Ãß°¡ÇÑ´Ù´Â °ÍÀÌ È®ÀÎµÇ¾ú½À´Ï´Ù.  ·¹Áö½ºÆ®¸® Å°°¡ Ãß°¡µÈ µð·ºÅÍ¸®´Â c:\tempÀÔ´Ï´Ù. startup.bat´Â ´Ù¸¥ ÀÌ¸§ÀÏ ¼öµµ ÀÖ½À´Ï´Ù.  ´ÙÀ½ KQL ¹®À» ÀÔ·ÂÇÕ´Ï´Ù.
+7. ì´ ì˜ˆì œì˜ ìœ„í˜‘ ì¸í…”ë¦¬ì „ìŠ¤ì—ì„œëŠ” ìœ„í˜‘ í–‰ìœ„ìžê°€ reg.exeë¥¼ ì‚¬ìš©í•˜ì—¬ ë ˆì§€ìŠ¤íŠ¸ë¦¬ í‚¤ë¥¼ ì¶”ê°€í•œë‹¤ëŠ” ê²ƒì´ í™•ì¸ë˜ì—ˆìŠµë‹ˆë‹¤.  ë ˆì§€ìŠ¤íŠ¸ë¦¬ í‚¤ê°€ ì¶”ê°€ëœ ë””ë ‰í„°ë¦¬ëŠ” c:\tempìž…ë‹ˆë‹¤. startup.batëŠ” ë‹¤ë¥¸ ì´ë¦„ì¼ ìˆ˜ë„ ìžˆìŠµë‹ˆë‹¤.  ë‹¤ìŒ KQL ë¬¸ì„ ìž…ë ¥í•©ë‹ˆë‹¤.
 
 ```KQL
 
@@ -251,9 +251,9 @@ DeviceRegistryEvents
 
 ```
 
-ÀÌÁ¦ ÀûÀýÇÑ °Ë»ö ±ÔÄ¢ÀÌ ÀÛ¼ºµÇ¾ú½À´Ï´Ù.  
+ì´ì œ ì ì ˆí•œ ê²€ìƒ‰ ê·œì¹™ì´ ìž‘ì„±ë˜ì—ˆìŠµë‹ˆë‹¤.  
 
-8. º¸¾È ¿î¿µ ¼¾ÅÍ ºÐ¼®ÀÚ°¡ À§ÇùÀ» Á¤È®ÇÏ°Ô ºÐ¼®ÇÒ ¼ö ÀÖµµ·Ï °æ°í °ü·Ã »óÈ² Á¤º¸¸¦ ÃÖ´ëÇÑ ¸¹ÀÌ Á¦°øÇØ¾ß ÇÕ´Ï´Ù. °¡·É Á¶»ç ±×·¡ÇÁ¿¡ »ç¿ëÇÒ ¿£ÅÍÆ¼ µîÀ» Á¦°øÇÒ ¼ö ÀÖ½À´Ï´Ù. ´ÙÀ½ Äõ¸®¸¦ ½ÇÇàÇÕ´Ï´Ù.
+8. ë³´ì•ˆ ìš´ì˜ ì„¼í„° ë¶„ì„ìžê°€ ìœ„í˜‘ì„ ì •í™•í•˜ê²Œ ë¶„ì„í•  ìˆ˜ ìžˆë„ë¡ ê²½ê³  ê´€ë ¨ ìƒí™© ì •ë³´ë¥¼ ìµœëŒ€í•œ ë§Žì´ ì œê³µí•´ì•¼ í•©ë‹ˆë‹¤. ê°€ë ¹ ì¡°ì‚¬ ê·¸ëž˜í”„ì— ì‚¬ìš©í•  ì—”í„°í‹° ë“±ì„ ì œê³µí•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤. ë‹¤ìŒ ì¿¼ë¦¬ë¥¼ ì‹¤í–‰í•©ë‹ˆë‹¤.
 
 ```KQL
 DeviceRegistryEvents
@@ -265,80 +265,80 @@ DeviceRegistryEvents
 
 ```
 
-   ![½ºÅ©¸°¼¦](../Media/SC200_sysmon_query2.png)
+   ![ìŠ¤í¬ë¦°ìƒ·](../Media/SC200_sysmon_query2.png)
 
-9.  ÀÌÁ¦ ÀûÀýÇÑ °Ë»ö ±ÔÄ¢ÀÌ ÀÛ¼ºµÇ¾úÀ¸¹Ç·Î Äõ¸®°¡ ÀÖ´Â ·Î±× Ã¢ÀÇ ¸í·É ¸ðÀ½¿¡¼­ **+ »õ °æ°í ±ÔÄ¢**À» ¼±ÅÃÇÕ´Ï´Ù.  **Azure Sentinel °æ°í ¸¸µé±â**¸¦ ¼±ÅÃÇÕ´Ï´Ù.
+9.  ì´ì œ ì ì ˆí•œ ê²€ìƒ‰ ê·œì¹™ì´ ìž‘ì„±ë˜ì—ˆìœ¼ë¯€ë¡œ ì¿¼ë¦¬ê°€ ìžˆëŠ” ë¡œê·¸ ì°½ì˜ ëª…ë ¹ ëª¨ìŒì—ì„œ **+ ìƒˆ ê²½ê³  ê·œì¹™**ì„ ì„ íƒí•©ë‹ˆë‹¤.  **Azure Sentinel ê²½ê³  ë§Œë“¤ê¸°**ë¥¼ ì„ íƒí•©ë‹ˆë‹¤.
 
-10. ±×·¯¸é ºÐ¼® ±ÔÄ¢ ¸¶¹ý»ç°¡ ½ÃÀÛµË´Ï´Ù.  ÀÏ¹Ý ÅÇ¿¡¼­ ´ÙÀ½ Á¤º¸¸¦ ÀÔ·ÂÇÕ´Ï´Ù.
+10. ê·¸ëŸ¬ë©´ ë¶„ì„ ê·œì¹™ ë§ˆë²•ì‚¬ê°€ ì‹œìž‘ë©ë‹ˆë‹¤.  ì¼ë°˜ íƒ­ì—ì„œ ë‹¤ìŒ ì •ë³´ë¥¼ ìž…ë ¥í•©ë‹ˆë‹¤.
 
 
-    ÀÌ¸§: D4E Startup RegKey
+    ì´ë¦„: D4E Startup RegKey
 
-    ¼³¸í: c:\tempÀÇ D4E Startup Regkey
+    ì„¤ëª…: c:\tempì˜ D4E Startup Regkey
 
-    Àü¼ú: Áö¼Ó¼º
+    ì „ìˆ : ì§€ì†ì„±
 
-    ½É°¢µµ: ³ôÀ½
+    ì‹¬ê°ë„: ë†’ìŒ
 
-11. **´ÙÀ½: ±ÔÄ¢ ³í¸® ¼³Á¤ >** ´ÜÃß¸¦ ¼±ÅÃÇÕ´Ï´Ù.
+11. **ë‹¤ìŒ: ê·œì¹™ ë…¼ë¦¬ ì„¤ì • >** ë‹¨ì¶”ë¥¼ ì„ íƒí•©ë‹ˆë‹¤.
 
-12. ±ÔÄ¢ ³í¸® ¼³Á¤ ÅÇ¿¡¼­ **±ÔÄ¢ Äõ¸®**¿¡´Â ³»¿ëÀÌ ÀÌ¹Ì ÀÔ·ÂµÇ¾î ÀÖ½À´Ï´Ù.
+12. ê·œì¹™ ë…¼ë¦¬ ì„¤ì • íƒ­ì—ì„œ **ê·œì¹™ ì¿¼ë¦¬**ì—ëŠ” ë‚´ìš©ì´ ì´ë¯¸ ìž…ë ¥ë˜ì–´ ìžˆìŠµë‹ˆë‹¤.
 
-13. Äõ¸® ¿¹¾à¿¡¼­ ´ÙÀ½ Ç×¸ñÀ» ¼³Á¤ÇÕ´Ï´Ù.
+13. ì¿¼ë¦¬ ì˜ˆì•½ì—ì„œ ë‹¤ìŒ í•­ëª©ì„ ì„¤ì •í•©ë‹ˆë‹¤.
 
-- Äõ¸® ½ÇÇà °£°Ý: 5ºÐ
-- µ¥ÀÌÅÍ¸¦ È®ÀÎÇÒ ±â°£: 1ÀÏ
+- ì¿¼ë¦¬ ì‹¤í–‰ ê°„ê²©: 5ë¶„
+- ë°ì´í„°ë¥¼ í™•ì¸í•  ê¸°ê°„: 1ì¼
 
-**Âü°í** ¿©±â¼­´Â °°Àº µ¥ÀÌÅÍ¿¡ ´ëÇØ ÀÇµµÀûÀ¸·Î ¿©·¯ ÀÎ½Ã´øÆ®¸¦ »ý¼ºÇÕ´Ï´Ù.  ±×·¯¸é ·¦¿¡¼­ ÇØ´ç °æ°í¸¦ »ç¿ëÇÒ ¼ö ÀÖ±â ¶§¹®ÀÔ´Ï´Ù.
+**ì°¸ê³ ** ì—¬ê¸°ì„œëŠ” ê°™ì€ ë°ì´í„°ì— ëŒ€í•´ ì˜ë„ì ìœ¼ë¡œ ì—¬ëŸ¬ ì¸ì‹œë˜íŠ¸ë¥¼ ìƒì„±í•©ë‹ˆë‹¤.  ê·¸ëŸ¬ë©´ ëž©ì—ì„œ í•´ë‹¹ ê²½ê³ ë¥¼ ì‚¬ìš©í•  ìˆ˜ ìžˆê¸° ë•Œë¬¸ìž…ë‹ˆë‹¤.
 
-14. ³ª¸ÓÁö ¿É¼ÇÀº ±âº»°ªÀ¸·Î µÓ´Ï´Ù.  **´ÙÀ½: ÀÎ½Ã´øÆ® ¼³Á¤**À» ¼±ÅÃÇÏ°í
+14. ë‚˜ë¨¸ì§€ ì˜µì…˜ì€ ê¸°ë³¸ê°’ìœ¼ë¡œ ë‘¡ë‹ˆë‹¤.  **ë‹¤ìŒ: ì¸ì‹œë˜íŠ¸ ì„¤ì •**ì„ ì„ íƒí•˜ê³ 
 
-15. ÀÎ½Ã´øÆ® ¼³Á¤¿¡¼­ ´ÙÀ½ Ç×¸ñÀ» ¼³Á¤ÇÕ´Ï´Ù. 
+15. ì¸ì‹œë˜íŠ¸ ì„¤ì •ì—ì„œ ë‹¤ìŒ í•­ëª©ì„ ì„¤ì •í•©ë‹ˆë‹¤. 
 
-- ÀÎ½Ã´øÆ® ¼³Á¤: »ç¿ë
-- °æ°í ±×·ì: »ç¿ë ¾È ÇÔ
+- ì¸ì‹œë˜íŠ¸ ì„¤ì •: ì‚¬ìš©
+- ê²½ê³  ê·¸ë£¹: ì‚¬ìš© ì•ˆ í•¨
 
-**´ÙÀ½: ÀÚµ¿È­µÈ ÀÀ´ä >** À» ¼±ÅÃÇÏ°í
+**ë‹¤ìŒ: ìžë™í™”ëœ ì‘ë‹µ >** ì„ ì„ íƒí•˜ê³ 
 
-16. ÀÚµ¿È­µÈ ÀÀ´ä ÅÇ¿¡¼­ ´ÙÀ½ Ç×¸ñÀ» ¼³Á¤ÇÕ´Ï´Ù.
+16. ìžë™í™”ëœ ì‘ë‹µ íƒ­ì—ì„œ ë‹¤ìŒ í•­ëª©ì„ ì„¤ì •í•©ë‹ˆë‹¤.
 
-- PostMessageTeams-OnAlertÀ» ¼±ÅÃÇÕ´Ï´Ù.
-- **´ÙÀ½: °ËÅä**¸¦ ¼±ÅÃÇÕ´Ï´Ù.
+- PostMessageTeams-OnAlertì„ ì„ íƒí•©ë‹ˆë‹¤.
+- **ë‹¤ìŒ: ê²€í† **ë¥¼ ì„ íƒí•©ë‹ˆë‹¤.
 
-17. °ËÅä ¹× ¸¸µé±â ÅÇ¿¡¼­ **¸¸µé±â**¸¦ ¼±ÅÃÇÕ´Ï´Ù.
+17. ê²€í†  ë° ë§Œë“¤ê¸° íƒ­ì—ì„œ **ë§Œë“¤ê¸°**ë¥¼ ì„ íƒí•©ë‹ˆë‹¤.
 
-### ÀÛ¾÷ 3: SecurityEvent¸¦ »ç¿ëÇÏ¿© °ø°Ý 2 °Ë»ö
+### ìž‘ì—… 3: SecurityEventë¥¼ ì‚¬ìš©í•˜ì—¬ ê³µê²© 2 ê²€ìƒ‰
 
-ÀÌ ÀÛ¾÷¿¡¼­´Â º¸¾È ÀÌº¥Æ® Ä¿³ØÅÍ¿Í SysmonÀÌ ¼³Ä¡µÈ È£½ºÆ®¿¡¼­ °ø°Ý 2 °Ë»öÀ» ¸¸µì´Ï´Ù.
+ì´ ìž‘ì—…ì—ì„œëŠ” ë³´ì•ˆ ì´ë²¤íŠ¸ ì»¤ë„¥í„°ì™€ Sysmonì´ ì„¤ì¹˜ëœ í˜¸ìŠ¤íŠ¸ì—ì„œ ê³µê²© 2 ê²€ìƒ‰ì„ ë§Œë“­ë‹ˆë‹¤.
 
-ÀÌ °ø°ÝÀº »õ »ç¿ëÀÚ¸¦ ¸¸µé¾î ·ÎÄÃ °ü¸®ÀÚ¿¡ Ãß°¡ÇÕ´Ï´Ù.
+ì´ ê³µê²©ì€ ìƒˆ ì‚¬ìš©ìžë¥¼ ë§Œë“¤ì–´ ë¡œì»¬ ê´€ë¦¬ìžì— ì¶”ê°€í•©ë‹ˆë‹¤.
 ```Command
 net user theusernametoadd /add
 net user theusernametoadd ThePassword1!
 net localgroup administrators theusernametoadd /add
 ```
 
-1. Azure Sentinel Æ÷ÅÐÀÇ ÀÏ¹Ý ¼½¼Ç¿¡¼­ **·Î±×**¸¦ ¼±ÅÃÇÕ´Ï´Ù.
+1. Azure Sentinel í¬í„¸ì˜ ì¼ë°˜ ì„¹ì…˜ì—ì„œ **ë¡œê·¸**ë¥¼ ì„ íƒí•©ë‹ˆë‹¤.
 
-2. ¸ÕÀú µ¥ÀÌÅÍ°¡ ÀúÀåµÇ´Â À§Ä¡¸¦ È®ÀÎÇØ¾ß ÇÕ´Ï´Ù. ¹æ±Ý °ø°ÝÀ» ¼öÇàÇßÀ¸¹Ç·Î,  
+2. ë¨¼ì € ë°ì´í„°ê°€ ì €ìž¥ë˜ëŠ” ìœ„ì¹˜ë¥¼ í™•ì¸í•´ì•¼ í•©ë‹ˆë‹¤. ë°©ê¸ˆ ê³µê²©ì„ ìˆ˜í–‰í–ˆìœ¼ë¯€ë¡œ,  
 
-    ·Î±× ½Ã°£ ¹üÀ§¸¦ Áö³­ 24½Ã°£À¸·Î ¼³Á¤ÇÕ´Ï´Ù.
+    ë¡œê·¸ ì‹œê°„ ë²”ìœ„ë¥¼ ì§€ë‚œ 24ì‹œê°„ìœ¼ë¡œ ì„¤ì •í•©ë‹ˆë‹¤.
 
-3. ´ÙÀ½ KQL ¹®À» ½ÇÇàÇÕ´Ï´Ù.
+3. ë‹¤ìŒ KQL ë¬¸ì„ ì‹¤í–‰í•©ë‹ˆë‹¤.
 
 ```KQL
 search "administrators"
 ```
 
-4. °á°ú¿¡´Â ´ÙÀ½ Å×ÀÌºíÀÌ Ç¥½ÃµË´Ï´Ù.
+4. ê²°ê³¼ì—ëŠ” ë‹¤ìŒ í…Œì´ë¸”ì´ í‘œì‹œë©ë‹ˆë‹¤.
     Event
     SecurityEvent
 
-5. Ã¹ ¹øÂ° µ¥ÀÌÅÍ ¿øº»Àº SecurityEventÀÔ´Ï´Ù. Windows¿¡¼­ ±ÇÇÑ ÀÖ´Â ±×·ì¿¡ ±¸¼º¿øÀ» Ãß°¡ÇÏ´Â ÀÛ¾÷À» ½Äº°ÇÏ´Â µ¥ »ç¿ëÇÏ´Â ÀÌº¥Æ® ID¸¦ Á¶»çÇØ¾ß ÇÕ´Ï´Ù.  ¿©±â¼­ ÇØ´ç Á¤º¸´Â ´ÙÀ½ EventID ¹× EventÀÔ´Ï´Ù.
+5. ì²« ë²ˆì§¸ ë°ì´í„° ì›ë³¸ì€ SecurityEventìž…ë‹ˆë‹¤. Windowsì—ì„œ ê¶Œí•œ ìžˆëŠ” ê·¸ë£¹ì— êµ¬ì„±ì›ì„ ì¶”ê°€í•˜ëŠ” ìž‘ì—…ì„ ì‹ë³„í•˜ëŠ” ë° ì‚¬ìš©í•˜ëŠ” ì´ë²¤íŠ¸ IDë¥¼ ì¡°ì‚¬í•´ì•¼ í•©ë‹ˆë‹¤.  ì—¬ê¸°ì„œ í•´ë‹¹ ì •ë³´ëŠ” ë‹¤ìŒ EventID ë° Eventìž…ë‹ˆë‹¤.
 
-4732 - ±¸¼º¿øÀ» º¸¾ÈµÈ ·ÎÄÃ ±×·ì¿¡ Ãß°¡Çß½À´Ï´Ù.
+4732 - êµ¬ì„±ì›ì„ ë³´ì•ˆëœ ë¡œì»¬ ê·¸ë£¹ì— ì¶”ê°€í–ˆìŠµë‹ˆë‹¤.
 
-´ÙÀ½ ½ºÅ©¸³Æ®¸¦ ½ÇÇàÇÕ´Ï´Ù.
+ë‹¤ìŒ ìŠ¤í¬ë¦½íŠ¸ë¥¼ ì‹¤í–‰í•©ë‹ˆë‹¤.
 
 ```KQL
 SecurityEvent
@@ -347,7 +347,7 @@ SecurityEvent
 
 ```
 
-6. ÇàÀ» È®ÀåÇÏ¿© ·¹ÄÚµå¿Í °ü·ÃµÈ ¸ðµç ¿­À» Ç¥½ÃÇÕ´Ï´Ù.  ±×·±µ¥ Ã£À¸·Á´Â »ç¿ëÀÚ ÀÌ¸§Àº Ç¥½ÃµÇÁö ¾Ê½À´Ï´Ù.  »ç¿ëÀÚ ÀÌ¸§ÀÌ ÀúÀåµÇ´Â ´ë½Å SID(º¸¾È ½Äº°ÀÚ)°¡ ÀúÀåµÇ±â ¶§¹®ÀÔ´Ï´Ù.  ´ÙÀ½ KQLÀº SID ÀÏÄ¡ ¿©ºÎ¸¦ È®ÀÎÇÏ¿© Administrators ±×·ì¿¡ Ãß°¡µÈ TargetUserNameÀ» ¿­¿¡ ÀÔ·ÂÇÕ´Ï´Ù.
+6. í–‰ì„ í™•ìž¥í•˜ì—¬ ë ˆì½”ë“œì™€ ê´€ë ¨ëœ ëª¨ë“  ì—´ì„ í‘œì‹œí•©ë‹ˆë‹¤.  ê·¸ëŸ°ë° ì°¾ìœ¼ë ¤ëŠ” ì‚¬ìš©ìž ì´ë¦„ì€ í‘œì‹œë˜ì§€ ì•ŠìŠµë‹ˆë‹¤.  ì‚¬ìš©ìž ì´ë¦„ì´ ì €ìž¥ë˜ëŠ” ëŒ€ì‹  SID(ë³´ì•ˆ ì‹ë³„ìž)ê°€ ì €ìž¥ë˜ê¸° ë•Œë¬¸ìž…ë‹ˆë‹¤.  ë‹¤ìŒ KQLì€ SID ì¼ì¹˜ ì—¬ë¶€ë¥¼ í™•ì¸í•˜ì—¬ Administrators ê·¸ë£¹ì— ì¶”ê°€ëœ TargetUserNameì„ ì—´ì— ìž…ë ¥í•©ë‹ˆë‹¤.
 
 
 ```KQL
@@ -362,13 +362,13 @@ SecurityEvent
 ) on $left.MachId == $right.MachId1, $left.Acct == $right.Acct1 
 
 ```
-ÀÌÁ¦ ÀûÀýÇÑ °Ë»ö ±ÔÄ¢ÀÌ ÀÛ¼ºµÇ¾ú½À´Ï´Ù.  
+ì´ì œ ì ì ˆí•œ ê²€ìƒ‰ ê·œì¹™ì´ ìž‘ì„±ë˜ì—ˆìŠµë‹ˆë‹¤.  
 
-   ![½ºÅ©¸°¼¦](../Media/SC200_sysmon_attack3.png)
+   ![ìŠ¤í¬ë¦°ìƒ·](../Media/SC200_sysmon_attack3.png)
 
-**Âü°í:** ·¦¿¡¼­´Â »ç¿ëµÇ´Â µ¥ÀÌÅÍ ¼¼Æ®°¡ ÀÛ¾Æ¼­ ÀÌ KQLÀÌ ÀûÀýÇÑ °á°ú¸¦ ¹ÝÈ¯ÇÏÁö ¾ÊÀ» ¼öµµ ÀÖ½À´Ï´Ù.
+**ì°¸ê³ :** ëž©ì—ì„œëŠ” ì‚¬ìš©ë˜ëŠ” ë°ì´í„° ì„¸íŠ¸ê°€ ìž‘ì•„ì„œ ì´ KQLì´ ì ì ˆí•œ ê²°ê³¼ë¥¼ ë°˜í™˜í•˜ì§€ ì•Šì„ ìˆ˜ë„ ìžˆìŠµë‹ˆë‹¤.
 
-7. º¸¾È ¿î¿µ ºÐ¼®ÀÚ°¡ À§ÇùÀ» Á¤È®ÇÏ°Ô ºÐ¼®ÇÒ ¼ö ÀÖµµ·Ï °æ°í °ü·Ã »óÈ² Á¤º¸¸¦ ÃÖ´ëÇÑ ¸¹ÀÌ Á¦°øÇØ¾ß ÇÕ´Ï´Ù. °¡·É Á¶»ç ±×·¡ÇÁ¿¡ »ç¿ëÇÒ ¿£ÅÍÆ¼ µîÀ» Á¦°øÇÒ ¼ö ÀÖ½À´Ï´Ù.  ´ÙÀ½ Äõ¸®¸¦ ½ÇÇàÇÕ´Ï´Ù.
+7. ë³´ì•ˆ ìš´ì˜ ë¶„ì„ìžê°€ ìœ„í˜‘ì„ ì •í™•í•˜ê²Œ ë¶„ì„í•  ìˆ˜ ìžˆë„ë¡ ê²½ê³  ê´€ë ¨ ìƒí™© ì •ë³´ë¥¼ ìµœëŒ€í•œ ë§Žì´ ì œê³µí•´ì•¼ í•©ë‹ˆë‹¤. ê°€ë ¹ ì¡°ì‚¬ ê·¸ëž˜í”„ì— ì‚¬ìš©í•  ì—”í„°í‹° ë“±ì„ ì œê³µí•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.  ë‹¤ìŒ ì¿¼ë¦¬ë¥¼ ì‹¤í–‰í•©ë‹ˆë‹¤.
 
 
 ```KQL
@@ -385,39 +385,39 @@ SecurityEvent
 
 ```
 
-8. ÀÌÁ¦ ÀûÀýÇÑ °Ë»ö ±ÔÄ¢ÀÌ ÀÛ¼ºµÇ¾úÀ¸¹Ç·Î Äõ¸®°¡ ÀÖ´Â ·Î±× Ã¢ÀÇ ¸í·É ¸ðÀ½¿¡¼­ **+ »õ °æ°í ±ÔÄ¢**À» ¼±ÅÃÇÏ°í **Azure Sentinel °æ°í ¸¸µé±â**¸¦ ¼±ÅÃÇÕ´Ï´Ù.
+8. ì´ì œ ì ì ˆí•œ ê²€ìƒ‰ ê·œì¹™ì´ ìž‘ì„±ë˜ì—ˆìœ¼ë¯€ë¡œ ì¿¼ë¦¬ê°€ ìžˆëŠ” ë¡œê·¸ ì°½ì˜ ëª…ë ¹ ëª¨ìŒì—ì„œ **+ ìƒˆ ê²½ê³  ê·œì¹™**ì„ ì„ íƒí•˜ê³  **Azure Sentinel ê²½ê³  ë§Œë“¤ê¸°**ë¥¼ ì„ íƒí•©ë‹ˆë‹¤.
 
-9. ±×·¯¸é ºÐ¼® ±ÔÄ¢ ¸¶¹ý»ç°¡ ½ÃÀÛµË´Ï´Ù.  ÀÏ¹Ý ÅÇ¿¡¼­ ´ÙÀ½ Á¤º¸¸¦ ÀÔ·ÂÇÕ´Ï´Ù.
+9. ê·¸ëŸ¬ë©´ ë¶„ì„ ê·œì¹™ ë§ˆë²•ì‚¬ê°€ ì‹œìž‘ë©ë‹ˆë‹¤.  ì¼ë°˜ íƒ­ì—ì„œ ë‹¤ìŒ ì •ë³´ë¥¼ ìž…ë ¥í•©ë‹ˆë‹¤.
 
-- ÀÌ¸§: SecurityEvents Local Administrators User Add 
-- ¼³¸í: SecurityEvents Local Administrators User Add 
-- Àü¼ú: ±ÇÇÑ ¿¡½ºÄÃ·¹ÀÌ¼Ç
-- ½É°¢µµ: ³ôÀ½
+- ì´ë¦„: SecurityEvents Local Administrators User Add 
+- ì„¤ëª…: SecurityEvents Local Administrators User Add 
+- ì „ìˆ : ê¶Œí•œ ì—ìŠ¤ì»¬ë ˆì´ì…˜
+- ì‹¬ê°ë„: ë†’ìŒ
 
-**´ÙÀ½: ±ÔÄ¢ ³í¸® ¼³Á¤ >** ´ÜÃß¸¦ ¼±ÅÃÇÕ´Ï´Ù.
+**ë‹¤ìŒ: ê·œì¹™ ë…¼ë¦¬ ì„¤ì • >** ë‹¨ì¶”ë¥¼ ì„ íƒí•©ë‹ˆë‹¤.
 
-10. ±ÔÄ¢ ³í¸® ¼³Á¤ ÅÇÀÇ ±ÔÄ¢ Äõ¸® ¹× ¿£ÅÍÆ¼ ¸ÅÇÎ¿¡´Â ³»¿ëÀÌ ÀÌ¹Ì ÀÔ·ÂµÇ¾î ÀÖ½À´Ï´Ù.
+10. ê·œì¹™ ë…¼ë¦¬ ì„¤ì • íƒ­ì˜ ê·œì¹™ ì¿¼ë¦¬ ë° ì—”í„°í‹° ë§¤í•‘ì—ëŠ” ë‚´ìš©ì´ ì´ë¯¸ ìž…ë ¥ë˜ì–´ ìžˆìŠµë‹ˆë‹¤.
 
-11. Äõ¸® ¿¹¾à¿¡¼­ ´ÙÀ½ Ç×¸ñÀ» ¼³Á¤ÇÕ´Ï´Ù.
+11. ì¿¼ë¦¬ ì˜ˆì•½ì—ì„œ ë‹¤ìŒ í•­ëª©ì„ ì„¤ì •í•©ë‹ˆë‹¤.
 
-- Äõ¸® ½ÇÇà °£°Ý: 5ºÐ
-- µ¥ÀÌÅÍ¸¦ È®ÀÎÇÒ ±â°£: 1ÀÏ
+- ì¿¼ë¦¬ ì‹¤í–‰ ê°„ê²©: 5ë¶„
+- ë°ì´í„°ë¥¼ í™•ì¸í•  ê¸°ê°„: 1ì¼
 
-**Âü°í** ¿©±â¼­´Â °°Àº µ¥ÀÌÅÍ¿¡ ´ëÇØ ÀÇµµÀûÀ¸·Î ¿©·¯ ÀÎ½Ã´øÆ®¸¦ »ý¼ºÇÕ´Ï´Ù.  ±×·¯¸é ·¦¿¡¼­ ÇØ´ç °æ°í¸¦ »ç¿ëÇÒ ¼ö ÀÖ±â ¶§¹®ÀÔ´Ï´Ù.
+**ì°¸ê³ ** ì—¬ê¸°ì„œëŠ” ê°™ì€ ë°ì´í„°ì— ëŒ€í•´ ì˜ë„ì ìœ¼ë¡œ ì—¬ëŸ¬ ì¸ì‹œë˜íŠ¸ë¥¼ ìƒì„±í•©ë‹ˆë‹¤.  ê·¸ëŸ¬ë©´ ëž©ì—ì„œ í•´ë‹¹ ê²½ê³ ë¥¼ ì‚¬ìš©í•  ìˆ˜ ìžˆê¸° ë•Œë¬¸ìž…ë‹ˆë‹¤.
 
-12. ³ª¸ÓÁö ¿É¼ÇÀº ±âº»°ªÀ¸·Î µÓ´Ï´Ù.  **´ÙÀ½: ÀÎ½Ã´øÆ® ¼³Á¤**À» ¼±ÅÃÇÏ°í
+12. ë‚˜ë¨¸ì§€ ì˜µì…˜ì€ ê¸°ë³¸ê°’ìœ¼ë¡œ ë‘¡ë‹ˆë‹¤.  **ë‹¤ìŒ: ì¸ì‹œë˜íŠ¸ ì„¤ì •**ì„ ì„ íƒí•˜ê³ 
 
-13. ÀÎ½Ã´øÆ® ¼³Á¤¿¡¼­ ´ÙÀ½ Ç×¸ñÀ» ¼³Á¤ÇÕ´Ï´Ù.
+13. ì¸ì‹œë˜íŠ¸ ì„¤ì •ì—ì„œ ë‹¤ìŒ í•­ëª©ì„ ì„¤ì •í•©ë‹ˆë‹¤.
 
-- ÀÎ½Ã´øÆ® ¼³Á¤: »ç¿ë
-- °æ°í ±×·ì: »ç¿ë ¾È ÇÔ
-- **´ÙÀ½: ÀÚµ¿È­µÈ ÀÀ´ä >À» ¼±ÅÃÇÏ°í**
+- ì¸ì‹œë˜íŠ¸ ì„¤ì •: ì‚¬ìš©
+- ê²½ê³  ê·¸ë£¹: ì‚¬ìš© ì•ˆ í•¨
+- **ë‹¤ìŒ: ìžë™í™”ëœ ì‘ë‹µ >ì„ ì„ íƒí•˜ê³ **
 
-14. ÀÚµ¿È­µÈ ÀÀ´ä ÅÇ¿¡¼­ ´ÙÀ½ Ç×¸ñÀ» ¼³Á¤ÇÕ´Ï´Ù.
+14. ìžë™í™”ëœ ì‘ë‹µ íƒ­ì—ì„œ ë‹¤ìŒ í•­ëª©ì„ ì„¤ì •í•©ë‹ˆë‹¤.
 
-- **PostMessageTeams-OnAlert**À» ¼±ÅÃÇÕ´Ï´Ù.
-- **´ÙÀ½: °ËÅä >** ´ÜÃß¸¦ ¼±ÅÃÇÕ´Ï´Ù.
+- **PostMessageTeams-OnAlert**ì„ ì„ íƒí•©ë‹ˆë‹¤.
+- **ë‹¤ìŒ: ê²€í†  >** ë‹¨ì¶”ë¥¼ ì„ íƒí•©ë‹ˆë‹¤.
 
-15. °ËÅä ÅÇ¿¡¼­ **¸¸µé±â**¸¦ ¼±ÅÃÇÕ´Ï´Ù.
+15. ê²€í†  íƒ­ì—ì„œ **ë§Œë“¤ê¸°**ë¥¼ ì„ íƒí•©ë‹ˆë‹¤.
 
-## ¿¬½À 7 °è¼Ó ÁøÇà
+## ì—°ìŠµ 7 ê³„ì† ì§„í–‰

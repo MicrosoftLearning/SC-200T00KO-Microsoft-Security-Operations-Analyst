@@ -1,61 +1,61 @@
-# ¸ðµâ 8 - ·¦ 1 - ¿¬½À 2 - Azure SentinelÀ» ÅëÇØ Notebooks¸¦ »ç¿ëÇÏ¿© À§Çù ÇåÆÃ ¼öÇà
+ï»¿# ëª¨ë“ˆ 8 - ëž© 1 - ì—°ìŠµ 2 - Azure Sentinelì„ í†µí•´ Notebooksë¥¼ ì‚¬ìš©í•˜ì—¬ ìœ„í˜‘ í—ŒíŒ… ìˆ˜í–‰
 
-## ·¦ ½Ã³ª¸®¿À
+## ëž© ì‹œë‚˜ë¦¬ì˜¤
 
-Azure SentinelÀ» ±¸ÇöÇÑ È¸»ç¿¡¼­ ±Ù¹«ÇÏ´Â º¸¾È ¿î¿µ ºÐ¼®ÀÚÀÎ ¿©·¯ºÐÀº Azure Sentinel Notebooks¸¦ »ç¿ëÇÏ´Â À§Çù ÇåÆÃÀÇ ÀÌÁ¡À» ÆÄ¾ÇÇØ¾ß ÇÕ´Ï´Ù.
+Azure Sentinelì„ êµ¬í˜„í•œ íšŒì‚¬ì—ì„œ ê·¼ë¬´í•˜ëŠ” ë³´ì•ˆ ìš´ì˜ ë¶„ì„ìžì¸ ì—¬ëŸ¬ë¶„ì€ Azure Sentinel Notebooksë¥¼ ì‚¬ìš©í•˜ëŠ” ìœ„í˜‘ í—ŒíŒ…ì˜ ì´ì ì„ íŒŒì•…í•´ì•¼ í•©ë‹ˆë‹¤.
 
-### ÀÛ¾÷ 1: Notebooks »ìÆìº¸±â
+### ìž‘ì—… 1: Notebooks ì‚´íŽ´ë³´ê¸°
 
-ÀÌ ÀÛ¾÷¿¡¼­´Â Azure Sentinel¿¡¼­ Notebooks¸¦ »ç¿ëÇÏ´Â ¹æ¹ýÀ» »ìÆìº¾´Ï´Ù.
+ì´ ìž‘ì—…ì—ì„œëŠ” Azure Sentinelì—ì„œ Notebooksë¥¼ ì‚¬ìš©í•˜ëŠ” ë°©ë²•ì„ ì‚´íŽ´ë´…ë‹ˆë‹¤.
 
-1. WIN1 °¡»ó ¸Ó½Å¿¡ AdminÀ¸·Î ·Î±×ÀÎÇÕ´Ï´Ù. ¾ÏÈ£·Î´Â **Pa55w.rd**¸¦ »ç¿ëÇÕ´Ï´Ù.  
+1. WIN1 ê°€ìƒ ë¨¸ì‹ ì— Adminìœ¼ë¡œ ë¡œê·¸ì¸í•©ë‹ˆë‹¤. ì•”í˜¸ë¡œëŠ” **Pa55w.rd**ë¥¼ ì‚¬ìš©í•©ë‹ˆë‹¤.  
 
-2. Edge ºê¶ó¿ìÀú¿¡¼­ Azure Portal https://portal.azure.comÀ¸·Î ÀÌµ¿ÇÕ´Ï´Ù.
+2. Edge ë¸Œë¼ìš°ì €ì—ì„œ Azure Portal https://portal.azure.comìœ¼ë¡œ ì´ë™í•©ë‹ˆë‹¤.
 
-3. ·¦ È£½ºÆÃ °ø±ÞÀÚ°¡ Á¦°øÇÑ **Å×³ÍÆ® ÀüÀÚ ¸ÞÀÏ** °èÁ¤À» º¹»çÇÏ¿© **·Î±×ÀÎ** ´ëÈ­ »óÀÚ¿¡ ºÙ¿©³ÖÀº ÈÄ **´ÙÀ½**À» ¼±ÅÃÇÕ´Ï´Ù.
+3. ëž© í˜¸ìŠ¤íŒ… ê³µê¸‰ìžê°€ ì œê³µí•œ **í…Œë„ŒíŠ¸ ì „ìž ë©”ì¼** ê³„ì •ì„ ë³µì‚¬í•˜ì—¬ **ë¡œê·¸ì¸** ëŒ€í™” ìƒìžì— ë¶™ì—¬ë„£ì€ í›„ **ë‹¤ìŒ**ì„ ì„ íƒí•©ë‹ˆë‹¤.
 
-4. ·¦ È£½ºÆÃ °ø±ÞÀÚ°¡ Á¦°øÇÑ **Å×³ÍÆ® ¾ÏÈ£**¸¦ º¹»çÇÏ¿© **¾ÏÈ£ ÀÔ·Â** ´ëÈ­ »óÀÚ¿¡ ºÙ¿©³ÖÀº ÈÄ **·Î±×ÀÎ**À» ¼±ÅÃÇÕ´Ï´Ù.
+4. ëž© í˜¸ìŠ¤íŒ… ê³µê¸‰ìžê°€ ì œê³µí•œ **í…Œë„ŒíŠ¸ ì•”í˜¸**ë¥¼ ë³µì‚¬í•˜ì—¬ **ì•”í˜¸ ìž…ë ¥** ëŒ€í™” ìƒìžì— ë¶™ì—¬ë„£ì€ í›„ **ë¡œê·¸ì¸**ì„ ì„ íƒí•©ë‹ˆë‹¤.
 
-5. Azure PortalÀÇ °Ë»ö Ã¢¿¡ *Sentinel*À» ÀÔ·ÂÇÏ°í **Azure Sentinel**À» ¼±ÅÃÇÕ´Ï´Ù.
+5. Azure Portalì˜ ê²€ìƒ‰ ì°½ì— *Sentinel*ì„ ìž…ë ¥í•˜ê³  **Azure Sentinel**ì„ ì„ íƒí•©ë‹ˆë‹¤.
 
-6. Azure Sentinel ÀÛ¾÷ ¿µ¿ªÀ» ¼±ÅÃÇÕ´Ï´Ù.
+6. Azure Sentinel ìž‘ì—… ì˜ì—­ì„ ì„ íƒí•©ë‹ˆë‹¤.
 
-7. Azure Sentinel ÀÛ¾÷ ¿µ¿ª¿¡¼­ **Notebooks**¸¦ ¼±ÅÃÇÕ´Ï´Ù.
+7. Azure Sentinel ìž‘ì—… ì˜ì—­ì—ì„œ **Notebooks**ë¥¼ ì„ íƒí•©ë‹ˆë‹¤.
 
-8. ´ÙÀ½À¸·Î, AzureML ÀÛ¾÷ ¿µ¿ªÀ» ¼±ÅÃÇØ¾ß ÇÕ´Ï´Ù. ¸í·É ¸ðÀ½ÀÇ µå·Ó´Ù¿î ¸Þ´º¿¡¼­ **»õ AML ÀÛ¾÷ ¿µ¿ª ¸¸µé±â**¸¦ ¼±ÅÃÇÕ´Ï´Ù.
+8. ë‹¤ìŒìœ¼ë¡œ, AzureML ìž‘ì—… ì˜ì—­ì„ ì„ íƒí•´ì•¼ í•©ë‹ˆë‹¤. ëª…ë ¹ ëª¨ìŒì˜ ë“œë¡­ë‹¤ìš´ ë©”ë‰´ì—ì„œ **ìƒˆ AML ìž‘ì—… ì˜ì—­ ë§Œë“¤ê¸°**ë¥¼ ì„ íƒí•©ë‹ˆë‹¤.
 
-9. ±¸µ¶ »óÀÚ¿¡¼­ ±¸µ¶À» ¼±ÅÃÇÕ´Ï´Ù.
+9. êµ¬ë… ìƒìžì—ì„œ êµ¬ë…ì„ ì„ íƒí•©ë‹ˆë‹¤.
 
-10. ¸®¼Ò½º ±×·ì¿¡¼­ **»õ·Î ¸¸µé±â**¸¦ ¼±ÅÃÇÏ°í »õ ¸®¼Ò½º ±×·ìÀÇ ÀÌ¸§À» ¼±ÅÃÇÕ´Ï´Ù. 
+10. ë¦¬ì†ŒìŠ¤ ê·¸ë£¹ì—ì„œ **ìƒˆë¡œ ë§Œë“¤ê¸°**ë¥¼ ì„ íƒí•˜ê³  ìƒˆ ë¦¬ì†ŒìŠ¤ ê·¸ë£¹ì˜ ì´ë¦„ì„ ì„ íƒí•©ë‹ˆë‹¤. 
 
-11.	ÀÛ¾÷ ¿µ¿ª Á¤º¸ ¼½¼Ç¿¡¼­ ´ÙÀ½ ÀÛ¾÷À» ¼öÇàÇÕ´Ï´Ù.
-- ÀÛ¾÷ ¿µ¿ª¿¡ °íÀ¯ÇÑ ÀÌ¸§À» ÁöÁ¤ÇÕ´Ï´Ù.
-- Áö¿ªÀ» ¼±ÅÃÇÕ´Ï´Ù(ÀûÀýÇÑ ¿É¼ÇÀÌ ±âº»°ªÀ¸·Î ¼±ÅÃµÇ¾î ÀÖÀ½).
-- ±âº» ½ºÅä¸®Áö °èÁ¤, Å° ÀÚ°Ý Áõ¸í ¸ðÀ½ ¹× ¾ÖÇÃ¸®ÄÉÀÌ¼Ç ÀÎ»çÀÌÆ® Á¤º¸´Â ±×´ë·Î À¯ÁöÇÕ´Ï´Ù.
-- Container Registry ¿É¼ÇÀº **¾øÀ½**À¸·Î À¯ÁöÇÏ¸é µË´Ï´Ù.
+11.	ìž‘ì—… ì˜ì—­ ì •ë³´ ì„¹ì…˜ì—ì„œ ë‹¤ìŒ ìž‘ì—…ì„ ìˆ˜í–‰í•©ë‹ˆë‹¤.
+- ìž‘ì—… ì˜ì—­ì— ê³ ìœ í•œ ì´ë¦„ì„ ì§€ì •í•©ë‹ˆë‹¤.
+- ì§€ì—­ì„ ì„ íƒí•©ë‹ˆë‹¤(ì ì ˆí•œ ì˜µì…˜ì´ ê¸°ë³¸ê°’ìœ¼ë¡œ ì„ íƒë˜ì–´ ìžˆìŒ).
+- ê¸°ë³¸ ìŠ¤í† ë¦¬ì§€ ê³„ì •, í‚¤ ìžê²© ì¦ëª… ëª¨ìŒ ë° ì• í”Œë¦¬ì¼€ì´ì…˜ ì¸ì‚¬ì´íŠ¸ ì •ë³´ëŠ” ê·¸ëŒ€ë¡œ ìœ ì§€í•©ë‹ˆë‹¤.
+- Container Registry ì˜µì…˜ì€ **ì—†ìŒ**ìœ¼ë¡œ ìœ ì§€í•˜ë©´ ë©ë‹ˆë‹¤.
 
-12.	ÆäÀÌÁöÀÇ ¾Æ·¡ÂÊ¿¡¼­ **°ËÅä + ¸¸µé±â**¸¦ ¼±ÅÃÇÕ´Ï´Ù. ±×¸®°í ´ÙÀ½ ÆäÀÌÁö¿¡¼­ **¸¸µé±â**¸¦ ¼±ÅÃÇÕ´Ï´Ù. 
+12.	íŽ˜ì´ì§€ì˜ ì•„ëž˜ìª½ì—ì„œ **ê²€í†  + ë§Œë“¤ê¸°**ë¥¼ ì„ íƒí•©ë‹ˆë‹¤. ê·¸ë¦¬ê³  ë‹¤ìŒ íŽ˜ì´ì§€ì—ì„œ **ë§Œë“¤ê¸°**ë¥¼ ì„ íƒí•©ë‹ˆë‹¤. 
 
-**Âü°í:** ÀÛ¾÷ ¿µ¿ªÀ» ¹èÆ÷ÇÏ·Á¸é ¸î ºÐ Á¤µµ °É¸± ¼ö ÀÖ½À´Ï´Ù. 
+**ì°¸ê³ :** ìž‘ì—… ì˜ì—­ì„ ë°°í¬í•˜ë ¤ë©´ ëª‡ ë¶„ ì •ë„ ê±¸ë¦´ ìˆ˜ ìžˆìŠµë‹ˆë‹¤. 
 
-13.	¹èÆ÷°¡ ¿Ï·áµÈ ÈÄ Azure Sentinel Æ÷ÅÐ·Î µ¹¾Æ°©´Ï´Ù.
+13.	ë°°í¬ê°€ ì™„ë£Œëœ í›„ Azure Sentinel í¬í„¸ë¡œ ëŒì•„ê°‘ë‹ˆë‹¤.
 
-14. **Notebooks**¸¦ ¼±ÅÃÇÕ´Ï´Ù. 
+14. **Notebooks**ë¥¼ ì„ íƒí•©ë‹ˆë‹¤. 
 
-15. **Azure Sentinel ML Notebook¿ë ½ÃÀÛ °¡ÀÌµå**¸¦ ¼±ÅÃÇÑ ´ÙÀ½ **Notebook ÅÛÇÃ¸´ º¹Á¦** ´ÜÃß¸¦ ¼±ÅÃÇÕ´Ï´Ù.  Notebook ÀÌ¸§À» ÀÔ·ÂÇÏ¶ó´Â ÆË¾÷ÀÌ Ç¥½ÃµÇ¸é ±âº»°ªÀ» ±×´ë·Î µÎ°í **È®ÀÎ**À» ¼±ÅÃÇÕ´Ï´Ù.
+15. **Azure Sentinel ML Notebookìš© ì‹œìž‘ ê°€ì´ë“œ**ë¥¼ ì„ íƒí•œ ë‹¤ìŒ **Notebook í…œí”Œë¦¿ ë³µì œ** ë‹¨ì¶”ë¥¼ ì„ íƒí•©ë‹ˆë‹¤.  Notebook ì´ë¦„ì„ ìž…ë ¥í•˜ë¼ëŠ” íŒì—…ì´ í‘œì‹œë˜ë©´ ê¸°ë³¸ê°’ì„ ê·¸ëŒ€ë¡œ ë‘ê³  **í™•ì¸**ì„ ì„ íƒí•©ë‹ˆë‹¤.
 
-16. **Notebook ½ÃÀÛ** ´ÜÃß¸¦ ¼±ÅÃÇÕ´Ï´Ù.
+16. **Notebook ì‹œìž‘** ë‹¨ì¶”ë¥¼ ì„ íƒí•©ë‹ˆë‹¤.
 
-17.	È­¸é ¸Ç À§ÀÇ **ÄÄÇ»ÆÃ:** ÀÎ½ºÅÏ½º ¼±ÅÃ±â ¿·¿¡ ÀÖ´Â **+** ±âÈ£¸¦ ¼±ÅÃÇÏ¿© **»õ ÄÄÇ»ÆÃ** È­¸éÀ» Ç¥½ÃÇÕ´Ï´Ù.
+17.	í™”ë©´ ë§¨ ìœ„ì˜ **ì»´í“¨íŒ…:** ì¸ìŠ¤í„´ìŠ¤ ì„ íƒê¸° ì˜†ì— ìžˆëŠ” **+** ê¸°í˜¸ë¥¼ ì„ íƒí•˜ì—¬ **ìƒˆ ì»´í“¨íŒ…** í™”ë©´ì„ í‘œì‹œí•©ë‹ˆë‹¤.
 
-18.	ÄÄÇ»ÆÃ ¼³Á¤À» ¼±ÅÃÇÕ´Ï´Ù.  ·¦ È¯°æÀÌ±â ¶§¹®¿¡ »ç¿ë °¡´ÉÇÑ ´õ ÀÛÀº ÄÄÇ»ÆÃÀ» ¼±ÅÃÇÕ´Ï´Ù.
+18.	ì»´í“¨íŒ… ì„¤ì •ì„ ì„ íƒí•©ë‹ˆë‹¤.  ëž© í™˜ê²½ì´ê¸° ë•Œë¬¸ì— ì‚¬ìš© ê°€ëŠ¥í•œ ë” ìž‘ì€ ì»´í“¨íŒ…ì„ ì„ íƒí•©ë‹ˆë‹¤.
 
-19.	ÄÄÇ»ÆÃ ÀÎ½ºÅÏ½ºÀÇ ÀÌ¸§À» ÁöÁ¤ÇÏ°í È­¸é ¸Ç ¾Æ·¡¿¡ ÀÖ´Â **¸¸µé±â** ´ÜÃß¸¦ ¼±ÅÃÇÕ´Ï´Ù.  ÀÌ ÀÛ¾÷Àº ¸î ºÐ Á¤µµ °É¸± ¼ö ÀÖ½À´Ï´Ù.
+19.	ì»´í“¨íŒ… ì¸ìŠ¤í„´ìŠ¤ì˜ ì´ë¦„ì„ ì§€ì •í•˜ê³  í™”ë©´ ë§¨ ì•„ëž˜ì— ìžˆëŠ” **ë§Œë“¤ê¸°** ë‹¨ì¶”ë¥¼ ì„ íƒí•©ë‹ˆë‹¤.  ì´ ìž‘ì—…ì€ ëª‡ ë¶„ ì •ë„ ê±¸ë¦´ ìˆ˜ ìžˆìŠµë‹ˆë‹¤.
 
-20.	ÄÄÇ»ÆÃ ÀÎ½ºÅÏ½º°¡ ÀÛ¼ºµÇ¸é Notebook ¿À¸¥ÂÊ À§¿¡¼­ »ç¿ëÇÒ Ä¿³ÎÀ» ¼±ÅÃÇÕ´Ï´Ù.
+20.	ì»´í“¨íŒ… ì¸ìŠ¤í„´ìŠ¤ê°€ ìž‘ì„±ë˜ë©´ Notebook ì˜¤ë¥¸ìª½ ìœ„ì—ì„œ ì‚¬ìš©í•  ì»¤ë„ì„ ì„ íƒí•©ë‹ˆë‹¤.
 
-21. ½ÃÀÛ ÀÚ½À¼­ÀÇ ÁöÄ§À» µû¸£¸é µË´Ï´Ù.
+21. ì‹œìž‘ ìžìŠµì„œì˜ ì§€ì¹¨ì„ ë”°ë¥´ë©´ ë©ë‹ˆë‹¤.
 
-**Âü°í** À§ÀÇ ´Ü°è¸¦ ¿Ï·áÇÏ¿© Notebook¿¡ ¾×¼¼½ºÇÒ ¼ö ¾ø´Â °æ¿ì¿¡´Â GitHub ÆäÀÌÁö¿¡¼­ NotebookÀ» È®ÀÎÇÒ ¼ö ÀÖ½À´Ï´Ù.  ´ÙÀ½ ÆäÀÌÁöÀÇ NotebookÀ» ÂüÁ¶ÇÏ¼¼¿ä. [GitHubÀÇ Azure Sentinal Notebooks](https://github.com/Azure/Azure-Sentinel-Notebooks/blob/8122bca32387d60a8ee9c058ead9d3ab8f4d61e6/A%20Getting%20Started%20Guide%20For%20Azure%20Sentinel%20ML%20Notebooks.ipynb) 
+**ì°¸ê³ ** ìœ„ì˜ ë‹¨ê³„ë¥¼ ì™„ë£Œí•˜ì—¬ Notebookì— ì•¡ì„¸ìŠ¤í•  ìˆ˜ ì—†ëŠ” ê²½ìš°ì—ëŠ” GitHub íŽ˜ì´ì§€ì—ì„œ Notebookì„ í™•ì¸í•  ìˆ˜ ìžˆìŠµë‹ˆë‹¤.  ë‹¤ìŒ íŽ˜ì´ì§€ì˜ Notebookì„ ì°¸ì¡°í•˜ì„¸ìš”. [GitHubì˜ Azure Sentinal Notebooks](https://github.com/Azure/Azure-Sentinel-Notebooks/blob/8122bca32387d60a8ee9c058ead9d3ab8f4d61e6/A%20Getting%20Started%20Guide%20For%20Azure%20Sentinel%20ML%20Notebooks.ipynb) 
 
-## ÀÌ ·¦À» ¿Ï·áÇß½À´Ï´Ù.
+## ì´ ëž©ì„ ì™„ë£Œí–ˆìŠµë‹ˆë‹¤.
