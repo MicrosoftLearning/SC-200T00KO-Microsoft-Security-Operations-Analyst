@@ -22,7 +22,7 @@ Azure Sentinel을 구현한 회사에서 근무하는 보안 운영 분석자인
 
 7. Azure Sentinel 작업 영역에서 **Notebooks**를 선택합니다.
 
-8. 다음으로, AzureML 작업 영역을 선택해야 합니다. 명령 모음에서 **새 AML 작업 영역 만들기** 단추를 선택합니다.
+8. 다음으로, AzureML 작업 영역을 선택해야 합니다. 명령 모음의 드롭다운 메뉴에서 **새 AML 작업 영역 만들기**를 선택합니다.
 
 9. 구독 상자에서 구독을 선택합니다.
 
@@ -42,7 +42,7 @@ Azure Sentinel을 구현한 회사에서 근무하는 보안 운영 분석자인
 
 14. **Notebooks**를 선택합니다. 
 
-15. **Azure Sentinel ML Notebook용 시작 가이드**를 선택한 다음 **Notebook 저장** 단추를 선택합니다.  Notebook 이름을 입력하라는 팝업이 표시되면 기본값을 그대로 두고 **확인**을 선택합니다.
+15. **Azure Sentinel ML Notebook용 시작 가이드**를 선택한 다음 **Notebook 템플릿 복제** 단추를 선택합니다.  Notebook 이름을 입력하라는 팝업이 표시되면 기본값을 그대로 두고 **확인**을 선택합니다.
 
 16. **Notebook 시작** 단추를 선택합니다.
 
@@ -56,6 +56,6 @@ Azure Sentinel을 구현한 회사에서 근무하는 보안 운영 분석자인
 
 21. 시작 자습서의 지침을 따르면 됩니다.
 
-**참고** 위의 단계를 완료하여 Notebook에 액세스할 수 없는 경우에는 GitHub 페이지에서 Notebook을 확인할 수 있습니다.  [GitHub의 Azure Sentinal Notebooks](https://github.com/Azure/Azure-Sentinel-Notebooks/blob/8122bca32387d60a8ee9c058ead9d3ab8f4d61e6/A%20Getting%20Started%20Guide%20For%20Azure%20Sentinel%20ML%20Notebooks.ipynb) 페이지에 나와 있는 Notebook 파일을 참조하세요. 
+**참고** 위의 단계를 완료하여 Notebook에 액세스할 수 없는 경우에는 GitHub 페이지에서 Notebook을 확인할 수 있습니다.  다음 페이지의 Notebook을 참조하세요. [GitHub의 Azure Sentinal Notebooks](https://github.com/Azure/Azure-Sentinel-Notebooks/blob/8122bca32387d60a8ee9c058ead9d3ab8f4d61e6/A%20Getting%20Started%20Guide%20For%20Azure%20Sentinel%20ML%20Notebooks.ipynb) 
 
 ## 이 랩을 완료했습니다.

@@ -1,4 +1,4 @@
-﻿# 모듈 2 - 랩 1 - 연습 1 - Microsoft 365 Defender 살펴보기 
+# 모듈 1 - 랩 1 - 연습 1 - Microsoft 365 Defender 살펴보기 
 
 ## 랩 시나리오
 
@@ -10,9 +10,9 @@
 
 1. WIN1 가상 머신에 Admin으로 로그인합니다. 암호로는 **Pa55w.rd** 를 사용합니다.  
 
-2. 이전 랩에서 이 과정을 진행하지 않았다면 브라우저를 열고 Microsoft Edge 브라우저를 검색하여 다운로드한 후 새로 설치합니다. 새 Edge 브라우저를 시작합니다.
+2. 아직 브라우저에서 Microsoft 365 Defender 포털이 아닌 경우. Edge 브라우저를 시작합니다.
 
-3. Edge 브라우저에서 Microsoft Defender 보안 센터 (https://security.microsoft.com) 로 이동합니다.
+3. Edge 브라우저에서 Microsoft 365 Defender 포털(https://security.microsoft.com)로 이동합니다.
 
 4. 랩 호스팅 공급자가 제공한 관리자 사용자 이름용 테넌트 전자 메일 계정을 복사하여 **로그인** 대화 상자에 붙여넣은 후 **다음**을 선택합니다.
 

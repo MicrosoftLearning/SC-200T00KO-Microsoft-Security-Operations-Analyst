@@ -1,4 +1,4 @@
-﻿# 모듈 4 - 랩 1 - 연습 1 - KQL(Kusto 쿼리 언어)을 사용하여 Azure Sentinel용 쿼리 만들기
+# 모듈 4 - 랩 1 - 연습 1 - KQL(Kusto 쿼리 언어)을 사용하여 Azure Sentinel용 쿼리 만들기
 
 ## 랩 시나리오
 Azure Sentinel을 구현한 회사에서 근무하는 보안 작업 분석가인 여러분은 로그 데이터 분석을 수행하여 악의적인 활동을 검색하고 시각화를 표시하고 위협 헌팅을 수행할 책임이 있습니다. 로그 데이터를 쿼리하려면 KQL(Kusto Query Language)을 사용합니다.
@@ -24,6 +24,8 @@ SecurityEvent
 ### 작업 2: 기본 KQL 문 실행
 
 이 작업에서는 기본적인 KQL 문을 작성합니다.
+
+**참고:**  각 단계에 대해 쿼리 창에서 이전 문을 지우거나, 마지막으로 연 탭 후에 **+** 를 선택함으로써 새 쿼리 창을 엽니다(최대 25개).
 
 1. 다음 문에는 let 문을 사용하여 변수를 선언하는 방법이 나와 있습니다. 쿼리 창에서 다음 문을 입력하고 **실행**을 선택합니다. 
 
@@ -59,7 +61,7 @@ LowActivityAccounts | where Account contains "Mal"
 
 **참고:** 이 스크립트를 실행하면 결과가 반환되지 않습니다.
 
-4. 다음 문에는 모든 테이블과 열에서 쿼리 창에 표시되는 쿼리 시간 범위 내의 레코드를 검색하는 방법이 나와 있습니다. 쿼리 창에서 이 스크립트를 실행하기 전에 Time 범위를 "Last hour"로 변경합니다. 다음 문을 입력하고 **실행**을 선택합니다. 
+4. 다음 문에는 모든 테이블과 열에서 쿼리 창에 표시되는 쿼리 시간 범위 내의 레코드를 검색하는 방법이 나와 있습니다. 쿼리 창에서 이 스크립트를 실행하기 전에 **Time range**를 "Last hour"로 변경합니다. 다음 문을 입력하고 **실행**을 선택합니다. 
 
 ```KQL
 search "err"
@@ -250,33 +252,29 @@ SecurityEvent
 | summarize arg_min(TimeGenerated,*) by Computer
 ```
 
-7. 다음 문에는 파이프 "|"의 순서를 기준으로 결과를 파악해야 하는 이유가 나와 있습니다. 쿼리 창에서 다음 문을 입력하고 각 문을 개별적으로 실행합니다. 
+7. 다음 문에는 파이프 "|"의 순서를 기준으로 결과를 파악해야 하는 이유가 나와 있습니다. 쿼리 창에서 다음 쿼리를 입력하고 각 문을 개별적으로 실행합니다. 
 
-문 1
+**쿼리 1**에는 마지막 작업이 로그인이었던 계정이 있습니다. 먼저 SecurityEvent 테이블이 요약되고 각 계정에 대한 최신 행이 반환됩니다.  그런 다음 EventID가 4624(로그인)인 행만 반환됩니다.
+
 ```KQL
 SecurityEvent
 | summarize arg_max(TimeGenerated, *) by Account
 | where EventID == "4624"
 ```
 
-문 2
+**쿼리 2**에는 로그인된 계정의 가장 최근 로그인이 있습니다. SecurityEvent 테이블은 EventID = 4624만 포함하도록 필터링됩니다. 그러면 해당 결과가 계정별로 최신 로그인 행에 대해 요약됩니다.
+
 ```KQL
 SecurityEvent
 | where EventID == "4624"
 | summarize arg_max(TimeGenerated, *) by Account
 ```
 
-문 1에는 마지막 작업이 로그인이었던 계정이 있습니다.
-
-먼저 SecurityEvent 테이블이 요약되고 각 계정에 대한 최신 행이 반환됩니다.  그런 다음 EventID가 4624(로그인)인 행만 반환됩니다.
-
-문 2에는 로그인한 계정에 대한 최근 로그인이 있습니다.  
-
-SecurityEvent 테이블은 EventID = 4624만 포함하도록 필터링됩니다. 그러면 해당 결과가 계정별로 최신 로그인 행에 대해 요약됩니다.
+**참고:**  "Completed." 막대를 선택하고 두 문 간에 데이터를 비교함으로써 "Total CPU" 및 "Data used for processed query"를 검토할 수도 있습니다.
 
 8. 다음 문에는 make_list 함수 사용법이 나와 있습니다.
 
-함수는 그룹에 있는 식의 모든 값에 대한 동적(JSON) 배열을 반환합니다. 이 KQL 쿼리는 먼저 where 연산자를 사용하여 EventID를 필터링합니다.  그런 다음 각 컴퓨터에서 결과는 계정의 JSON 배열입니다. 결과 JSON 배열에는 중복된 계정이 포함됩니다.
+make_list 함수는 그룹에 있는 식의 모든 값에 대한 동적(JSON) 배열을 반환합니다. 이 KQL 쿼리는 먼저 where 연산자를 사용하여 EventID를 필터링합니다.  그런 다음 각 컴퓨터에서 결과는 계정의 JSON 배열입니다. 결과 JSON 배열에는 중복된 계정이 포함됩니다.
 
 쿼리 창에서 다음 문을 입력하고 **실행**을 선택합니다. 
 
@@ -286,9 +284,9 @@ SecurityEvent
 | summarize make_list(Account) by Computer
 ```
 
-9. 다음 문에는 make_list 함수 사용법이 나와 있습니다.
+9. 다음 문에는 make_set 함수 사용법이 나와 있습니다.
 
-make_list는 식이 그룹으로 가져오는 개별 값이 포함된 동적(JSON) 배열을 반환합니다. 이 KQL 쿼리는 먼저 where 연산자를 사용하여 EventID를 필터링합니다.  그런 다음 각 컴퓨터에서 결과는 고유한 계정의 JSON 배열입니다. 쿼리 창에서 다음 문을 입력하고 **실행**을 선택합니다. 
+make_set 함수는 식이 그룹으로 가져오는 *개별* 값이 포함된 동적(JSON) 배열을 반환합니다. 이 KQL 쿼리는 먼저 where 연산자를 사용하여 EventID를 필터링합니다.  그런 다음 각 컴퓨터에서 결과는 고유한 계정의 JSON 배열입니다. 쿼리 창에서 다음 문을 입력하고 **실행**을 선택합니다. 
 
 
 ```KQL
@@ -315,7 +313,7 @@ bin() 함수는 주어진 bin 크기의 정수 배수로 값을 반내림합니�
 
 ```KQL
 SecurityEvent 
-| summarize count() by bin(TimeGenerated, 1d) 
+| summarize count() by bin(TimeGenerated, 1h) 
 | render timechart
 ```
 
@@ -323,26 +321,16 @@ SecurityEvent
 
 이 작업에서는 다중 테이블 KQL 문을 작성합니다.
 
-1. 다음 문에는 테이블 두 개 이상을 가져온 다음 모든 테이블의 행을 반환하는 union 연산자의 사용법이 나와 있습니다. 결과가 파이프 문자에 어떻게 전달되고 영향을 받는지 이해하는 것은 중요합니다. 쿼리 창에 설정된 시간대를 기준으로 합니다.
-
-쿼리 1은 SecurityEvent의 모든 행과 SecurityAlert의 모든 행을 반환합니다.
-
-쿼리 2는 SecurityEvent의 모든 행과 SecurityAlert의 모든 행의 수인 행 1개와 열 1개를 반환합니다.
-
-쿼리 3은 SecurityEvent의 모든 행과 SecurityAlert의 하나의 행을 반환합니다.  SecurityAlert의 행에는 SecurityAlert 행의 수가 포함됩니다.
-
-결과를 확인하려면 각 쿼리를 개별적으로 실행합니다. 
-
-쿼리 창에서 다음 문을 입력하고 각 문에서 **실행**을 선택합니다. 
+1. 다음 문에는 테이블 두 개 이상을 가져온 다음 모든 테이블의 행을 반환하는 union 연산자의 사용법이 나와 있습니다. 결과가 파이프 문자에 어떻게 전달되고 영향을 받는지 이해하는 것은 중요합니다. 쿼리 창에서 다음 문을 입력하고 각각에 대해 **실행**을 선택하여 결과를 봅니다. 
 
 
-**쿼리 1**
+**쿼리 1**은 SecurityEvent의 모든 행과 SecurityAlert의 모든 행을 반환합니다.
 ```KQL
 SecurityEvent 
 | union SecurityAlert  
 ```
 
-**쿼리 2**
+**쿼리 2**는 SecurityEvent의 모든 행과 SecurityAlert의 모든 행의 수인 행 1개와 열 1개를 반환합니다.
 ```KQL
 SecurityEvent 
 | union SecurityAlert  
@@ -350,7 +338,7 @@ SecurityEvent
 | project count_
 ```
 
-**쿼리 3**
+**쿼리 3**은 SecurityEvent의 모든 행과 SecurityAlert의 하나의 행을 반환합니다.  SecurityAlert의 행에는 SecurityAlert 행의 수가 포함됩니다.
 ```KQL
 SecurityEvent 
 | union (SecurityAlert  | summarize count()) 
@@ -569,11 +557,11 @@ OfficeActivity
 
 함수를 만들려면
 
+**참고:** 이 랩의 데이터에 사용되는 랩 데모 환경에서는 함수를 만들 수 없습니다. 하지만 함수는 랩 환경에서 사용할 중요한 개념이므로 숙지해 두어야 합니다. 
+
 쿼리를 실행한 후 **저장** 단추를 선택한 다음 이름 (MailboxForward)을 입력한 후 드롭다운에서 **다른 이름으로 저장** 함수를 선택합니다.   
 
 KQL에서 함수 별칭을 통해 함수를 사용할 수 있습니다.
-
-**참고:** 이 랩의 데이터에 사용되는 랩 데모 환경에서는 함수를 만들 수 없습니다. 하지만 함수는 랩 환경에서 사용할 중요한 개념이므로 숙지해 두어야 합니다. 
 
 ```KQL
 MailboxForward

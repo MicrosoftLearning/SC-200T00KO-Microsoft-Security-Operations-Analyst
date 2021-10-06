@@ -32,13 +32,15 @@ search "temp\\startup.bat"
 ```
 
 10. 결과에는 다음의 3개 테이블이 표시됩니다.
-    DeviceProcessEvents
-    DeviceRegistryEvents
-    Event
+    - DeviceProcessEvents
+    - DeviceRegistryEvents
+    - Event
 
-    Device* 테이블은 엔드포인트용 Defender(데이터 커넥터 - Microsoft 365 Defender)에서 제공된 것입니다.  그리고 Event 테이블은 여기서 사용하는 데이터 커넥터 보안 이벤트에서 제공된 것입니다. 
+    *Device* 테이블은 엔드포인트용 Defender(데이터 커넥터 - Microsoft 365 Defender)에서 제공된 것입니다.  그리고 *Event* 테이블은 여기서 사용하는 데이터 커넥터 보안 이벤트에서 제공된 것입니다. 
 
     여기서는 Sysmon과 엔드포인트용 Defender의 두 원본에서 데이터를 수신하므로, 나중에 통합할 수 있는 KQL 문 두 개를 작성해야 합니다.  초기 조사에서 각 문을 개별적으로 살펴볼 예정입니다.
+
+    **참고:** 드물게 데이터 로드 프로세스 시간이 평소보다 더 오래 걸리는 경우도 있을 수 있습니다.  그럴 경우 몇 시간 동안 테이블이 쿼리에 표시되지 않을 수 있습니다.
 
 11. 첫 번째 데이터 원본은 Windows 호스트의 Sysmon입니다.  다음 KQL 문을 실행합니다.
 

@@ -1,4 +1,4 @@
-﻿# 모듈 6 - 랩 1 - 연습 2 - 데이터 커넥터를 사용하여 Azure Sentinel에 Windows 디바이스 연결
+# 모듈 6 - 랩 1 - 연습 2 - 데이터 커넥터를 사용하여 Azure Sentinel에 Windows 디바이스 연결
 
 ### 작업 1: Azure에서 Windows 가상 머신 만들기
 
@@ -126,10 +126,12 @@ WIN2 가상 머신에 연결되어 있어야 합니다.  다음 지침에 따라
 
 7. 브라우저에서 탭을 열고 https://github.com/SwiftOnSecurity/sysmon-config/blob/master/sysmonconfig-export.xml로 이동합니다.
 
-8. Github의 해당 파일 내용을 방금 만든 sysmon.xml 메모장 파일에 복사한 후 파일을 저장합니다.
+8. **Raw** 단추를 선택하고 Github의 해당 파일 내용을 방금 만든 sysmon.xml 메모장 파일에 복사한 후 파일을 **저장**합니다.
 
 9. 명령 프롬프트에 다음 명령을 입력하고 Enter 키를 누릅니다.
     sysmon.exe -accepteula -i sysmon.xml
+
+**참고:**  출력에 "Configuration file validated" 및 "Sysmon started" 메시지가 나타나는지 확인합니다.
 
 10. 브라우저에서 Azure Portal https://portal.azure.com으로 이동합니다. 
 
@@ -153,7 +155,7 @@ WIN2 가상 머신에 연결되어 있어야 합니다.  다음 지침에 따라
 
 이 작업에서는 엔드포인트용 Microsoft Defender에 디바이스를 온보딩합니다.
 
-**참고:** 이 과정의 첫 번째 모듈에서 랩을 완료했다면 이 작업을 이미 수행한 것입니다.  랩 연습에서 동일한 가상 머신을 사용하는 경우 이 작업을 건너뛸 수 있습니다.
+**참고:** 이 과정의 첫 번째 모듈에서 랩을 완료했고 가상 머신을 저장했다면 이 작업을 이미 수행한 것입니다.  랩 연습에서 동일한 가상 머신을 사용하는 경우 이 작업을 건너뛸 수 있습니다.
 
 1. WIN1 가상 머신에 Admin으로 로그인합니다. 암호로는 **Pa55w.rd**를 사용합니다.  
 
