@@ -1,4 +1,4 @@
-﻿# 모듈 1 - 랩 1 - 연습 1 - Microsoft 365 Defender 살펴보기 
+# 모듈 1 - 랩 1 - 연습 1 - Microsoft 365 Defender 살펴보기 
 
 ## 랩 시나리오
 
