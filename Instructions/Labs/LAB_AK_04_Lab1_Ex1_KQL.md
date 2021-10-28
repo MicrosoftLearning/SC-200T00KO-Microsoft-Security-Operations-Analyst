@@ -3,6 +3,9 @@
 ## 랩 시나리오
 Azure Sentinel을 구현한 회사에서 근무하는 보안 작업 분석가인 여러분은 로그 데이터 분석을 수행하여 악의적인 활동을 검색하고 시각화를 표시하고 위협 헌팅을 수행할 책임이 있습니다. 로그 데이터를 쿼리하려면 KQL(Kusto Query Language)을 사용합니다.
 
+**힌트:** 이 랩에서는 많은 KQL 스크립트를 Azure Sentinel에 입력합니다.  텍스트 파일에서 스크립트를 붙여넣고 싶다면 다음 위치에 해당 파일이 있습니다.  https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst/tree/master/Allfiles
+
+
 ### 작업 1: KQL 테스트 영역 액세스
 
 이 작업에서는 KQL 문 작성을 연습할 수 있는 Log Analytics 환경에 액세스합니다.
