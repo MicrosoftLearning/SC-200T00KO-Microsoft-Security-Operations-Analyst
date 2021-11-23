@@ -22,7 +22,7 @@ Azure Sentinel을 구현한 회사에서 근무하는 보안 운영 분석자인
 
 7. Azure Sentinel 작업 영역에서 **Notebooks**를 선택합니다.
 
-8. 다음으로, AzureML 작업 영역을 선택해야 합니다. 명령 모음의 드롭다운 메뉴에서 **새 AML 작업 영역 만들기**를 선택합니다.
+8. 다음으로, AzureML 작업 영역을 선택해야 합니다. **Azure Machine Learning 구성**을 선택하고 명령 모음에서 **새 AML 작업 영역 만들기** 단추를 클릭합니다.
 
 9. 구독 상자에서 구독을 선택합니다.
 
@@ -42,7 +42,7 @@ Azure Sentinel을 구현한 회사에서 근무하는 보안 운영 분석자인
 
 14. **Notebooks**를 선택합니다. 
 
-15. **Azure Sentinel ML Notebook용 시작 가이드**를 선택한 다음 **Notebook 템플릿 복제** 단추를 선택합니다.  Notebook 이름을 입력하라는 팝업이 표시되면 기본값을 그대로 두고 **확인**을 선택합니다.
+15. **Azure Sentinel ML Notebook용 시작 가이드**를 선택한 다음 **Notebook 복제** 단추를 선택합니다.  Notebook 이름을 입력하라는 팝업이 표시되면 기본값을 그대로 두고 **확인**을 선택합니다.
 
 16. **Notebook 시작** 단추를 선택합니다.
 

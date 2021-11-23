@@ -51,7 +51,7 @@ search in (Event) "temp\\startup.bat"
 
 12. 행을 확장하여 레코드와 관련된 모든 열을 표시합니다.  EventData, ParameterXml 등의 일부 필드에는 여러 데이터 항목이 구조화된 데이터로 저장되어 있습니다.  그러므로 특정 필드를 쿼리하기가 어렵습니다.  
 
-13. 따라서 다음으로는 의미 있는 필드를 찾을 수 있도록 각 행의 데이터를 구문 분석하는 KQL 문을 작성해야 합니다.  GitHub의 Azure Sentinel 커뮤니티 내 Parsers 폴더에는 다양한 파서 예제가 포함되어 있습니다.  브라우저에서 다른 탭을 열고 https://github.com/Azure/Azure-Sentinel로 이동합니다.
+13. 따라서 다음으로는 의미 있는 필드를 찾을 수 있도록 각 행의 데이터를 구문 분석하는 KQL 문을 작성해야 합니다.  GitHub의 Azure Sentinel 커뮤니티 내 Parsers 폴더에는 다양한 파서 예제가 포함되어 있습니다.  브라우저에서 다른 탭을 열고 다음 위치로 이동합니다. **https://github.com/Azure/Azure-Sentinel**
 
 14. **Parsers** 폴더와 **Sysmon** 폴더를 차례로 선택합니다.  그러면 다음 파일이 표시됩니다. Azure-Sentinel/Parsers/Sysmon/Sysmon-v12.0.txt
 
