@@ -1,4 +1,4 @@
-﻿# 모듈 6 - 랩 1 - 연습 2 - 데이터 커넥터를 사용하여 Azure Sentinel에 Windows 디바이스 연결
+# 모듈 6 - 랩 1 - 연습 2 - 데이터 커넥터를 사용하여 Azure Sentinel에 Windows 디바이스 연결
 
 ### 작업 1: Azure에서 Windows 가상 머신 만들기
 
