@@ -1,4 +1,4 @@
-# 모듈 6 - 랩 1 - 연습 4 - 데이터 커넥터를 사용하여 Azure Sentinel에 위협 인텔리전스 연결
+﻿# 모듈 6 - 랩 1 - 연습 4 - 데이터 커넥터를 사용하여 Azure Sentinel에 위협 인텔리전스 연결
 
 ### 작업 1: 위협 인텔리전스 연결
 
@@ -20,7 +20,7 @@
 
 8. 커넥터 정보 블레이드에서 **커넥터 페이지 열기**를 선택합니다.
 
-9. 구성 영역에서 **식별 이름(서버용)** 으로는 *PhishURL*을 입력합니다.
+9. 구성 영역에서 **식별 이름(서버용)**으로는 *PhishURL*을 입력합니다.
 
 10. API 루트 URL로는 https://limo.anomali.com/api/v1/taxii2/feeds/를 입력합니다.
 
@@ -34,6 +34,6 @@
 
 피싱 URL 끌어오기가 진행되며 ThreatIntelligenceIndicator 테이블에 피싱 URL이 입력됩니다.
 
-**참고:** 추가적인 컬렉션에 대해서는 브라우저에서 https://limo.anomali.com/api/v1/taxii2/feeds/collections/를 열고, 사용 가능한 다른 ID를 검토합니다.
+**참고:** 추가적인 컬렉션에 대해서는 브라우저에서 https://limo.anomali.com/api/v1/taxii2/feeds/collections/를 열고 사용자 이름과 암호로 guest를 사용하여 사용 가능한 다른 컬렉션 ID를 검토합니다.
 
 ## 이 랩을 완료했습니다.

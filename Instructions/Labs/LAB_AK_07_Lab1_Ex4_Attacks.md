@@ -2,11 +2,11 @@
 
 ### 작업 1: 공격 이해
 
-이 연습에서는 특별한 작업을 수행하지 않으며  수행할 공격의 설명만 확인합니다.
+**중요: 이 연습에서는 특별한 작업을 수행하지 않으며**  여기에 나오는 지침은 다음 연습에서 수행하게 될 공격에 대한 설명입니다. 이 페이지의 내용을 주의하여 읽어보세요.
 
 이 공격의 패턴은 오픈 소스 프로젝트 https://github.com/redcanaryco/atomic-red-team을 토대로 작성된 것입니다.
 
-**참고** 일부 설정을 이 랩의 목적에 따라 더 짧은 기간에 트리거됩니다.
+**참고:** 랩을 진행하기 위해 짧은 시간 내에 트리거되는 설정도 있습니다.
 
 #### 공격 1 - 레지스트리 키 추가를 통한 지속성 적용
 
@@ -31,8 +31,6 @@ net localgroup administrators theusernametoadd /add
 이 공격에서는 C2(명령 및 제어) 통신을 시뮬레이트합니다.
 
 ```PowerShell
-
-
 param(
     [string]$Domain = "microsoft.com",
     [string]$Subdomain = "subdomain",
@@ -43,43 +41,31 @@ param(
         [int]$C2Jitter = 20,
         [int]$RunTime = 240
 )
-
-
 $RunStart = Get-Date
 $RunEnd = $RunStart.addminutes($RunTime)
-
 $x2 = 1
 $x3 = 1 
 Do {
     $TimeNow = Get-Date
     Resolve-DnsName -type $QueryType $Subdomain".$(Get-Random -Minimum 1 -Maximum 999999)."$Domain -QuickTimeout
-
     if ($x2 -eq 3 )
     {
         Resolve-DnsName -type $QueryType $Sub2domain".$(Get-Random -Minimum 1 -Maximum 999999)."$Domain -QuickTimeout
-        
         $x2 = 1
-
     }
     else
     {
         $x2 = $x2 + 1
     }
-    
     if ($x3 -eq 7 )
     {
-
         Resolve-DnsName -type $QueryType $Sub3domain".$(Get-Random -Minimum 1 -Maximum 999999)."$Domain -QuickTimeout
-
         $x3 = 1
-        
     }
     else
     {
         $x3 = $x3 + 1
     }
-
-
     $Jitter = ((Get-Random -Minimum -$C2Jitter -Maximum $C2Jitter) / 100 + 1) +$C2Interval
     Start-Sleep -Seconds $Jitter
 }

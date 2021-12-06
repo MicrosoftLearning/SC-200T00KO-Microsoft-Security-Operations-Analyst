@@ -1,13 +1,8 @@
-# 모듈 7 - 랩 1 - 연습 6 - 검색 만들기
+﻿# 모듈 7 - 랩 1 - 연습 6 - 검색 만들기
 
 ### 작업 1: Sysmon을 사용하여 공격 1 검색
 
-이 작업에서는 보안 이벤트 커넥터와 Sysmon이 설치된 호스트에서 공격 1 검색을 만듭니다.
-
-이 공격은 시작 시에 실행되는 레지스트리 키를 만듭니다.  
-```Command
-REG ADD "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /V "SOC Test" /t REG_SZ /F /D "C:\temp\startup.bat"
-```
+이 작업에서는 보안 이벤트 커넥터와 Sysmon이 설치된 호스트에서 **공격 1** 검색을 만듭니다.
 
 1. WIN1 가상 머신에 Admin으로 로그인합니다. 암호로는 **Pa55w.rd**를 사용합니다.  
 
@@ -36,11 +31,11 @@ search "temp\\startup.bat"
     - DeviceRegistryEvents
     - Event
 
-    *Device* 테이블은 엔드포인트용 Defender(데이터 커넥터 - Microsoft 365 Defender)에서 제공된 것입니다.  그리고 *Event* 테이블은 여기서 사용하는 데이터 커넥터 보안 이벤트에서 제공된 것입니다. 
+    *Device* 테이블은 엔드포인트용 Defender 커넥터에서 가져오고 *Event* 테이블은 에이전트 구성을 통해 연결된 Sysmon/Operational Windows 이벤트 로그의 데이터를 채웁니다.
 
-    여기서는 Sysmon과 엔드포인트용 Defender의 두 원본에서 데이터를 수신하므로, 나중에 통합할 수 있는 KQL 문 두 개를 작성해야 합니다.  초기 조사에서 각 문을 개별적으로 살펴볼 예정입니다.
+    여기서는 Sysmon과 엔드포인트용 Defender의 두 원본에서 데이터를 수신하므로, 나중에 통합할 수 있는 KQL 문 두 개를 작성해야 합니다. 초기 조사에서 각 문을 개별적으로 살펴볼 예정입니다.
 
-    **참고:** 드물게 데이터 로드 프로세스 시간이 평소보다 더 오래 걸리는 경우도 있을 수 있습니다.  그럴 경우 몇 시간 동안 테이블이 쿼리에 표시되지 않을 수 있습니다.
+    **참고:** 드물게 데이터 로드 프로세스 시간이 평소보다 더 오래 걸리는 경우도 있을 수 있습니다. 그럴 경우 몇 시간 동안 테이블이 쿼리에 표시되지 않을 수 있습니다. *Event* 테이블만 표시되는 경우 진행해도 무방합니다.
 
 11. 첫 번째 데이터 원본은 Windows 호스트의 Sysmon입니다.  다음 KQL 문을 실행합니다.
 
@@ -51,16 +46,16 @@ search in (Event) "temp\\startup.bat"
 
 12. 행을 확장하여 레코드와 관련된 모든 열을 표시합니다.  EventData, ParameterXml 등의 일부 필드에는 여러 데이터 항목이 구조화된 데이터로 저장되어 있습니다.  그러므로 특정 필드를 쿼리하기가 어렵습니다.  
 
-13. 따라서 다음으로는 의미 있는 필드를 찾을 수 있도록 각 행의 데이터를 구문 분석하는 KQL 문을 작성해야 합니다.  GitHub의 Azure Sentinel 커뮤니티 내 Parsers 폴더에는 다양한 파서 예제가 포함되어 있습니다.  브라우저에서 다른 탭을 열고 다음 위치로 이동합니다. **https://github.com/Azure/Azure-Sentinel**
+13. 따라서 다음으로는 의미 있는 필드를 찾을 수 있도록 각 행의 데이터를 구문 분석하는 KQL 문을 작성해야 합니다. GitHub의 Azure Sentinel 커뮤니티 내 Parsers 폴더에는 다양한 파서 예제가 포함되어 있습니다.  브라우저에서 다른 탭을 열고 다음 페이지로 이동합니다. **https://github.com/Azure/Azure-Sentinel**
 
-14. **Parsers** 폴더와 **Sysmon** 폴더를 차례로 선택합니다.  그러면 다음 파일이 표시됩니다. Azure-Sentinel/Parsers/Sysmon/Sysmon-v12.0.txt
+14. **Parsers** 폴더와 **Sysmon** 폴더를 차례로 선택합니다.
 
 15. Sysmon-v12.0.txt 파일을 선택하여 표시합니다.
 
 파일 맨 위에 Event 테이블을 쿼리하여 EventData 변수에 저장하는 let 문이 있습니다.
+**힌트:** 다음 코드 조각은 16단계의 코드에 대한 이해를 돕기 위한 것입니다. 복사하여 실행하지 않도록 하세요.
 
-
-```KQL
+```
 let EventData = Event
 | where Source == "Microsoft-Windows-Sysmon"
 | extend RenderedDescription = tostring(split(RenderedDescription, ":")[0])
@@ -71,8 +66,9 @@ let EventData = Event
 ```
 
 파일 아래쪽에는 EventData 변수를 입력으로 사용하여 EventID == 13을 찾는 또 다른 let 문이 있습니다.  
+**힌트:** 다음 코드 조각은 16단계의 코드에 대한 이해를 돕기 위한 것입니다. 복사하여 실행하지 않도록 하세요.
 
-```KQL
+```
 let SYSMON_REG_SETVALUE_13=()
 {
     let processEvents = EventData
@@ -86,10 +82,11 @@ let SYSMON_REG_SETVALUE_13=()
 ```
 이 예제를 참조하여 KQL 문을 작성할 수 있습니다.
 
-16. 여기서는 위의 문을 사용하여 모든 Registry Key Set Value 행을 표시하는 KQL 문을 직접 작성합니다.  다음 KQL 쿼리를 실행합니다.
+16. 위의 두 문을 사용하여 Event 테이블 내의 Sysmon을 사용하는 모든 레지스트리 키 집합 값 행을 표시하는 고유한 KQL 문을 만듭니다. 다음 KQL 쿼리를 실행합니다.
+
+**중요:** 먼저 KQL 쿼리를 *메모장*에 붙여 넣은 후 메모장에서 *새 쿼리 1* 로그 창으로 복사하세요. 이렇게 해야 오류가 발생하지 않습니다.
 
 ```KQL
-
 Event
 | where Source == "Microsoft-Windows-Sysmon"
 | where EventID == 13
@@ -101,33 +98,26 @@ Event
 | extend RuleName = EventDetail.[0].["#text"], EventType = EventDetail.[1].["#text"], UtcTime = EventDetail.[2].["#text"], ProcessGuid = EventDetail.[3].["#text"], 
     ProcessId = EventDetail.[4].["#text"], Image = EventDetail.[5].["#text"], TargetObject = EventDetail.[6].["#text"], Details = EventDetail.[7].["#text"]
     | project-away EventDetail 
-
-
 ```
 
    ![스크린샷](../Media/SC200_sysmon_query1.png)
 
-17.  검색 규칙을 계속 작성할 수도 있지만, 이 KQL 문을 다른 검색 규칙의 KQL 문에 이 KQL 문을 재사용할 수 있을 것으로 보입니다.  로그 창에서 **저장**, **함수로 저장**을 차례로 선택합니다. 저장 플라이아웃에서 다음을 입력하고 함수를 저장합니다.
+17. 검색 규칙을 계속 작성할 수도 있지만, 이 KQL 문을 다른 검색 규칙의 KQL 문에 이 KQL 문을 재사용할 수 있을 것으로 보입니다.  로그 창에서 **저장**, **함수로 저장**을 차례로 선택합니다. 저장 플라이아웃에서 다음을 입력하고 함수를 저장합니다.
 
-함수 이름: Event_Reg_SetValue
-범주: Sysmon
+    함수 이름: Event_Reg_SetValue 
+    범주: Sysmon
 
-
-18. 새 로그 쿼리 탭을 엽니다. 해당 탭에서 다음 KQL 문을 실행합니다.
+18. **저장**을 선택하고 '+' 기호를 선택하여 새 쿼리 로그 탭을 엽니다. 해당 탭에서 다음 KQL 문을 실행합니다.
 
 ```KQL
-
 Event_Reg_SetValue
-
 ```
 현재 데이터 컬렉션에 따라 행이 여러 개 반환될 수도 있습니다.  정상적인 현상이므로 무시하세요.  다음 작업에서 이 랩의 시나리오에 맞게 결과를 필터링합니다.
 
 19. 다음 KQL 문을 실행합니다.
 
 ```KQL
-
 Event_Reg_SetValue | search "startup.bat"
-
 ```
 그러면 필요한 레코드가 반환됩니다. 이제 해당 레코드의 데이터를 검토하여 행 식별을 위해 변경 가능한 부분을 확인할 수 있습니다.
 
@@ -150,7 +140,7 @@ Event_Reg_SetValue
 
 이제 적절한 검색 규칙이 작성되었습니다.  
 
-22. 보안 운영 분석자가 위협을 정확하게 분석할 수 있도록 경고 관련 상황 정보를 최대한 많이 제공해야 합니다. 가령 조사 그래프에 사용할 엔터티 등을 제공할 수 있습니다.  다음 쿼리를 실행합니다.
+22. 보안 작업 분석가가 위협을 정확하게 분석할 수 있도록 경고 관련 상황 정보를 최대한 많이 제공해야 합니다. 가령 조사 그래프에 사용할 엔터티 등을 제공할 수 있습니다.  다음 쿼리를 실행합니다.
 
 ```KQL
 Event_Reg_SetValue 
@@ -165,27 +155,24 @@ Event_Reg_SetValue
 24. 그러면 분석 규칙 마법사가 시작됩니다.  일반 탭에서 다음 정보를 입력합니다.
 
     이름: Sysmon Startup RegKey
-
     설명: c:\temp의 Sysmon Startup RegKey
-
     전술: 지속성
-
     심각도: 높음
 
-**다음: 규칙 논리 설정 >** 을 선택합니다.
+**다음: 규칙 논리 설정 >**을 선택합니다.
 
-25. **규칙 논리 설정** 탭에서 **규칙 쿼리**에는 내용이 이미 입력되어 있습니다.
+25. **규칙 논리 설정** 탭에서 **규칙 쿼리**에는 내용이 이미 입력되어 있습니다. **-> 현재 데이터로 테스트**를 선택하여 현재 구성으로 하루에 받을 수 있는 경고 수를 검토합니다.
 
 26. 쿼리 예약에서 다음 항목을 설정합니다.
 
-- 쿼리 실행 간격: 5분
+- 쿼리 실행 빈도: 5분
 - 데이터를 확인할 기간: 1일
 
-**참고** 여기서는 같은 데이터에 대해 의도적으로 여러 인시던트를 생성합니다.  그러면 랩에서 해당 경고를 사용할 수 있기 때문입니다.
+**참고:** 여기서는 같은 데이터에 대해 의도적으로 여러 인시던트를 생성합니다. 그러면 랩에서 해당 경고를 사용할 수 있기 때문입니다. 이렇게 구성을 변경하면 수신되는 경고 수가 변경될 수 있습니다.  **-> 현재 데이터로 테스트**를 선택하여 변경한 구성으로 하루에 받을 수 있는 경고 수를 검토합니다.
 
 27. 나머지 옵션은 기본값으로 둡니다.  **다음: 인시던트 설정 >** 단추를 클릭합니다.
 
-28. 인시던트 설정에서 다음 항목을 설정합니다. 
+28. *인시던트 설정(미리 보기)* 탭에서 구성이 다음과 같이 설정되어 있는지 확인합니다. 
 
 - 인시던트 설정: 사용
 - 경고 그룹: 사용 안 함
@@ -194,21 +181,15 @@ Event_Reg_SetValue
 
 29. 자동화된 응답 탭에서 다음 항목을 설정합니다.
 
-- *PostMessageTeams-OnAlert*을 선택합니다.
+- *PostMessageTeams-OnAlert*를 선택합니다.
 
 **다음: 검토** 단추를 선택합니다.
 
 30. 검토 탭에서 **만들기** 단추를 선택합니다.
 
-
 ### 작업 2: 엔드포인트용 Defender를 사용하여 공격 1 검색
 
-이 작업에서는 엔드포인트용 Defender가 구성되어 있는 호스트에서 공격 1 검색을 만듭니다.
-
-이 공격은 시작 시에 실행되는 레지스트리 키를 만듭니다.  
-```Command
-REG ADD "HKCU\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /V "SOC Test" /t REG_SZ /F /D "C:\temp\startup.bat"
-```
+이 작업에서는 엔드포인트용 Defender가 구성되어 있는 호스트에서 **공격 1** 검색을 만듭니다.
 
 1. Azure Sentinel 포털의 일반 섹션에서 **로그**를 선택합니다.
 
@@ -227,9 +208,11 @@ search "temp\\startup.bat"
     DeviceRegistryEvents
     Event
 
-    Device* 테이블은 엔드포인트용 Defender(데이터 커넥터 - Microsoft 365 Defender)에서 제공된 것입니다.  그리고 Event 테이블은 여기서 사용하는 데이터 커넥터 보안 이벤트에서 제공된 것입니다. 
+    *Device* 테이블은 엔드포인트용 Defender 커넥터에서 가져오고 *Event* 테이블은 에이전트 구성을 통해 연결된 Sysmon/Operational Windows 이벤트 로그의 데이터를 채웁니다.
 
-    여기서는 Sysmon과 엔드포인트용 Defender의 두 원본에서 데이터를 수신하므로,  나중에 통합할 수 있는 KQL 문 두 개를 작성해야 합니다.  초기 조사에서 각 문을 개별적으로 살펴볼 예정입니다.
+    여기서는 Sysmon과 엔드포인트용 Defender의 두 원본에서 데이터를 수신하므로,  나중에 통합할 수 있는 KQL 문 두 개를 작성해야 합니다. 초기 조사에서 각 문을 개별적으로 살펴볼 예정입니다.
+
+    **참고:** 드물게 데이터 로드 프로세스 시간이 평소보다 더 오래 걸리는 경우도 있을 수 있습니다. 그럴 경우 몇 시간 동안 테이블이 쿼리에 표시되지 않을 수 있습니다. 결과에 *Device* 테이블이 표시되지 않는 경우 작업 3을 계속 진행한 후 나중에 이 단계로 돌아오세요.
 
 5. 이 검색에서는 엔드포인트용 Defender의 데이터를 중점적으로 찾습니다.  다음 KQL 문을 실행합니다.
 
@@ -242,13 +225,10 @@ search in (Device*) "temp\\startup.bat"
 7. 이 예제의 위협 인텔리전스에서는 위협 행위자가 reg.exe를 사용하여 레지스트리 키를 추가한다는 것이 확인되었습니다.  레지스트리 키가 추가된 디렉터리는 c:\temp입니다. startup.bat는 다른 이름일 수도 있습니다.  다음 KQL 문을 입력합니다.
 
 ```KQL
-
 DeviceRegistryEvents
 | where ActionType == "RegistryValueSet"
 | where InitiatingProcessFileName == "reg.exe"
 | where RegistryValueData startswith "c:\\temp"
-
-
 ```
 
 이제 적절한 검색 규칙이 작성되었습니다.  
@@ -261,8 +241,6 @@ DeviceRegistryEvents
 | where InitiatingProcessFileName == "reg.exe"
 | where RegistryValueData startswith "c:\\temp"
 | extend timestamp = TimeGenerated, HostCustomEntity = DeviceName, AccountCustomEntity = InitiatingProcessAccountName
-
-
 ```
 
    ![스크린샷](../Media/SC200_sysmon_query2.png)
@@ -271,13 +249,9 @@ DeviceRegistryEvents
 
 10. 그러면 분석 규칙 마법사가 시작됩니다.  일반 탭에서 다음 정보를 입력합니다.
 
-
     이름: D4E Startup RegKey
-
     설명: c:\temp의 D4E Startup Regkey
-
     전술: 지속성
-
     심각도: 높음
 
 11. **다음: 규칙 논리 설정 >** 단추를 선택합니다.
@@ -286,37 +260,31 @@ DeviceRegistryEvents
 
 13. 쿼리 예약에서 다음 항목을 설정합니다.
 
-- 쿼리 실행 간격: 5분
+- 쿼리 실행 빈도: 5분
 - 데이터를 확인할 기간: 1일
 
-**참고** 여기서는 같은 데이터에 대해 의도적으로 여러 인시던트를 생성합니다.  그러면 랩에서 해당 경고를 사용할 수 있기 때문입니다.
+**참고:** 여기서는 같은 데이터에 대해 의도적으로 여러 인시던트를 생성합니다.  그러면 랩에서 해당 경고를 사용할 수 있기 때문입니다.
 
 14. 나머지 옵션은 기본값으로 둡니다.  **다음: 인시던트 설정**을 선택하고
 
-15. 인시던트 설정에서 다음 항목을 설정합니다. 
+15. *인시던트 설정(미리 보기)* 에서 다음 항목을 설정합니다. 
 
 - 인시던트 설정: 사용
 - 경고 그룹: 사용 안 함
 
-**다음: 자동화된 응답 >** 을 선택하고
+**다음: 자동화된 응답 >**을 선택하고
 
 16. 자동화된 응답 탭에서 다음 항목을 설정합니다.
 
-- PostMessageTeams-OnAlert을 선택합니다.
-- **다음: 검토**를 선택합니다.
+- *PostMessageTeams-OnAlert*를 선택합니다.
+
+**다음: 검토**를 선택합니다.
 
 17. 검토 및 만들기 탭에서 **만들기**를 선택합니다.
 
 ### 작업 3: SecurityEvent를 사용하여 공격 2 검색
 
-이 작업에서는 보안 이벤트 커넥터와 Sysmon이 설치된 호스트에서 공격 2 검색을 만듭니다.
-
-이 공격은 새 사용자를 만들어 로컬 관리자에 추가합니다.
-```Command
-net user theusernametoadd /add
-net user theusernametoadd ThePassword1!
-net localgroup administrators theusernametoadd /add
-```
+이 작업에서는 보안 이벤트 커넥터와 Sysmon이 설치된 호스트에서 *공격 2* 검색을 만듭니다.
 
 1. Azure Sentinel 포털의 일반 섹션에서 **로그**를 선택합니다.
 
@@ -334,11 +302,7 @@ search "administrators"
     Event
     SecurityEvent
 
-5. 첫 번째 데이터 원본은 SecurityEvent입니다. Windows에서 권한 있는 그룹에 구성원을 추가하는 작업을 식별하는 데 사용하는 이벤트 ID를 조사해야 합니다.  여기서 해당 정보는 다음 EventID 및 Event입니다.
-
-4732 - 구성원을 보안된 로컬 그룹에 추가했습니다.
-
-다음 스크립트를 실행합니다.
+5. 첫 번째 데이터 원본은 SecurityEvent입니다. Windows에서 권한 있는 그룹에 구성원을 추가하는 작업을 식별하는 데 사용하는 이벤트 ID를 조사해야 합니다. 찾으려는 이벤트 ID 및 이벤트는 "4732 - 구성원을 보안된 로컬 그룹에 추가했습니다."입니다. 다음 스크립트를 실행하여 확인합니다.
 
 ```KQL
 SecurityEvent
@@ -348,7 +312,6 @@ SecurityEvent
 ```
 
 6. 행을 확장하여 레코드와 관련된 모든 열을 표시합니다.  그런데 찾으려는 사용자 이름은 표시되지 않습니다.  사용자 이름이 저장되는 대신 SID(보안 식별자)가 저장되기 때문입니다.  다음 KQL은 SID 일치 여부를 확인하여 Administrators 그룹에 추가된 TargetUserName을 열에 입력합니다.
-
 
 ```KQL
 SecurityEvent
@@ -362,14 +325,14 @@ SecurityEvent
 ) on $left.MachId == $right.MachId1, $left.Acct == $right.Acct1 
 
 ```
+
 이제 적절한 검색 규칙이 작성되었습니다.  
 
    ![스크린샷](../Media/SC200_sysmon_attack3.png)
 
 **참고:** 랩에서는 사용되는 데이터 세트가 작아서 이 KQL이 적절한 결과를 반환하지 않을 수도 있습니다.
 
-7. 보안 운영 분석자가 위협을 정확하게 분석할 수 있도록 경고 관련 상황 정보를 최대한 많이 제공해야 합니다. 가령 조사 그래프에 사용할 엔터티 등을 제공할 수 있습니다.  다음 쿼리를 실행합니다.
-
+7. 보안 작업 분석가가 위협을 정확하게 분석할 수 있도록 경고 관련 상황 정보를 최대한 많이 제공해야 합니다. 가령 조사 그래프에 사용할 엔터티 등을 제공할 수 있습니다.  다음 쿼리를 실행합니다.
 
 ```KQL
 SecurityEvent
@@ -382,7 +345,6 @@ SecurityEvent
      | project Acct1 = TargetSid, MachId1 = SourceComputerId, UserName1 = TargetUserName
 ) on $left.MachId == $right.MachId1, $left.Acct == $right.Acct1 
 | extend timestamp = TimeGenerated, HostCustomEntity = Computer, AccountCustomEntity = UserName1
-
 ```
 
 8. 이제 적절한 검색 규칙이 작성되었으므로 쿼리가 있는 로그 창의 명령 모음에서 **+ 새 경고 규칙**을 선택하고 **Azure Sentinel 경고 만들기**를 선택합니다.
@@ -400,23 +362,25 @@ SecurityEvent
 
 11. 쿼리 예약에서 다음 항목을 설정합니다.
 
-- 쿼리 실행 간격: 5분
+- 쿼리 실행 빈도: 5분
 - 데이터를 확인할 기간: 1일
 
-**참고** 여기서는 같은 데이터에 대해 의도적으로 여러 인시던트를 생성합니다.  그러면 랩에서 해당 경고를 사용할 수 있기 때문입니다.
+**참고:** 여기서는 같은 데이터에 대해 의도적으로 여러 인시던트를 생성합니다.  그러면 랩에서 해당 경고를 사용할 수 있기 때문입니다.
 
 12. 나머지 옵션은 기본값으로 둡니다.  **다음: 인시던트 설정**을 선택하고
 
-13. 인시던트 설정에서 다음 항목을 설정합니다.
+13. *인시던트 설정(미리 보기)* 에서 다음 항목을 설정합니다.
 
 - 인시던트 설정: 사용
 - 경고 그룹: 사용 안 함
-- **다음: 자동화된 응답 >을 선택하고**
+
+**다음: 자동화된 응답 >을 선택하고**
 
 14. 자동화된 응답 탭에서 다음 항목을 설정합니다.
 
 - **PostMessageTeams-OnAlert**을 선택합니다.
-- **다음: 검토 >** 단추를 선택합니다.
+
+**다음: 검토 >** 단추를 선택합니다.
 
 15. 검토 탭에서 **만들기**를 선택합니다.
 
