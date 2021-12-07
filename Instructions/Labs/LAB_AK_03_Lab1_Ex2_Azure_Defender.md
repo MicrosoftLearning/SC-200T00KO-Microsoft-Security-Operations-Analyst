@@ -1,4 +1,4 @@
-﻿# 모듈 3 - 랩 1 - 연습 2 - Microsoft Defender for Cloud를 사용하여 위협 완화
+# 모듈 3 - 랩 1 - 연습 2 - Microsoft Defender for Cloud를 사용하여 위협 완화
 
 ## 랩 시나리오
 
