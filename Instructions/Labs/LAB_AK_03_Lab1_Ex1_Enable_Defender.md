@@ -1,4 +1,4 @@
-﻿# 모듈 3 - 랩 1 - 연습 1 - Microsoft Defender for Cloud를 사용하도록 설정
+# 모듈 3 - 랩 1 - 연습 1 - Microsoft Defender for Cloud를 사용하도록 설정
 
 ## 랩 시나리오
 
