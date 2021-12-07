@@ -6,7 +6,7 @@
 
 1. WIN1 가상 머신에 Admin으로 로그인합니다. 암호로는 **Pa55w.rd**를 사용합니다.  
 
-2. Edge 브라우저에서 Azure Portal(https://portal.azure.com)로 이동합니다.
+2. Edge 브라우저에서 Azure Portal(https://portal.azure.com) 로 이동합니다.
 
 3. 랩 호스팅 공급자가 제공한 **테넌트 전자 메일** 계정을 복사하여 **로그인** 대화 상자에 붙여넣은 후 **다음**을 선택합니다.
 
@@ -34,6 +34,6 @@
 
 피싱 URL 끌어오기가 진행되며 ThreatIntelligenceIndicator 테이블에 피싱 URL이 입력됩니다.
 
-**참고:** 추가적인 컬렉션에 대해서는 브라우저에서 https://limo.anomali.com/api/v1/taxii2/feeds/collections/를 열고, 사용 가능한 다른 ID를 검토합니다.
+**참고:** 추가적인 컬렉션에 대해서는 브라우저에서 https://limo.anomali.com/api/v1/taxii2/feeds/collections/를 열고 사용자 이름과 암호로 guest를 사용하여 사용 가능한 다른 컬렉션 ID를 검토합니다.
 
 ## 이 랩을 완료했습니다.

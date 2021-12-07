@@ -8,7 +8,7 @@
 
 2. 새 Microsoft Edge 브라우저를 시작합니다.
 
-3. Edge 브라우저에서 Azure Portal https://portal.azure.com으로 이동합니다.
+3. Edge 브라우저에서 Azure Portal https://portal.azure.com 으로 이동합니다.
 
 4. 랩 호스팅 공급자가 제공한 **테넌트 전자 메일** 계정을 복사하여 **로그인** 대화 상자에 붙여 넣은 후 **다음**을 선택합니다.
 
@@ -32,7 +32,7 @@
 
    ![linux 로그인](../Media/LinuxLoginExample.png)
 
-5. WIN1 가상 머신으로 돌아가서 Windows PowerShell을 관리자 권한으로 시작합니다.
+5. WIN1 가상 머신으로 돌아가 시작 메뉴 아이콘을 마우스 오른쪽 단추로 클릭하고 **Windows PowerShell(관리자)** 을 선택하여 관리자 권한으로 Windows PowerShell을 시작합니다. **예**를 선택하여 표시되는 사용자 계정 컨트롤 창에서 앱을 실행하도록 허용합니다.
 
 6. 구체적인 Linux 서버 정보에 맞게 다음 PowerShell 명령을 수정하여 입력하고 Enter 키를 누릅니다.
 
@@ -40,7 +40,7 @@
 ssh <insert your linux IP address here> -l <insert linux user name here>
 ```
 
-7. PowerShell에서 사용자 암호를 물으면 입력하고 Enter 키를 누릅니다.  화면이 이제 다음과 같이 표시됩니다.
+7. *yes*를 입력하여 연결을 확인한 후 사용자의 암호를 입력하고 Enter 키를 누릅니다. 화면이 이제 다음과 같이 표시됩니다.
 
    ![linux 로그인](../Media/PSconnectLinux.png)
 
@@ -75,7 +75,9 @@ ssh <insert your linux IP address here> -l <insert linux user name here>
 
    ![linux 로그인](../Media/LinuxLoginExample.png)
 
-9. WIN1 가상 머신으로 돌아가서 Windows PowerShell을 관리자 권한으로 시작합니다.
+9. WIN1 가상 머신으로 돌아가 시작 메뉴 아이콘을 마우스 오른쪽 단추로 클릭하고 **Windows PowerShell(관리자)** 을 선택하여 관리자 권한으로 새 Windows PowerShell을 시작합니다. **예**를 선택하여 표시되는 사용자 계정 컨트롤 창에서 앱을 실행하도록 허용합니다.
+
+**참고:** 마지막 작업에 대한 *설치가 완료*된 경우 *exit*를 입력하여 LIN1에 대한 연결을 닫고 Windows PowerShell 창을 재사용할 수 있습니다.
 
 10. 구체적인 Linux 서버 정보에 맞게 다음 PowerShell 명령을 수정하여 입력하고 Enter 키를 누릅니다.
 
@@ -83,7 +85,7 @@ ssh <insert your linux IP address here> -l <insert linux user name here>
 ssh <insert your linux IP address here> -l <insert linux user name here>
 ```
 
-11. PowerShell에서 사용자 암호를 물으면 입력하고 Enter 키를 누릅니다.  화면이 이제 다음과 같이 표시됩니다.
+11. *yes*를 입력하여 연결을 확인한 후 사용자의 암호를 입력하고 Enter 키를 누릅니다. 화면이 이제 다음과 같이 표시됩니다.
 
    ![linux 로그인](../Media/PSconnectLinux.png)
 
@@ -107,9 +109,9 @@ ssh <insert your linux IP address here> -l <insert linux user name here>
 
 6. *기능 이름* 드롭다운 메뉴에서 **인증**을 선택합니다.
 
-7. **기능 추가** 단추를 선택합니다.
+7. **+ 기능 추가** 단추를 다시 선택합니다.
 
-8. *기능 이름* 드롭다운 메뉴에서 *authpriv*를 선택합니다.
+8. *기능 이름* 드롭다운 메뉴에서 **authpriv**를 선택합니다.
 
 9. **적용**을 선택합니다.  이 작업을 완료했습니다.
 
