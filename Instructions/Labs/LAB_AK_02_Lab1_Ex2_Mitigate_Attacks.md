@@ -1,4 +1,4 @@
-﻿# 모듈 2 - 랩 1 - 연습 2 - 엔드포인트용 Microsoft Defender를 사용하여 위협 완화
+# 모듈 2 - 랩 1 - 연습 2 - 엔드포인트용 Microsoft Defender를 사용하여 위협 완화
 
 ## 랩 시나리오
 
