@@ -1,4 +1,4 @@
-﻿# 모듈 2 - 랩 1 - 연습 1 - 엔드포인트용 Microsoft Defender 배포
+# 모듈 2 - 랩 1 - 연습 1 - 엔드포인트용 Microsoft Defender 배포
 
 ## 랩 시나리오
 
