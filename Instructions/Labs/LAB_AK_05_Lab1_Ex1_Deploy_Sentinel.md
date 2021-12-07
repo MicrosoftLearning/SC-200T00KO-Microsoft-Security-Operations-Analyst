@@ -1,4 +1,4 @@
-﻿# 모듈 5 - 랩 1 - 연습 1 - Azure Sentinel 환경 구성
+# 모듈 5 - 랩 1 - 연습 1 - Azure Sentinel 환경 구성
 
 ## 랩 시나리오
 

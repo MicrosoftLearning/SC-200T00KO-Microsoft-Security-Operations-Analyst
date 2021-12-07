@@ -1,4 +1,4 @@
-﻿# 모듈 4 - 랩 1 - 연습 1 - KQL(Kusto 쿼리 언어)을 사용하여 Azure Sentinel용 쿼리 만들기
+# 모듈 4 - 랩 1 - 연습 1 - KQL(Kusto 쿼리 언어)을 사용하여 Azure Sentinel용 쿼리 만들기
 
 ## 랩 시나리오
 Azure Sentinel을 구현하고 있는 회사에서 근무하는 보안 작업 분석가인 여러분은 로그 데이터 분석을 수행하여 악의적인 활동을 검색하고 시각화를 표시하고 위협 헌팅을 수행할 책임이 있습니다. 로그 데이터를 쿼리하려면 KQL(Kusto Query Language)을 사용합니다.

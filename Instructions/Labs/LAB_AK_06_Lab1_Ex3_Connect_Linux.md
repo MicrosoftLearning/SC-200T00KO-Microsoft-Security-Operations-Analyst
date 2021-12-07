@@ -1,4 +1,4 @@
-﻿# 모듈 6 - 랩 1 - 연습 3 - 데이터 커넥터를 사용하여 Azure Sentinel에 Linux 호스트 연결
+# 모듈 6 - 랩 1 - 연습 3 - 데이터 커넥터를 사용하여 Azure Sentinel에 Linux 호스트 연결
 
 ### 작업 1: Azure Sentinel 작업 영역 액세스
 
