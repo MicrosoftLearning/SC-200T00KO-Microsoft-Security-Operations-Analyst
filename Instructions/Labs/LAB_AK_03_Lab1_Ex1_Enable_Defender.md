@@ -12,7 +12,7 @@
 
 2. Microsoft Edge 브라우저를 열거나 Microsoft Edge 브라우저가 이미 열려 있으면 새 탭을 엽니다.
 
-3. Edge 브라우저에서 Azure Portal(https://portal.azure.com)로 이동합니다.
+3. Edge 브라우저에서 Azure Portal(https://portal.azure.com) 로 이동합니다.
 
 4. 랩 호스팅 공급자가 제공한 관리자 사용자 이름용 테넌트 전자 메일 계정을 복사하여 **로그인** 대화 상자에 붙여 넣은 후 **다음**을 선택합니다.
 
@@ -74,7 +74,7 @@
 
 이 작업에서는 온-프레미스 서버에 Azure Arc를 설치합니다.
 
-1. WINServer 가상 머신에 Administrator로 로그인합니다. 암호로는 **Passw0rd!**를 사용합니다.  
+1. WINServer 가상 머신에 Administrator로 로그인합니다. 암호로는 **Passw0rd!** 를 사용합니다.  
 
 2. Microsoft Edge 브라우저를 열고 Azure Portal(https://portal.azure.com)로 이동합니다.
 
@@ -106,7 +106,7 @@
 
 14. 아래로 스크롤하여 **다운로드** 단추를 선택합니다. 힌트: 브라우저에서 다운로드를 차단하는 경우 브라우저에서 다운로드를 허용하도록 설정합니다. Edge 브라우저에서 점 3개 "..."를 선택하고**유지**를 선택합니다. 
 
-15. Windows 시작 단추를 마우스 오른쪽 단추로 클릭하고  **Windows PowerShell(관리자)**을 클릭합니다.
+15. Windows 시작 단추를 마우스 오른쪽 단추로 클릭하고 **Windows PowerShell(관리자)** 을 클릭합니다.
 
 16. 사용자 이름을 입력하라는 메시지가 표시되면 Administrator를 입력합니다.
 
@@ -118,7 +118,7 @@
 
 20. 모두 예에 해당하는 **A** 키를 누른 다음 Enter 키를 누릅니다.
 
-21. *[.\OnboardingScript.ps1]*을 입력하고 Enter 키를 누릅니다.
+21. *[.\OnboardingScript.ps1]* 을 입력하고 Enter 키를 누릅니다.
 
 22. **R** 키를 눌러 한 번 실행하고 Enter 키를 누릅니다(몇 분 정도 걸릴 수 있음).
 
@@ -144,7 +144,7 @@
 
 5. 앞에서 만든 작업 영역 옆의 **+ 서버 추가**를 선택합니다.
 
-6. **Windows 에이전트 다운로드(64비트)**를 선택합니다.
+6. **Windows 에이전트 다운로드(64비트)** 를 선택합니다.
 
 7. 다운로드한 파일을 실행합니다.
 

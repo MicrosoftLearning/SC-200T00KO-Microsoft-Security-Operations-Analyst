@@ -10,7 +10,7 @@ Azure Sentinel을 구현한 회사에서 근무하는 보안 작업 분석가인
 
 1. WIN1 가상 머신에 Admin으로 로그인합니다. 암호로는 **Pa55w.rd**를 사용합니다.  
 
-2. Edge 브라우저에서 Azure Portal https://portal.azure.com으로 이동합니다.
+2. Edge 브라우저에서 Azure Portal https://portal.azure.com 으로 이동합니다.
 
 3. 랩 호스팅 공급자가 제공한 **테넌트 전자 메일** 계정을 복사하여 **로그인** 대화 상자에 붙여넣은 후 **다음**을 선택합니다.
 

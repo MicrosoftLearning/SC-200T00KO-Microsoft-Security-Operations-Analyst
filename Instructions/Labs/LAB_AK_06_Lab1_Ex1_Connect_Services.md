@@ -16,7 +16,7 @@ Azure Sentinel을 구현한 회사에서 근무하는 보안 작업 분석가인
 
 2. Microsoft Edge 브라우저를 엽니다.
 
-3. Edge 브라우저에서 Azure Portal https://portal.azure.com으로 이동합니다.
+3. Edge 브라우저에서 Azure Portal https://portal.azure.com 으로 이동합니다.
 
 4. 랩 호스팅 공급자가 제공한 **테넌트 전자 메일** 계정을 복사하여 **로그인** 대화 상자에 붙여 넣은 후 **다음**을 선택합니다.
 
@@ -50,7 +50,7 @@ Azure Sentinel을 구현한 회사에서 근무하는 보안 작업 분석가인
 
 이 작업에서는 Microsoft Defender for Cloud 커넥터를 연결합니다.
 
-1. 데이터 커넥터 탭의 목록에서 ** Microsoft Defender for Cloud** 커넥터를 선택합니다.
+1. 데이터 커넥터 탭의 목록에서 **Microsoft Defender for Cloud** 커넥터를 선택합니다.
 
 2. 커넥터 정보 블레이드에서 **커넥터 페이지 열기**를 선택합니다.
 
@@ -120,7 +120,7 @@ Azure Sentinel을 구현한 회사에서 근무하는 보안 작업 분석가인
 
 2. 커넥터 정보 블레이드에서 **커넥터 페이지 열기**를 선택합니다.
 
-3. 구성 영역에서 **Azure Policy 할당 마법사 시작>**을 선택합니다.
+3. 구성 영역에서 **Azure Policy 할당 마법사 시작>** 을 선택합니다.
 
 4. **기본 사항** 탭의 **범위** 아래에서 세 개의 점이 있는 단추를 선택하여 드롭다운 목록에서 사용자의 구독을 선택하고 **선택**을 클릭합니다.
 
