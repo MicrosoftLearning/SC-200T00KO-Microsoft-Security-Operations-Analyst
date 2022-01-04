@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: '연습 1 - 데이터 커넥터를 사용하여 Microsoft Sentinel에 데이터 연결'
     module: '모듈 6 - Microsoft Sentinel에 로그 연결'
