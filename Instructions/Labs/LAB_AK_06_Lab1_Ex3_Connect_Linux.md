@@ -1,8 +1,15 @@
-# 모듈 6 - 랩 1 - 연습 3 - 데이터 커넥터를 사용하여 Azure Sentinel에 Linux 호스트 연결
+﻿---
+lab:
+    title: '연습 3 - 데이터 커넥터를 사용하여 Microsoft Sentinel에 Linux 호스트 연결'
+    module: '모듈 6 - Microsoft Sentinel에 로그 연결'
+---
 
-### 작업 1: Azure Sentinel 작업 영역 액세스
+# 모듈 6 - 랩 1 - 연습 3 - 데이터 커넥터를 사용하여 Microsoft Sentinel에 Linux 호스트 연결
 
-이 작업에서는 Azure Sentinel 작업 영역에 액세스합니다.
+
+### 작업 1: Microsoft Sentinel 작업 영역 액세스
+
+이 작업에서는 Microsoft Sentinel 작업 영역에 액세스합니다.
 
 1. WIN1 가상 머신에 Admin으로 로그인합니다. 암호로는 **Pa55w.rd**를 사용합니다.  
 
@@ -14,15 +21,16 @@
 
 5. 랩 호스팅 공급자가 제공한 **테넌트 암호**를 복사하여 **암호 입력** 대화 상자에 붙여 넣은 후 **로그인**을 선택합니다.
 
-6. Azure Portal의 검색 창에 *Sentinel*을 입력하고 **Azure Sentinel**을 선택합니다.
+6. Azure Portal의 검색 창에 *Sentinel*을 입력하고 **Microsoft Sentinel**을 선택합니다.
 
-7. 이전 랩에서 만든 Azure Sentinel 작업 영역을 선택합니다.
+7. 이전 랩에서 만든 Microsoft Sentinel 작업 영역을 선택합니다.
+
 
 ### 작업 2: Common Event Format 커넥터를 사용하여 Linux 호스트 연결
 
-이 작업에서는 CEF(Common Event Format) 커넥터를 사용하여 Azure Sentinel에 Linux 호스트를 연결합니다.
+이 작업에서는 CEF(Common Event Format) 커넥터를 사용하여 Microsoft Sentinel에 Linux 호스트를 연결합니다.
 
-1. Azure Sentinel의 구성 영역에서 **데이터 커넥터**를 선택합니다.  데이터 커넥터 탭의 목록에서 **CEF(Common Event Format)** 커넥터를 선택합니다.
+1. Microsoft Sentinel의 구성 영역에서 **데이터 커넥터**를 선택합니다.  데이터 커넥터 탭에서 **CEF(Common Event Format)** 커넥터를 검색하고 목록에서 선택합니다.
 
 2. 커넥터 정보 블레이드에서 **커넥터 페이지 열기**를 선택합니다.
 
@@ -53,13 +61,14 @@ ssh <insert your linux IP address here> -l <insert linux user name here>
 
    ![ConnectorScript](../Media/LinuxConnected.png)
 
+
 ### 작업 3: Syslog 커넥터를 사용하여 Linux 호스트 연결
 
-이 작업에서는 Syslog 커넥터를 사용하여 Azure Sentinel에 Linux 호스트를 연결합니다.
+이 작업에서는 Syslog 커넥터를 사용하여 Microsoft Sentinel에 Linux 호스트를 연결합니다.
 
-1. WIN1(작업 영역에 대한 Azure Sentinel 포털에 이미 있어야 함)에 연결합니다.  
+1. WIN1(작업 영역에 대한 Microsoft Sentinel 포털에 이미 있어야 함)에 연결합니다.  
 
-2. 데이터 커넥터 탭의 목록에서 **Syslog** 커넥터를 선택합니다.
+2. 데이터 커넥터 탭에서 **Syslog** 커넥터를 검색하고 목록에서 선택합니다.
 
 3. 커넥터 정보 블레이드에서 **커넥터 페이지 열기**를 선택합니다.
 
@@ -77,7 +86,7 @@ ssh <insert your linux IP address here> -l <insert linux user name here>
 
 9. WIN1 가상 머신으로 돌아가 시작 메뉴 아이콘을 마우스 오른쪽 단추로 클릭하고 **Windows PowerShell(관리자)** 을 선택하여 관리자 권한으로 새 Windows PowerShell을 시작합니다. **예**를 선택하여 표시되는 사용자 계정 컨트롤 창에서 앱을 실행하도록 허용합니다.
 
-**참고:** 마지막 작업에 대한 *설치가 완료*된 경우 *exit*를 입력하여 LIN1에 대한 연결을 닫고 Windows PowerShell 창을 재사용할 수 있습니다.
+   >**참고:** 마지막 작업에 대해 *설치가 완료*된 경우 *exit*를 입력하여 LIN1에 대한 연결을 닫고 Windows PowerShell을 재사용할 수 있습니다.
 
 10. 구체적인 Linux 서버 정보에 맞게 다음 PowerShell 명령을 수정하여 입력하고 Enter 키를 누릅니다.
 
@@ -93,13 +102,14 @@ ssh <insert your linux IP address here> -l <insert linux user name here>
 
 13. 스크립트를 붙여넣은 후에 Enter 키를 누릅니다. 스크립트가 Linux 서버에 대해 원격으로 실행됩니다. 이 작업을 완료했습니다. 이 과정에는 이 연결을 사용하는 추가 랩이 없습니다.
 
+
 ### 작업 4: Syslog 커넥터용으로 수집할 기능 및 해당 심각도 구성
 
 이 작업에서는 Syslog 수집 기능을 구성합니다.
 
 1. WIN1 가상 머신에 연결합니다.
 
-2. Azure Sentinel 포털에서 **설정**을 선택하고 설정 블레이드에서 **작업 영역 설정**을 선택합니다.
+2. Microsoft Sentinel 포털에서 **설정**을 선택하고 설정 블레이드에서 **작업 영역 설정**을 선택합니다.
 
 3. **설정** 영역에서 **에이전트 구성**을 선택합니다.
 

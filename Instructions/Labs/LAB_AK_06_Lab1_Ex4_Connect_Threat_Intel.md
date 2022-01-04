@@ -1,4 +1,11 @@
-# 모듈 6 - 랩 1 - 연습 4 - 데이터 커넥터를 사용하여 Azure Sentinel에 위협 인텔리전스 연결
+﻿---
+lab:
+    title: '연습 4 - 데이터 커넥터를 사용하여 Microsoft Sentinel에 위협 인텔리전스 연결'
+    module: '모듈 6 - Microsoft Sentinel에 로그 연결'
+---
+
+# 모듈 6 - 랩 1 - 연습 4 - 데이터 커넥터를 사용하여 Microsoft Sentinel에에 위협 인텔리전스 연결
+
 
 ### 작업 1: 위협 인텔리전스 연결
 
@@ -12,9 +19,9 @@
 
 4. 랩 호스팅 공급자가 제공한 **테넌트 암호**를 복사하여 **암호 입력** 대화 상자에 붙여넣은 후 **로그인**을 선택합니다.
 
-5. Azure Portal의 검색 창에 *Sentinel*을 입력하고 **Azure Sentinel**을 선택합니다.
+5. Azure Portal의 검색 창에 *Sentinel*을 입력하고 **Microsoft Sentinel**을 선택합니다.
 
-6. 앞에서 만든 Azure Sentinel 작업 영역을 선택합니다.
+6. 앞에서 만든 Microsoft Sentinel 작업 영역을 선택합니다.
 
 7. 데이터 커넥터 탭에서 **위협 인텔리전스 - TAXII** 커넥터를 선택합니다.
 
@@ -32,8 +39,8 @@
 
 14. 이제 **추가** 단추를 선택합니다.  
 
-피싱 URL 끌어오기가 진행되며 ThreatIntelligenceIndicator 테이블에 피싱 URL이 입력됩니다.
+    피싱 URL 끌어오기가 진행되며 ThreatIntelligenceIndicator 테이블에 피싱 URL이 입력됩니다.
 
-**참고:** 추가적인 컬렉션에 대해서는 브라우저에서 https://limo.anomali.com/api/v1/taxii2/feeds/collections/를 열고 사용자 이름과 암호로 guest를 사용하여 사용 가능한 다른 컬렉션 ID를 검토합니다.
+>**참고:** 추가적인 컬렉션에 대해서는 브라우저에서 https://limo.anomali.com/api/v1/taxii2/feeds/collections/를 열고, 사용자 이름과 암호로 guest를 사용하여 사용 가능한 다른 컬렉션 ID를 검토합니다.
 
 ## 이 랩을 완료했습니다.
