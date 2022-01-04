@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: '연습 1 - KQL(Kusto Query Language)을 사용하여 Microsoft Sentinel용 쿼리 만들기'
     module: '모듈 4 - KQL(Kusto Query Language)을 사용하여 Microsoft Sentinel용 쿼리 만들기'
