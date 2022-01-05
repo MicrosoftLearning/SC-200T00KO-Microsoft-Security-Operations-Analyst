@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: '연습 3 - 예약된 쿼리 만들기'
     module: '모듈 7 - Microsoft Sentinel을 사용하여 검색 만들기 및 조사 수행'

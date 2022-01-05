@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: '연습 2 - Microsoft Sentinel을 통해 Notebooks를 사용하여 위협 헌팅 수행'
     module: '모듈 8 - Microsoft Sentinel에서 위협 헌팅 수행'

@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: '연습 1 - Microsoft 365 Defender 살펴보기'
     module: '모듈 1 – Microsoft 365 Defender를 사용하여 위협 완화'

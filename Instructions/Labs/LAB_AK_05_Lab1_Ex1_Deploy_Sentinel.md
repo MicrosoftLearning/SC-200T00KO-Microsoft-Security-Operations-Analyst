@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: '연습 1 - Microsoft Sentinel 환경 구성'
     module: '모듈 5 - Microsoft Sentinel 환경 구성'

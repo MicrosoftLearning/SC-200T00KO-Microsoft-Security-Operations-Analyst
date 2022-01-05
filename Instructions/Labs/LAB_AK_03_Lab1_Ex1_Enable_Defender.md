@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: '연습 1 - 클라우드용 Microsoft Defender 활성화'
     module: '모듈 3 – 클라우드용 Microsoft Defender를 사용하여 위협 완화'

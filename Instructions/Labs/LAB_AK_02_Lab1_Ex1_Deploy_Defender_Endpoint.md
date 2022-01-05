@@ -1,4 +1,4 @@
-﻿---
+---
 lab:
     title: '연습 1 - 엔드포인트용 Microsoft Defender 배포'
     module: '모듈 2 – 엔드포인트용 Microsoft Defender를 사용하여 위협 완화'
