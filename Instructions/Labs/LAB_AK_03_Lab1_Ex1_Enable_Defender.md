@@ -1,6 +1,6 @@
 ﻿---
 lab:
-    title: '연습 1 - 클라우드용 Microsoft Defender를 사용하도록 설정'
+    title: '연습 1 - 클라우드용 Microsoft Defender 활성화'
     module: '모듈 3 – 클라우드용 Microsoft Defender를 사용하여 위협 완화'
 ---
 
@@ -114,7 +114,7 @@ lab:
 
 14. 아래로 스크롤하고 **다운로드** 단추를 선택합니다. 힌트: 브라우저에서 다운로드를 차단하는 경우 브라우저에서 다운로드를 허용하도록 설정합니다. Edge 브라우저에서 점 3개 "..."를 선택하고 **유지**를 선택합니다. 
 
-15. Windows 시작 단추를 마우스 오른쪽 단추로 클릭하고 **Windows PowerShell (Admin)**을 선택합니다.
+15. Windows 시작 단추를 마우스 오른쪽 단추로 클릭하고 **Windows PowerShell (Admin)** 을 선택합니다.
 
 16. 사용자 이름을 입력하라는 메시지가 표시되면 Administrator를 입력합니다.
 
@@ -130,7 +130,7 @@ lab:
 
 22. **R** 키를 눌러 한 번 실행하고 Enter 키를 누릅니다(몇 분 정도 걸릴 수 있음).
 
-23. PowerShell 출력 마지막 줄에 있는 지침을 따라 디바이스 등록을 완료합니다.  여기에는 브라우저를 통한 디바이스 인증이 포함됩니다.  url(https://microsoft.com/devicelogin)을 복사하고 새 Edge 브라우저 탭에 입력합니다. Windows PowerShell 창으로 돌아가고, 인증할 코드를 복사하여 앞서 열어 놓은 탭에 붙여넣고, **다음**을 선택합니다. 테넌트 관리자 계정을 선택하고 *Azure Connected Machine Agent에 로그인하려고 하십니까?* 창에서 **계속**을 선택합니다. 
+23. PowerShell 출력 마지막 줄에 있는 지침을 따라 디바이스 등록을 완료합니다.  여기에는 브라우저를 통한 디바이스 인증이 포함됩니다.  url(https://microsoft.com/devicelogin) 을 복사하고 새 Edge 브라우저 탭에 입력합니다. Windows PowerShell 창으로 돌아가고, 인증할 코드를 복사하여 앞서 열어 놓은 탭에 붙여넣고, **다음**을 선택합니다. 테넌트 관리자 계정을 선택하고 *Azure Connected Machine Agent에 로그인하려고 하십니까?* 창에서 **계속**을 선택합니다. 
 
 24. *"리소스를 Azure에 온보딩함"* 메시지가 Windows PowerShell 창에 나타나면 스크립트를 다운로드했던 Azure Portal 페이지로 이동하여 **닫기**를 선택합니다. **Azure Arc로 서버 추가**를 닫아서 Azure Arc **서버** 페이지로 돌아갑니다.
 

@@ -79,7 +79,7 @@ lab:
 
 2. Microsoft Edge 브라우저를 엽니다.
 
-3. 브라우저를 열고 이전 랩에서 사용했던 자격 증명으로 Azure Portal(https://portal.azure.com)에 로그인합니다.
+3. 브라우저를 열고 이전 랩에서 사용했던 자격 증명으로 Azure Portal(https://portal.azure.com) 에 로그인합니다.
 
 4. Azure Portal의 검색 창에 *Sentinel*을 입력하고 **Microsoft Sentinel**을 선택합니다.
 
@@ -122,7 +122,7 @@ lab:
 
 >**중요:** WIN2 가상 머신에 연결되어 있어야 합니다. 다음 지침에 따라 작업을 수행하면 기본 구성으로 Sysmon이 설치됩니다. 프로덕션 컴퓨터에서 Sysmon을 사용하려면 커뮤니티에서 제공되는 구성을 조사해야 합니다.
 
-1. 브라우저에서 새 탭을 열고https://docs.microsoft.com/sysinternals/downloads/sysmon으로 이동합니다.
+1. 브라우저에서 새 탭을 열고https://docs.microsoft.com/sysinternals/downloads/sysmon 으로 이동합니다.
 
 2. **Download Sysmon**을 선택하여 해당 페이지에서 Sysmon을 다운로드합니다.
 
@@ -134,7 +134,7 @@ lab:
 
 6. *notepad sysmon.xml*을 입력하여 새 파일을 만듭니다. **예**를 선택하여 파일 만들기를 확인합니다.
 
-7. 브라우저에서 새 탭을 열고 https://github.com/SwiftOnSecurity/sysmon-config/blob/master/sysmonconfig-export.xml로 이동합니다.
+7. 브라우저에서 새 탭을 열고 https://github.com/SwiftOnSecurity/sysmon-config/blob/master/sysmonconfig-export.xml 로 이동합니다.
 
 8. **Raw** 단추를 선택하고 GitHub의 해당 파일 내용을 방금 만든 sysmon.xml 메모장 파일에 복사합니다. **파일**, **저장**을 차례로 선택하여 파일을 저장합니다.
 
@@ -143,7 +143,7 @@ lab:
 
     >**참고:**  출력에 "Configuration file validated" 및 "Sysmon started" 메시지가 나타나는지 확인합니다. 그렇지 않은 경우 데이터가 제대로 복사되었고 sysmon.xml이 저장되었는지 확인합니다.
 
-10. 브라우저에서 Azure Portal(https://portal.azure.com)로 이동합니다. 
+10. 브라우저에서 Azure Portal(https://portal.azure.com) 로 이동합니다. 
 
 11. Azure Portal의 검색 창에 *Sentinel*을 입력하고 **Microsoft Sentinel**을 선택한 다음 앞에서 만든 Microsoft Sentinel 작업 영역을 선택합니다.
 
@@ -170,7 +170,7 @@ lab:
 
 1. WIN1 가상 머신에 Admin으로 로그인합니다. 암호로는 **Pa55w.rd**를 사용합니다.  
 
-2. Edge 브라우저에서 Microsoft 365 Defender 포털(https://security.microsoft.com)로 이동하여 **테넌트 전자 메일** 자격 증명으로 로그인합니다(현재 포털에 없는 경우).
+2. Edge 브라우저에서 Microsoft 365 Defender 포털(https://security.microsoft.com) 로 이동하여 **테넌트 전자 메일** 자격 증명으로 로그인합니다(현재 포털에 없는 경우).
 
 3. 왼쪽 메뉴 모음에서 **설정**을 선택한 다음 설정 페이지에서 **엔드포인트**를 선택합니다.
 

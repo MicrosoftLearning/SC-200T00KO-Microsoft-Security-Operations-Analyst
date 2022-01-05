@@ -9,7 +9,7 @@ lab:
 ## 랩 시나리오
 여러분은 Microsoft Sentinel을 구현하는 중인 회사에서 일하는 보안 작업 분석가입니다. 로그 데이터 분석을 수행하여 악의적인 활동을 검색하고 시각화를 표시하고 위협 헌팅을 수행할 책임이 있습니다. 로그 데이터를 쿼리하려면 KQL(Kusto Query Language)을 사용합니다.
 
->**힌트:** 이 랩에서는 Microsoft Sentinel에 많은 KQL 스크립트를 입력합니다. 스크립트는 이 랩을 시작할 때 파일로 제공되었습니다. 다음 위치에서 스크립트를 다운로드할 수 있습니다.  https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst/tree/master/Allfiles
+>**힌트:** 이 랩에서는 Microsoft Sentinel에 많은 KQL 스크립트를 입력합니다. 스크립트는 이 랩을 시작할 때 파일로 제공되었습니다. 다음 위치에서 스크립트를 다운로드할 수 있습니다.  https://github.com/MicrosoftLearning/SC-200T00KO-Microsoft-Security-Operations-Analyst/tree/master/Allfiles
 
 
 ### 작업 1: KQL 테스트 영역 액세스
@@ -35,7 +35,7 @@ SecurityEvent
 
 이 작업에서는 기본적인 KQL 문을 작성합니다.
 
->**중요:**  각 쿼리에 대해 쿼리 창에서 이전 문을 지우거나, 마지막으로 연 탭 후에 **+**를 선택함으로써 새 쿼리 창을 엽니다(최대 25개).
+>**중요:**  각 쿼리에 대해 쿼리 창에서 이전 문을 지우거나, 마지막으로 연 탭 후에 **+** 를 선택함으로써 새 쿼리 창을 엽니다(최대 25개).
 
 1. 다음 문에는 let 문을 사용하여 변수를 선언하는 방법이 나와 있습니다. 쿼리 창에서 다음 문을 입력하고 **실행**을 선택합니다. 
 

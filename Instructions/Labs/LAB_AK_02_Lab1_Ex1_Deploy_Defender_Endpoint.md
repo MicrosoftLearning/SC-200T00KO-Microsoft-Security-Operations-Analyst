@@ -23,7 +23,7 @@ lab:
 
 2. 아직 브라우저에서 Microsoft 365 Defender 포털이 아닌 경우 Microsoft Edge 브라우저를 시작합니다.
 
-3. Edge 브라우저에서 Microsoft 365 Defender 포털(https://security.microsoft.com)로 이동합니다.
+3. Edge 브라우저에서 Microsoft 365 Defender 포털(https://security.microsoft.com) 로 이동합니다.
 
 4. 랩 호스팅 공급자가 제공한 관리자 사용자 이름용 테넌트 전자 메일 계정을 복사하여 **로그인** 대화 상자에 붙여 넣은 후 **다음**을 선택합니다.
 
@@ -42,7 +42,7 @@ lab:
 
 이 작업에서는 온보딩 스크립트를 사용하여 엔드포인트용 Microsoft Defender에 디바이스를 온보딩합니다.
 
-1. 아직 브라우저에서 Microsoft 365 Defender 포털이 아닌 경우 Microsoft Edge 브라우저를 시작하고 https://security.microsoft.com으로 이동한 후 **테넌트 이메일** 자격 증명을 사용하여 로그인합니다.
+1. 아직 브라우저에서 Microsoft 365 Defender 포털이 아닌 경우 Microsoft Edge 브라우저를 시작하고 https://security.microsoft.com 으로 이동한 후 **테넌트 이메일** 자격 증명을 사용하여 로그인합니다.
 
 2. 왼쪽 메뉴 모음에서 **설정**을 선택한 다음 설정 페이지에서 **엔드포인트**를 선택합니다.
 

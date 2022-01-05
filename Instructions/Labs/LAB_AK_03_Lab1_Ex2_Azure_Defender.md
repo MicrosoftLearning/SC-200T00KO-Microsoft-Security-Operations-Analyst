@@ -1,6 +1,6 @@
 ﻿---
 lab:
-    title: '연습 2 – 클라우드용 Microsoft Defender를 사용하여 위협 완화'
+    title: '연습 2 - Microsoft Defender for Cloud를 사용하여 위협 완화'
     module: '모듈 3 – 클라우드용 Microsoft Defender를 사용하여 위협 완화'
 ---
 
