@@ -1,9 +1,15 @@
-# 모듈 4 - 랩 1 - 연습 1 - KQL(Kusto 쿼리 언어)을 사용하여 Azure Sentinel용 쿼리 만들기
+---
+lab:
+    title: '연습 1 - KQL(Kusto Query Language)을 사용하여 Microsoft Sentinel용 쿼리 만들기'
+    module: '모듈 4 - KQL(Kusto Query Language)을 사용하여 Microsoft Sentinel용 쿼리 만들기'
+---
+
+# 모듈 4 - 랩 1 - 연습 1 - KQL(Kusto Query Language)을 사용하여 Microsoft Sentinel용 쿼리 만들기
 
 ## 랩 시나리오
-Azure Sentinel을 구현하고 있는 회사에서 근무하는 보안 작업 분석가인 여러분은 로그 데이터 분석을 수행하여 악의적인 활동을 검색하고 시각화를 표시하고 위협 헌팅을 수행할 책임이 있습니다. 로그 데이터를 쿼리하려면 KQL(Kusto Query Language)을 사용합니다.
+여러분은 Microsoft Sentinel을 구현하는 중인 회사에서 일하는 보안 작업 분석가입니다. 로그 데이터 분석을 수행하여 악의적인 활동을 검색하고 시각화를 표시하고 위협 헌팅을 수행할 책임이 있습니다. 로그 데이터를 쿼리하려면 KQL(Kusto Query Language)을 사용합니다.
 
-**힌트:** 이 랩에서는 많은 KQL 스크립트를 Azure Sentinel에 입력합니다. 스크립트는 이 랩의 시작 부분에 있는 파일에 제공되었습니다. 스크립트를 다운로드할 수 있는 대체 위치:  https://github.com/MicrosoftLearning/SC-200T00A-Microsoft-Security-Operations-Analyst/tree/master/Allfiles
+>**힌트:** 이 랩에서는 Microsoft Sentinel에 많은 KQL 스크립트를 입력합니다. 스크립트는 이 랩을 시작할 때 파일로 제공되었습니다. 다음 위치에서 스크립트를 다운로드할 수 있습니다.  https://github.com/MicrosoftLearning/SC-200T00KO-Microsoft-Security-Operations-Analyst/tree/master/Allfiles
 
 
 ### 작업 1: KQL 테스트 영역 액세스
@@ -24,11 +30,12 @@ SecurityEvent
 
 5. 첫 번째 레코드 다음의 **>** 를 선택하여 해당 행의 정보를 확장합니다.
 
+
 ### 작업 2: 기본 KQL 문 실행
 
 이 작업에서는 기본적인 KQL 문을 작성합니다.
 
-**중요:**  각 쿼리에 대해 쿼리 창에서 이전 문을 지우거나, 마지막으로 연 탭 후에 **+** 를 선택함으로써 새 쿼리 창을 엽니다(최대 25개).
+>**중요:**  각 쿼리에 대해 쿼리 창에서 이전 문을 지우거나, 마지막으로 연 탭 후에 **+** 를 선택함으로써 새 쿼리 창을 엽니다(최대 25개).
 
 1. 다음 문에는 let 문을 사용하여 변수를 선언하는 방법이 나와 있습니다. 쿼리 창에서 다음 문을 입력하고 **실행**을 선택합니다. 
 
@@ -66,7 +73,7 @@ LowActivityAccounts | where Account contains "sql"
 search "err"
 ```
 
-**경고:** 다음 스크립트를 실행할 때는 TIme 범위를 "Last 24 hours"로 다시 변경해야 합니다.
+>**경고:** 다음 스크립트를 실행할 때는 Time 범위를 "Last 24 hours"로 다시 변경해야 합니다.
 
 5. 다음 문에는 "in" 절을 사용하여 나열한 테이블에서 쿼리 창에 표시되는 쿼리 시간 범위 내의 레코드를 검색하는 방법이 나와 있습니다. 쿼리 창에서 다음 문을 입력하고 **실행**을 선택합니다. 
 
@@ -76,7 +83,7 @@ search in (SecurityEvent,SecurityAlert,A*) "err"
 
 6. 다음 문에는 where 연산자를 사용하는 필터 사용 방식이 나와 있습니다. 쿼리 창에서 다음 문을 입력하고 **실행**을 선택합니다. 
 
-**참고:** 아래의 각 코드 블록에서 쿼리를 입력한 후 "실행"을 선택해야 합니다.
+    >**참고:** 아래의 각 코드 블록에서 쿼리를 입력한 후 "실행"을 선택해야 합니다.
 
 ```KQL
 SecurityEvent
@@ -128,7 +135,7 @@ SecurityAlert
 
 9. 다음 문에는 프로젝트 연산자를 사용하여 결과 집합을 필드를 지정하는 방법이 나와 있습니다.
 
-**참고:** 아래의 각 코드 블록에서 쿼리를 입력한 후 "실행"을 선택해야 합니다.
+    >**참고:** 아래의 각 코드 블록에서 쿼리를 입력한 후 "실행"을 선택해야 합니다.
 
 쿼리 창에서 다음 문을 입력하고 **실행**을 선택합니다. 
 
@@ -149,6 +156,7 @@ SecurityAlert
 | order by severityOrder
 | project-away severityOrder
 ```
+
 
 ### 작업 3: Summarize 연산자를 사용하여 KQL에서 결과 분석
 
@@ -216,7 +224,7 @@ SecurityEvent
 | summarize arg_max(TimeGenerated, *) by Account
 ```
 
-**참고:**  "Completed"를 선택하고 두 문 간에 데이터를 비교함으로써 "Total CPU" 및 "Data used for processed query"를 검토할 수도 있습니다.
+>**참고:**  "Completed." 막대를 선택하고 두 문 간에 데이터를 비교함으로써 "Total CPU" 및 "Data used for processed query"를 검토할 수도 있습니다.
 
 7. 다음 문에는 make_list 함수 사용법이 나와 있습니다.
 
@@ -240,6 +248,7 @@ SecurityEvent
 | summarize make_set(Account) by Computer
 ```
 
+
 ### 작업 4: Render 연산자를 사용하여 KQL에서 시각화 만들기
 
 이 작업에서는 KQL 문을 사용하여 시각화를 생성합니다.
@@ -262,6 +271,7 @@ SecurityEvent
 | render timechart
 ```
 
+
 ### 작업 5: KQL에서 다중 테이블 문 작성
 
 이 작업에서는 다중 테이블 KQL 문을 작성합니다.
@@ -269,12 +279,14 @@ SecurityEvent
 1. 다음 문에는 테이블 두 개 이상을 가져온 다음 모든 테이블의 행을 반환하는 union 연산자의 사용법이 나와 있습니다. 결과가 파이프 문자에 어떻게 전달되고 영향을 받는지 이해하는 것은 중요합니다. 쿼리 창에서 다음 문을 입력하고 각각에 대해 **실행**을 선택하여 결과를 봅니다. 
 
 **쿼리 1**은 SecurityEvent의 모든 행과 SecurityAlert의 모든 행을 반환합니다.
+
 ```KQL
 SecurityEvent 
 | union SecurityAlert  
 ```
 
 **쿼리 2**는 SecurityEvent의 모든 행과 SecurityAlert의 모든 행의 수인 행 1개와 열 1개를 반환합니다.
+
 ```KQL
 SecurityEvent 
 | union SecurityAlert  
@@ -283,6 +295,7 @@ SecurityEvent
 ```
 
 **쿼리 3**은 SecurityEvent의 모든 행과 SecurityAlert의 하나의 행을 반환합니다.  SecurityAlert의 행에는 SecurityAlert 행의 수가 포함됩니다.
+
 ```KQL
 SecurityEvent 
 | union (SecurityAlert  | summarize count()) 
@@ -312,6 +325,7 @@ SecurityEvent
 ```
 
 조인에서 지정된 첫 번째 테이블은 왼쪽 테이블로 간주됩니다.  조인 키워드 뒤의 테이블은 오른쪽 테이블입니다.  테이블의 열로 작업을 할 때는 참조 대상 테이블 열을 구분하기 위해 $left.Column name 이름 및 $right.Column 이름을 사용합니다. 
+
 
 ### 작업 6: KQL에서 문자열 데이터 작업
 
@@ -400,7 +414,7 @@ SecurityAlert
 
 6. 함수를 만들려면
 
-**참고:** 이 랩의 데이터에 사용되는 랩 데모 환경에서는 함수를 만들 수 없습니다. 하지만 함수는 랩 환경에서 사용할 중요한 개념이므로 숙지해 두어야 합니다. 
+    >**참고:** 이 랩의 데이터에 사용되는 랩 데모 환경에서는 함수를 만들 수 없습니다. 하지만 함수는 랩 환경에서 사용할 중요한 개념이므로 숙지해 두어야 합니다. 
 
 쿼리를 실행한 후 **저장 단추** 단추를 선택하고 드롭다운에서 **함수로 저장**을 선택합니다. 원하는 이름(예: *MailboxForward*)을 **함수 이름** 상자에 입력하고 *일반*과 같은 **레거시 범주**를 입력한 다음 **저장**을 선택합니다.
 
@@ -411,4 +425,3 @@ MailboxForward
 ```
 
 ## 이 랩을 완료했습니다.
-

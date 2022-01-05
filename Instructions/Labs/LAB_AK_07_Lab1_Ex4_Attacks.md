@@ -1,3 +1,9 @@
+---
+lab:
+    title: '연습 4 - 검색 모델링 이해'
+    module: '모듈 7 - Microsoft Sentinel을 사용하여 검색 만들기 및 조사 수행'
+---
+
 # 모듈 7 - 랩 1 - 연습 4 - 검색 모델링 이해
 
 ### 작업 1: 공격 이해
@@ -6,7 +12,7 @@
 
 이 공격의 패턴은 오픈 소스 프로젝트 https://github.com/redcanaryco/atomic-red-team 을 토대로 작성된 것입니다.
 
-**참고:** 랩을 진행하기 위해 짧은 시간 내에 트리거되는 설정도 있습니다.
+>**참고:** 랩을 진행하기 위해 짧은 시간 내에 트리거되는 설정도 있습니다.
 
 #### 공격 1 - 레지스트리 키 추가를 통한 지속성 적용
 
@@ -26,7 +32,7 @@ net user theusernametoadd ThePassword1!
 net localgroup administrators theusernametoadd /add
 ```
 
-### 공격 3 -DNS/C2 
+### 공격 3 - DNS/C2 
 
 이 공격에서는 C2(명령 및 제어) 통신을 시뮬레이트합니다.
 
@@ -71,6 +77,7 @@ Do {
 }
 Until ($TimeNow -ge $RunEnd)
 ```
+
 
 ### 작업 2: 검색 모델링 이해
 

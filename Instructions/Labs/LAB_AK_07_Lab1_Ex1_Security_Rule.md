@@ -1,8 +1,15 @@
+---
+lab:
+    title: '연습 1 - Microsoft 보안 규칙 활성화'
+    module: '모듈 7 - Microsoft Sentinel을 사용하여 검색 만들기 및 조사 수행'
+---
+
 # 모듈 7 - 랩 1 - 연습 1 - Microsoft 보안 규칙 활성화
 
 ## 랩 시나리오
 
-Azure Sentinel을 구현한 회사에서 근무하는 보안 운영 분석자인 여러분은 Azure Sentinel을 사용하여 위협을 검색하고 완화하는 방법을 파악해야 합니다.  그리고 다른 Microsoft 365 및 Azure 서비스에서 경고를 사용하도록 설정해야 합니다.  
+여러분은 Microsoft Sentinel을 구현한 회사에서 일하는 보안 작업 분석가입니다. Microsoft Sentinel을 사용하여 위협을 검색하고 완화하는 방법을 파악해야 합니다.  그리고 다른 Microsoft 365 및 Azure 서비스에서 경고를 사용하도록 설정해야 합니다.  
+
 
 ### 작업 1: Microsoft 보안 규칙 활성화
 
@@ -10,15 +17,15 @@ Azure Sentinel을 구현한 회사에서 근무하는 보안 운영 분석자인
 
 1. WIN1 가상 머신에 Admin으로 로그인합니다. 암호로는 **Pa55w.rd**를 사용합니다.  
 
-2. Edge 브라우저에서 Azure Portal(https://portal.azure.com)로 이동합니다.
+2. Edge 브라우저에서 Azure Portal(https://portal.azure.com) 로 이동합니다.
 
 3. 랩 호스팅 공급자가 제공한 **테넌트 전자 메일** 계정을 복사하여 **로그인** 대화 상자에 붙여 넣은 후 **다음**을 선택합니다.
 
 4. 랩 호스팅 공급자가 제공한 **테넌트 암호**를 복사하여 **암호 입력** 대화 상자에 붙여 넣은 후 **로그인**을 선택합니다.
 
-5. Azure Portal의 검색 창에 *Sentinel*을 입력하고 **Azure Sentinel**을 선택합니다.
+5. Azure Portal의 검색 창에 *Sentinel*을 입력하고 **Microsoft Sentinel**을 선택합니다.
 
-6. 이전 랩에서 만든 Azure Sentinel 작업 영역을 선택합니다.
+6. 이전 랩에서 만든 Microsoft Sentinel 작업 영역을 선택합니다.
 
 7. 구성 영역에서 **분석**을 선택하고 **규칙 탬플릿** 탭을 선택합니다.
 
